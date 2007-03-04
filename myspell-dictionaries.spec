@@ -1,5 +1,5 @@
 %define		_ver	1.0.2
-%define		_rel	0.3
+%define		_rel	0.4
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Name:		myspell-dictionaries
 Version:	%{_ver}
@@ -1535,405 +1535,395 @@ rm -rf $RPM_BUILD_ROOT
 ## Scripts for spell checking
 ##
 %post -n myspell-af_ZA
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*af[ \t]*ZA[ \t]*af_ZA" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*af[ \t]*ZA[ \t]*af_ZA" %{dictdir}/dictionary.lst; then
 	echo "DICT af ZA af_ZA" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-af_ZA
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*af\s*ZA\s*af_ZA$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-bg_BG
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*bg[ \t]*BG[ \t]*bg_BG" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*bg[ \t]*BG[ \t]*bg_BG" %{dictdir}/dictionary.lst; then
 	echo "DICT bg BG bg_BG" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-bg_BG
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*bg\s*BG\s*bg_BG$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ca_ES
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*ca[ \t]*ES[ \t]*ca_ES" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*ca[ \t]*ES[ \t]*ca_ES" %{dictdir}/dictionary.lst; then
 	echo "DICT ca ES ca_ES" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-ca_ES
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*ca\s*ES\s*ca_ES$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-cs_CZ
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*cs[ \t]*CZ[ \t]*cs_CZ" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*cs[ \t]*CZ[ \t]*cs_CZ" %{dictdir}/dictionary.lst; then
 	echo "DICT cs CZ cs_CZ" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-cs_CZ
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*cs\s*CZ\s*cs_CZ$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-cy_GB
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*cy[ \t]*GB[ \t]*cy_GB" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*cy[ \t]*GB[ \t]*cy_GB" %{dictdir}/dictionary.lst; then
 	echo "DICT cy GB cy_GB" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-cy_GB
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*cy\s*GB\s*cy_GB$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-da_DK
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*da[ \t]*DK[ \t]*da_DK" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*da[ \t]*DK[ \t]*da_DK" %{dictdir}/dictionary.lst; then
 	echo "DICT da DK da_DK" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-da_DK
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*da\s*DK\s*da_DK$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-de_AT
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*de[ \t]*AT[ \t]*de_AT" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*de[ \t]*AT[ \t]*de_AT" %{dictdir}/dictionary.lst; then
 	echo "DICT de AT de_AT" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-de_AT
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*de\s*AT\s*de_AT$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-el_GR
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*el[ \t]*GR[ \t]*el_GR" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*el[ \t]*GR[ \t]*el_GR" %{dictdir}/dictionary.lst; then
 	echo "DICT el GR el_GR" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-el_GR
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*el\s*GR\s*el_GR$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-en_NZ
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*en[ \t]*NZ[ \t]*en_NZ" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*en[ \t]*NZ[ \t]*en_NZ" %{dictdir}/dictionary.lst; then
 	echo "DICT en NZ en_NZ" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-en_NZ
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*en\s*NZ\s*en_NZ$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-es_MX
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*es[ \t]*MX[ \t]*es_MX" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*es[ \t]*MX[ \t]*es_MX" %{dictdir}/dictionary.lst; then
 	echo "DICT es MX es_MX" >> %{dictdir}/dictionary.lst
 fi
-
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*es[ \t]*AR[ \t]*es_MX" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*es[ \t]*AR[ \t]*es_MX" %{dictdir}/dictionary.lst; then
 	echo "DICT es AR es_MX" >> %{dictdir}/dictionary.lst
 fi
-
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*es[ \t]*CO[ \t]*es_MX" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*es[ \t]*CO[ \t]*es_MX" %{dictdir}/dictionary.lst; then
 	echo "DICT es CO es_MX" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-es_MX
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*es\s*MX\s*es_MX$/ or print" %{dictdir}/dictionary.lst
-fi
-
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^DICT\s*es\s*AR\s*es_MX$/ or print" %{dictdir}/dictionary.lst
-fi
-
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^DICT\s*es\s*CO\s*es_MX$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-et_EE
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*et[ \t]*EE[ \t]*et_EE" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*et[ \t]*EE[ \t]*et_EE" %{dictdir}/dictionary.lst; then
 	echo "DICT et EE et_EE" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-et_EE
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*et\s*EE\s*et_EE$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-fo_FO
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*fo[ \t]*FO[ \t]*fo_FO" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*fo[ \t]*FO[ \t]*fo_FO" %{dictdir}/dictionary.lst; then
 	echo "DICT fo FO fo_FO" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-fo_FO
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*fo\s*FO\s*fo_FO$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-fr_BE
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*fr[ \t]*BE[ \t]*fr_BE" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*fr[ \t]*BE[ \t]*fr_BE" %{dictdir}/dictionary.lst; then
 	echo "DICT fr BE fr_BE" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-fr_BE
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*fr\s*BE\s*fr_BE$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ga_IE
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*ga[ \t]*IE[ \t]*ga_IE" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*ga[ \t]*IE[ \t]*ga_IE" %{dictdir}/dictionary.lst; then
 	echo "DICT ga IE ga_IE" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-ga_IE
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*ga\s*IE\s*ga_IE$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-gl_ES
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*gl[ \t]*ES[ \t]*gl_ES" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*gl[ \t]*ES[ \t]*gl_ES" %{dictdir}/dictionary.lst; then
 	echo "DICT gl ES gl_ES" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-gl_ES
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*gl\s*ES\s*gl_ES$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hr_HR
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*hr[ \t]*HR[ \t]*hr_HR" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*hr[ \t]*HR[ \t]*hr_HR" %{dictdir}/dictionary.lst; then
 	echo "DICT hr HR hr_HR" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hr_HR
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*hr\s*HR\s*hr_HR$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hu_HU
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*hu[ \t]*HU[ \t]*hu_HU" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*hu[ \t]*HU[ \t]*hu_HU" %{dictdir}/dictionary.lst; then
 	echo "DICT hu HU hu_HU" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hu_HU
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*hu\s*HU\s*hu_HU$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-id_ID
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*id[ \t]*ID[ \t]*id_ID" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*id[ \t]*ID[ \t]*id_ID" %{dictdir}/dictionary.lst; then
 	echo "DICT id ID id_ID" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-id_ID
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*id\s*ID\s*id_ID$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-it_IT
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*it[ \t]*IT[ \t]*it_IT" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*it[ \t]*IT[ \t]*it_IT" %{dictdir}/dictionary.lst; then
 	echo "DICT it IT it_IT" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-it_IT
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*it\s*IT\s*it_IT$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-lt_LT
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*lt[ \t]*LT[ \t]*lt_LT" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*lt[ \t]*LT[ \t]*lt_LT" %{dictdir}/dictionary.lst; then
 	echo "DICT lt LT lt_LT" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-lt_LT
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*lt\s*LT\s*lt_LT$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-mi_NZ
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*mi[ \t]*NZ[ \t]*mi_NZ" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*mi[ \t]*NZ[ \t]*mi_NZ" %{dictdir}/dictionary.lst; then
 	echo "DICT mi NZ mi_NZ" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-mi_NZ
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*mi\s*NZ\s*mi_NZ$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ms_MY
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*ms[ \t]*MY[ \t]*ms_MY" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*ms[ \t]*MY[ \t]*ms_MY" %{dictdir}/dictionary.lst; then
 	echo "DICT ms MY ms_MY" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-ms_MY
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*ms\s*MY\s*ms_MY$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-nb_NO
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*nb[ \t]*NO[ \t]*nb_NO" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*nb[ \t]*NO[ \t]*nb_NO" %{dictdir}/dictionary.lst; then
 	echo "DICT nb NO nb_NO" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-nb_NO
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*nb\s*NO\s*nb_NO$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-nl_NL
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*nl[ \t]*NL[ \t]*nl_NL" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*nl[ \t]*NL[ \t]*nl_NL" %{dictdir}/dictionary.lst; then
 	echo "DICT nl NL nl_NL" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-nl_NL
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*nl\s*NL\s*nl_NL$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-nn_NO
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*nn[ \t]*NO[ \t]*nn_NO" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*nn[ \t]*NO[ \t]*nn_NO" %{dictdir}/dictionary.lst; then
 	echo "DICT nn NO nn_NO" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-nn_NO
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*nn\s*NO\s*nn_NO$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-pl_PL
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*pl[ \t]*PL[ \t]*pl_PL" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*pl[ \t]*PL[ \t]*pl_PL" %{dictdir}/dictionary.lst; then
 	echo "DICT pl PL pl_PL" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-pl_PL
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*pl\s*PL\s*pl_PL$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-pt_BR
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*pt[ \t]*BR[ \t]*pt_BR" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*pt[ \t]*BR[ \t]*pt_BR" %{dictdir}/dictionary.lst; then
 	echo "DICT pt BR pt_BR" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-pt_BR
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*pt\s*BR\s*pt_BR$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ro_RO
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*ro[ \t]*RO[ \t]*ro_RO" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*ro[ \t]*RO[ \t]*ro_RO" %{dictdir}/dictionary.lst; then
 	echo "DICT ro RO ro_RO" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-ro_RO
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*ro\s*RO\s*ro_RO$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ru_RU
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*ru[ \t]*RU[ \t]*ru_RU" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*ru[ \t]*RU[ \t]*ru_RU" %{dictdir}/dictionary.lst; then
 	echo "DICT ru RU ru_RU" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-ru_RU
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*ru\s*RU\s*ru_RU$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-sk_SK
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*sk[ \t]*SK[ \t]*sk_SK" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*sk[ \t]*SK[ \t]*sk_SK" %{dictdir}/dictionary.lst; then
 	echo "DICT sk SK sk_SK" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-sk_SK
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*sk\s*SK\s*sk_SK$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-sl_SI
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*sl[ \t]*SI[ \t]*sl_SI" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*sl[ \t]*SI[ \t]*sl_SI" %{dictdir}/dictionary.lst; then
 	echo "DICT sl SI sl_SI" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-sl_SI
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*sl\s*SI\s*sl_SI$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-sv_SE
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*sv[ \t]*SE[ \t]*sv_SE" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*sv[ \t]*SE[ \t]*sv_SE" %{dictdir}/dictionary.lst; then
 	echo "DICT sv SE sv_SE" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-sv_SE
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*sv\s*SE\s*sv_SE$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-sw_KE
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*sw[ \t]*KE[ \t]*sw_KE" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*sw[ \t]*KE[ \t]*sw_KE" %{dictdir}/dictionary.lst; then
 	echo "DICT sw KE sw_KE" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-sw_KE
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*sw\s*KE\s*sw_KE$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-uk_UA
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*uk[ \t]*UA[ \t]*uk_UA" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*uk[ \t]*UA[ \t]*uk_UA" %{dictdir}/dictionary.lst; then
 	echo "DICT uk UA uk_UA" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-uk_UA
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*uk\s*UA\s*uk_UA$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-zu_ZA
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^DICT[ \t]*zu[ \t]*ZA[ \t]*zu_ZA" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*zu[ \t]*ZA[ \t]*zu_ZA" %{dictdir}/dictionary.lst; then
 	echo "DICT zu ZA zu_ZA" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-zu_ZA
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*zu\s*ZA\s*zu_ZA$/ or print" %{dictdir}/dictionary.lst
 fi
 
@@ -1941,553 +1931,430 @@ fi
 ## Scripts for hyphenation
 ##
 %post -n myspell-hyph-bg
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*bg[ \t]*BG[ \t]*hyph_bg" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*bg[ \t]*BG[ \t]*hyph_bg" %{dictdir}/dictionary.lst; then
 	echo "HYPH bg BG hyph_bg" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-bg
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*bg\s*BG\s*hyph_bg$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-cs
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*cs[ \t]*CZ[ \t]*hyph_cs" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*cs[ \t]*CZ[ \t]*hyph_cs" %{dictdir}/dictionary.lst; then
 	echo "HYPH cs CZ hyph_cs" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-cs
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*cs\s*CZ\s*hyph_cs$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-da
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*da[ \t]*DA[ \t]*hyph_da" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*da[ \t]*DA[ \t]*hyph_da" %{dictdir}/dictionary.lst; then
 	echo "HYPH da DA hyph_da" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-da
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*da\s*DA\s*hyph_da$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-de
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*de[ \t]*DE[ \t]*hyph_de" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*de[ \t]*DE[ \t]*hyph_de" %{dictdir}/dictionary.lst; then
 	echo "HYPH de DE hyph_de" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*de[ \t]*AT[ \t]*hyph_de" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*de[ \t]*AT[ \t]*hyph_de" %{dictdir}/dictionary.lst; then
 	echo "HYPH de AT hyph_de" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*de[ \t]*CH[ \t]*hyph_de" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*de[ \t]*CH[ \t]*hyph_de" %{dictdir}/dictionary.lst; then
 	echo "HYPH de CH hyph_de" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*de[ \t]*LI[ \t]*hyph_de" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*de[ \t]*LI[ \t]*hyph_de" %{dictdir}/dictionary.lst; then
 	echo "HYPH de LI hyph_de" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*de[ \t]*LU[ \t]*hyph_de" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*de[ \t]*LU[ \t]*hyph_de" %{dictdir}/dictionary.lst; then
 	echo "HYPH de LU hyph_de" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-de
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*de\s*DE\s*hyph_de$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*de\s*AT\s*hyph_de$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*de\s*CH\s*hyph_de$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*de\s*LI\s*hyph_de$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*de\s*LU\s*hyph_de$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-el
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*el[ \t]*GR[ \t]*hyph_el" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*el[ \t]*GR[ \t]*hyph_el" %{dictdir}/dictionary.lst; then
 	echo "HYPH el GR hyph_el" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-el
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*el\s*GR\s*hyph_el$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-en
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*US[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*US[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en US hyph_en" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*CA[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*CA[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en CA hyph_en" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*GB[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*GB[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en GB hyph_en" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*NZ[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*NZ[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en NZ hyph_en" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*AU[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*AU[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en AU hyph_en" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*ZA[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*ZA[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en ZA hyph_en" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*IE[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*IE[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en IE hyph_en" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*JM[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*JM[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en JM hyph_en" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*PH[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*PH[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en PH hyph_en" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*TT[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*TT[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en TT hyph_en" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*en[ \t]*ZW[ \t]*hyph_en" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*ZW[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en ZW hyph_en" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-en
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*en\s*US\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*en\s*CA\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*en\s*GB\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*en\s*NZ\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*en\s*AU\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*en\s*ZA\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*en\s*IE\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*en\s*JM\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*en\s*PH\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*en\s*TT\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*en\s*ZW\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-es
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*ES[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*ES[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es ES hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*AR[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*AR[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es AR hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*BZ[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*BZ[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es BZ hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*BO[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*BO[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es BO hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*CL[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*CL[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es CL hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*CO[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*CO[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es CO hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*CR[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*CR[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es CR hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*CU[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*CU[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es CU hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*DO[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*DO[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es DO hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*EC[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*EC[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es EC hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*SV[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*SV[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es SV hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*GU[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*GU[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es GU hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*JN[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*JN[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es JN hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*MX[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*MX[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es MX hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*NI[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*NI[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es NI hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*PA[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*PA[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es PA hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*PU[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*PU[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es PU hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*PE[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*PE[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es PE hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*PR[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*PR[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es PR hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*UY[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*UY[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es UY hyph_es" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*es[ \t]*VE[ \t]*hyph_es" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*es[ \t]*VE[ \t]*hyph_es" %{dictdir}/dictionary.lst; then
 	echo "HYPH es VE hyph_es" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-es
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*es\s*ES\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*AR\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*BZ\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*BO\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*CL\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*CO\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*CR\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*CU\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*DO\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*EC\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*SV\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*GU\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*JN\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*MX\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*NI\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*PA\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*PU\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*PE\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*PR\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*UY\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*es\s*VE\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-et
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*et[ \t]*EE[ \t]*hyph_et" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*et[ \t]*EE[ \t]*hyph_et" %{dictdir}/dictionary.lst; then
 	echo "HYPH et EE hyph_et" >> %{dictdir}/dictionary.lst
 fi
 %preun -n myspell-hyph-et
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*et\s*EE\s*hyph_et$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*fi[ \t]*FI[ \t]*hyph_fi" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*fi[ \t]*FI[ \t]*hyph_fi" %{dictdir}/dictionary.lst; then
 	echo "HYPH fi FI hyph_fi" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-fi
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*fi\s*FI\s*hyph_fi$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-fr
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*fr[ \t]*FR[ \t]*hyph_fr" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*fr[ \t]*FR[ \t]*hyph_fr" %{dictdir}/dictionary.lst; then
 	echo "HYPH fr FR hyph_fr" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*fr[ \t]*BE[ \t]*hyph_fr" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*fr[ \t]*BE[ \t]*hyph_fr" %{dictdir}/dictionary.lst; then
 	echo "HYPH fr BE hyph_fr" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*fr[ \t]*CA[ \t]*hyph_fr" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*fr[ \t]*CA[ \t]*hyph_fr" %{dictdir}/dictionary.lst; then
 	echo "HYPH fr CA hyph_fr" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*fr[ \t]*LU[ \t]*hyph_fr" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*fr[ \t]*LU[ \t]*hyph_fr" %{dictdir}/dictionary.lst; then
 	echo "HYPH fr LU hyph_fr" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*fr[ \t]*MC[ \t]*hyph_fr" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*fr[ \t]*MC[ \t]*hyph_fr" %{dictdir}/dictionary.lst; then
 	echo "HYPH fr MC hyph_fr" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*fr[ \t]*CH[ \t]*hyph_fr" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*fr[ \t]*CH[ \t]*hyph_fr" %{dictdir}/dictionary.lst; then
 	echo "HYPH fr CH hyph_fr" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-fr
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*fr\s*FR\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*fr\s*BE\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*fr\s*CA\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*fr\s*LU\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*fr\s*MC\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*fr\s*CH\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-ga
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*ga[ \t]*IE[ \t]*hyph_ga" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*ga[ \t]*IE[ \t]*hyph_ga" %{dictdir}/dictionary.lst; then
 	echo "HYPH ga IE hyph_ga" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-ga
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*ga\s*IE\s*hyph_ga$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-hu
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*hu[ \t]*HU[ \t]*hyph_hu" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*hu[ \t]*HU[ \t]*hyph_hu" %{dictdir}/dictionary.lst; then
 	echo "HYPH hu HU hyph_hu" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-hu
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*hu\s*HU\s*hyph_hu$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-id
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*id[ \t]*ID[ \t]*hyph_id" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*id[ \t]*ID[ \t]*hyph_id" %{dictdir}/dictionary.lst; then
 	echo "HYPH id ID hyph_id" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-id
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*id\s*ID\s*hyph_id$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-is
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*is[ \t]*IS[ \t]*hyph_is" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*is[ \t]*IS[ \t]*hyph_is" %{dictdir}/dictionary.lst; then
 	echo "HYPH is IS hyph_is" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-is
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*is\s*IS\s*hyph_is$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-it
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*it[ \t]*IT[ \t]*hyph_it" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*it[ \t]*IT[ \t]*hyph_it" %{dictdir}/dictionary.lst; then
 	echo "HYPH it IT hyph_it" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*it[ \t]*CH[ \t]*hyph_it" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*it[ \t]*CH[ \t]*hyph_it" %{dictdir}/dictionary.lst; then
 	echo "HYPH it CH hyph_it" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-it
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*it\s*IT\s*hyph_it$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*it\s*CH\s*hyph_it$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-lt
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*lt[ \t]*LT[ \t]*hyph_lt" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*lt[ \t]*LT[ \t]*hyph_lt" %{dictdir}/dictionary.lst; then
 	echo "HYPH lt LT hyph_lt" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-lt
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*lt\s*LT\s*hyph_lt$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-nl
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*nl[ \t]*NL[ \t]*hyph_nl" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*nl[ \t]*NL[ \t]*hyph_nl" %{dictdir}/dictionary.lst; then
 	echo "HYPH nl NL hyph_nl" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-nl
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*nl\s*NL\s*hyph_nl$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-pl
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*pl[ \t]*PL[ \t]*hyph_pl" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*pl[ \t]*PL[ \t]*hyph_pl" %{dictdir}/dictionary.lst; then
 	echo "HYPH pl PL hyph_pl" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-pl
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*pl\s*PL\s*hyph_pl$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-pt
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*pt[ \t]*PT[ \t]*hyph_pt" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*pt[ \t]*PT[ \t]*hyph_pt" %{dictdir}/dictionary.lst; then
 	echo "HYPH pt PT hyph_pt" >> %{dictdir}/dictionary.lst
 fi
 
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*pt[ \t]*BR[ \t]*hyph_pt" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*pt[ \t]*BR[ \t]*hyph_pt" %{dictdir}/dictionary.lst; then
 	echo "HYPH pt BR hyph_pt" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-pt
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*pt\s*PT\s*hyph_pt$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^HYPH\s*pt\s*BR\s*hyph_pt$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-ru
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*ru[ \t]*RU[ \t]*hyph_ru" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*ru[ \t]*RU[ \t]*hyph_ru" %{dictdir}/dictionary.lst; then
 	echo "HYPH ru RU hyph_ru" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-ru
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*ru\s*RU\s*hyph_ru$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-sk
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*sk[ \t]*SK[ \t]*hyph_sk" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*sk[ \t]*SK[ \t]*hyph_sk" %{dictdir}/dictionary.lst; then
 	echo "HYPH sk SK hyph_sk" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-sk
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*sk\s*SK\s*hyph_sk$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-sl
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*sl[ \t]*SI[ \t]*hyph_sl" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*sl[ \t]*SI[ \t]*hyph_sl" %{dictdir}/dictionary.lst; then
 	echo "HYPH sl SI hyph_sl" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-sl
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*sl\s*SI\s*hyph_sl$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-sv
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*sv[ \t]*SE[ \t]*hyph_sv" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*sv[ \t]*SE[ \t]*hyph_sv" %{dictdir}/dictionary.lst; then
 	echo "HYPH sv SE hyph_sv" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-sv
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*sv\s*SE\s*hyph_sv$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-uk
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^HYPH[ \t]*uk[ \t]*UA[ \t]*hyph_uk" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*uk[ \t]*UA[ \t]*hyph_uk" %{dictdir}/dictionary.lst; then
 	echo "HYPH uk UA hyph_uk" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-uk
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*uk\s*UA\s*hyph_uk$/ or print" %{dictdir}/dictionary.lst
 fi
 
@@ -2495,235 +2362,173 @@ fi
 ## Scripts for thesaurus
 ##
 %post -n myspell-thes-bg_BG
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*bg[ \t]*BG[ \t]*th_bg_BG" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*bg[ \t]*BG[ \t]*th_bg_BG" %{dictdir}/dictionary.lst; then
 	echo "THES bg BG th_bg_BG" >> %{dictdir}/dictionary.lst
 fi
 %preun -n myspell-thes-bg_BG
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^THES\s*bg\s*BG\s*th_bg_BG$/ or print" %{dictdir}/dictionary.lst
 fi
+
 %post -n myspell-thes-de_DE
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*de[ \t]*DE[ \t]*th_de_DE" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*de[ \t]*DE[ \t]*th_de_DE" %{dictdir}/dictionary.lst; then
 	echo "THES de DE th_de_DE" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*de[ \t]*AT[ \t]*th_de_DE" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*de[ \t]*AT[ \t]*th_de_DE" %{dictdir}/dictionary.lst; then
 	echo "THES de AT th_de_DE" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*de[ \t]*CH[ \t]*th_de_DE" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*de[ \t]*CH[ \t]*th_de_DE" %{dictdir}/dictionary.lst; then
 	echo "THES de CH th_de_DE" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*de[ \t]*LI[ \t]*th_de_DE" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*de[ \t]*LI[ \t]*th_de_DE" %{dictdir}/dictionary.lst; then
 	echo "THES de LI th_de_DE" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*de[ \t]*LU[ \t]*th_de_DE" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*de[ \t]*LU[ \t]*th_de_DE" %{dictdir}/dictionary.lst; then
 	echo "THES de LU th_de_DE" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-thes-de_DE
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^THES\s*de\s*DE\s*th_de_DE$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*de\s*AT\s*th_de_DE$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*de\s*CH\s*th_de_DE$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*de\s*LI\s*th_de_DE$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*de\s*LU\s*th_de_DE$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-en_US
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*US[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*US[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en US th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*CA[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*CA[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en CA th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*GB[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*GB[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en GB th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*AU[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*AU[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en AU th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*BZ[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*BZ[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en BZ th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*IE[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*IE[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en IE th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*JM[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*JM[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en JM th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*NZ[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*NZ[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en NZ th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*PH[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*PH[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en PH th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*TT[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*TT[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en TT th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*ZA[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*ZA[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en ZA th_en_US" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*en[ \t]*ZW[ \t]*th_en_US" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*en[ \t]*ZW[ \t]*th_en_US" %{dictdir}/dictionary.lst; then
 	echo "THES en ZW th_en_US" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-thes-en_US
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^THES\s*en\s*US\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*CA\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*GB\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*AU\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*BZ\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*IE\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*JM\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*NZ\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*PH\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*TT\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*ZA\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*en\s*ZW\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-es_ES
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*es[ \t]*ES[ \t]*th_es_ES" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*es[ \t]*ES[ \t]*th_es_ES" %{dictdir}/dictionary.lst; then
 	echo "THES es ES th_es_ES" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*es[ \t]*AR[ \t]*th_es_ES" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*es[ \t]*AR[ \t]*th_es_ES" %{dictdir}/dictionary.lst; then
 	echo "THES es AR th_es_ES" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-thes-es_ES
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^THES\s*es\s*ES\s*th_es_ES$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*es\s*AR\s*th_es_ES$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-fr_FR
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*fr[ \t]*FR[ \t]*th_fr_FR" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*fr[ \t]*FR[ \t]*th_fr_FR" %{dictdir}/dictionary.lst; then
 	echo "THES fr FR th_fr_FR" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*fr[ \t]*BE[ \t]*th_fr_FR" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*fr[ \t]*BE[ \t]*th_fr_FR" %{dictdir}/dictionary.lst; then
 	echo "THES fr BE th_fr_FR" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*fr[ \t]*CA[ \t]*th_fr_FR" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*fr[ \t]*CA[ \t]*th_fr_FR" %{dictdir}/dictionary.lst; then
 	echo "THES fr CA th_fr_FR" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*fr[ \t]*CH[ \t]*th_fr_FR" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*fr[ \t]*CH[ \t]*th_fr_FR" %{dictdir}/dictionary.lst; then
 	echo "THES fr CH th_fr_FR" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*fr[ \t]*LU[ \t]*th_fr_FR" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*fr[ \t]*LU[ \t]*th_fr_FR" %{dictdir}/dictionary.lst; then
 	echo "THES fr LU th_fr_FR" >> %{dictdir}/dictionary.lst
 fi
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*fr[ \t]*MC[ \t]*th_fr_FR" %{dictdir}/dictionary.lst
-then
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*fr[ \t]*MC[ \t]*th_fr_FR" %{dictdir}/dictionary.lst; then
 	echo "THES fr MC th_fr_FR" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-thes-fr_FR
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^THES\s*fr\s*FR\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*fr\s*BE\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*fr\s*CA\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*fr\s*CH\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*fr\s*LU\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
-fi
-if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*fr\s*MC\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-it_IT
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*it[ \t]*IT[ \t]*th_it_IT" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*it[ \t]*IT[ \t]*th_it_IT" %{dictdir}/dictionary.lst; then
 	echo "THES it IT th_it_IT" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-thes-it_IT
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^THES\s*it\s*IT\s*th_it_IT$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-pl_PL
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*pl[ \t]*PL[ \t]*th_pl_PL" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*pl[ \t]*PL[ \t]*th_pl_PL" %{dictdir}/dictionary.lst; then
 	echo "THES pl PL th_pl_PL" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-thes-pl_PL
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^THES\s*pl\s*PL\s*th_pl_PL$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-sk_SK
-if [[ ! -f "%{dictdir}/dictionary.lst" ]] ||       ! grep -q "^THES[ \t]*sk[ \t]*SK[ \t]*th_sk_SK" %{dictdir}/dictionary.lst
-then
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*sk[ \t]*SK[ \t]*th_sk_SK" %{dictdir}/dictionary.lst; then
 	echo "THES sk SK th_sk_SK" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-thes-sk_SK
-if [[ "$1" = "0" ]]; then
+if [ "$1" = "0" ]; then
 	perl -ni -e "/^THES\s*sk\s*SK\s*th_sk_SK$/ or print" %{dictdir}/dictionary.lst
 fi
 
