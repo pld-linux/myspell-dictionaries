@@ -1,5 +1,5 @@
 %define		_ver	1.0.2
-%define		_rel	0.4
+%define		_rel	0.5
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Name:		myspell-dictionaries
 Version:	%{_ver}
@@ -174,6 +174,7 @@ Source306:	th_bg_BG.zip
 #Source306:	http://dl.sourceforge.net/bgoffice/OOo-full-pack.zip
 Source307:	th_sk_SK.zip
 # Source307-md5:	df70385609f32d63a1e0d17712428755
+Patch0:		myspell-mozilla_words.patch
 BuildRequires:	unzip
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -1451,7 +1452,7 @@ for dictfile in %{SOURCE100} %{SOURCE101} %{SOURCE102} %{SOURCE103} %{SOURCE104}
 	langpack="${basefile%.zip}"
 	echo "LANGPACK=$langpack"
 	mkdir -p doc/DICT/$langpack
-	unzip -d doc/DICT/$langpack $dictfile
+	%{__unzip} -q -d doc/DICT/$langpack $dictfile
 	mkdir -p dic/DICT/$langpack
 	mv doc/DICT/$langpack/$langpack.{aff,dic} dic/DICT/$langpack
 	# create dummy file if docdir is empty
@@ -1460,8 +1461,6 @@ for dictfile in %{SOURCE100} %{SOURCE101} %{SOURCE102} %{SOURCE103} %{SOURCE104}
 Spell checking dictionary for $langpack
 EOF
 	fi
-	# fix permissions
-	chmod 644 doc/DICT/$langpack/*
 done
 
 # Handle spelling dictionaries
@@ -1474,7 +1473,7 @@ for hyphfile in %{SOURCE200} %{SOURCE201} %{SOURCE202} %{SOURCE203} %{SOURCE204}
 	langpack="${basefile%.zip}"
 	echo "LANGPACK/(HPY)=$langpack"
 	mkdir -p doc/HYPH/$langpack
-	unzip -d doc/HYPH/$langpack $hyphfile
+	%{__unzip} -q -d doc/HYPH/$langpack $hyphfile
 	mkdir -p dic/HYPH/$langpack
 	mv doc/HYPH/$langpack/$langpack.dic dic/HYPH/$langpack
 	# create dummy file if docdir is empty
@@ -1483,8 +1482,6 @@ for hyphfile in %{SOURCE200} %{SOURCE201} %{SOURCE202} %{SOURCE203} %{SOURCE204}
 Hyphenation dictionary for $langpack
 EOF
 	fi
-	# fix permissions
-	chmod 644 doc/HYPH/$langpack/*
 done
 
 # Handle thesaurus dictionaries
@@ -1494,7 +1491,7 @@ for thesfile in %{SOURCE300} %{SOURCE301} %{SOURCE302} %{SOURCE303} %{SOURCE304}
 	langpack="${basefile%.zip}"
 	echo "LANGPACK(thes)=$langpack"
 	mkdir -p doc/THES/$langpack
-	unzip -d doc/THES/$langpack $thesfile
+	%{__unzip} -q -d doc/THES/$langpack $thesfile
 	mkdir -p dic/THES/$langpack
 	mv doc/THES/$langpack/$langpack.{dat,idx} dic/THES/$langpack
 	# create dummy file if docdir is empty
@@ -1503,9 +1500,9 @@ for thesfile in %{SOURCE300} %{SOURCE301} %{SOURCE302} %{SOURCE303} %{SOURCE304}
 Thesaurus dictionary for $langpack
 EOF
 	fi
-	# fix permissions
-	chmod 644 doc/THES/$langpack/*
 done
+
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
