@@ -1,5 +1,5 @@
 %define		_ver	1.0.2
-%define		_rel	0.1
+%define		_rel	0.2
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Name:		myspell-dictionaries
 Version:	%{_ver}
@@ -178,7 +178,7 @@ BuildRequires:	unzip
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		dictdir		%{_libdir}/myspell
+%define		dictdir		%{_datadir}/myspell
 
 %description
 myspell-* packages contain spell checking data to be used by
