@@ -1,12 +1,12 @@
 %define		_ver	1.0.2
-%define		_rel	0.2
+%define		_rel	0.3
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Name:		myspell-dictionaries
 Version:	%{_ver}
 Release:	%{_rel}
-URL:		http://lingucomponent.openoffice.org/download_dictionary.html
 License:	BSD/GPL/LGPL
 Group:		Applications/Text
+URL:		http://lingucomponent.openoffice.org/download_dictionary.html
 ## Sources for spell checking dictionaries
 Source100:	bg_BG.zip
 # Source100-md5:	0619620e36b1a9a45995f939d765fd3e
@@ -186,6 +186,14 @@ OpenOffice.org or any other MySpell-capable application, like Mozilla.
 myspell-hyph-* packages contain hyphenation dictionaries for a
 particular set of languages.
 
+%package -n myspell-common
+Summary:	Common files for myspell and hunspell dictionaries
+License:	Public Domain
+Group:		Applications/Text
+
+%description -n myspell-common
+Common files for myspell and hunspell dictionaries
+
 # Spelling dictionaries
 %package -n myspell-af_ZA
 Summary:	MySpell spelling dictionaries for Afrikaans (Africa)
@@ -194,6 +202,7 @@ Release:	0.20040727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-af
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-af = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	myspell-af
@@ -211,6 +220,7 @@ Release:	0.20040402.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-bg
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-bg = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	myspell-bg
@@ -228,6 +238,7 @@ Release:	0.20030907.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-ca
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-ca = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	myspell-ca
@@ -245,6 +256,7 @@ Release:	0.20030907.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-cs
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-cs = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	myspell-cs
@@ -262,6 +274,7 @@ Release:	0.20040425.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-cy
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-cy = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	myspell-cy
@@ -279,6 +292,7 @@ Release:	0.20040609.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-da
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-da = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	myspell-da
@@ -296,6 +310,7 @@ Release:	0.20030905.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-de
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	myspell-de
@@ -313,6 +328,7 @@ Release:	0.20030905.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-de
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	myspell-de
@@ -330,6 +346,7 @@ Release:	0.20030905.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-de
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	myspell-de
@@ -347,6 +364,7 @@ Release:	0.20040424.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-el
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-el = %{version}
 Obsoletes:	myspell-el
@@ -364,6 +382,7 @@ Release:	0.20030329.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-en
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	myspell-en
@@ -381,6 +400,7 @@ Release:	0.20020315.%{_rel}
 License:	Public Domain
 Group:		Applications/Text
 #Requires:	locales-en
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	myspell-en
@@ -398,6 +418,7 @@ Release:	0.20040208.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-en
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	myspell-en
@@ -415,6 +436,7 @@ Release:	0.20030907.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-en
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	myspell-en
@@ -432,6 +454,7 @@ Release:	0.20040623.%{_rel}
 License:	BSD
 Group:		Applications/Text
 #Requires:	locales-en
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	myspell-en
@@ -449,6 +472,7 @@ Release:	0.20040626.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-es
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-es = %{version}
 Obsoletes:	myspell-es
@@ -466,6 +490,7 @@ Release:	0.20030818.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-es
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-es = %{version}
 Obsoletes:	myspell-es
@@ -483,6 +508,7 @@ Release:	0.20040621.%{_rel}
 License:	free, see http://www.eki.ee/eki/licence.html
 Group:		Applications/Text
 #Requires:	locales-et
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-et = %{version}
 Obsoletes:	myspell-et
@@ -500,6 +526,7 @@ Release:	0.20040403.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-fo
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fo = %{version}
 Obsoletes:	myspell-fo
@@ -517,6 +544,7 @@ Release:	0.20030619.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-fr
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fr = %{version}
 Obsoletes:	myspell-fr
@@ -534,6 +562,7 @@ Release:	0.20020608.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-fr
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fr = %{version}
 Obsoletes:	myspell-fr
@@ -551,6 +580,7 @@ Release:	0.20040404.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-ga
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ga = %{version}
 Obsoletes:	myspell-ga
@@ -568,6 +598,7 @@ Release:	0.20030905.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-gl
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-gl = %{version}
 Obsoletes:	myspell-gl
@@ -585,6 +616,7 @@ Release:	0.20020411.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-hr
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-hr = %{version}
 Obsoletes:	myspell-hr
@@ -602,6 +634,7 @@ Release:	0.20040331.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-hu
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-hu = %{version}
 Obsoletes:	myspell-hu
@@ -619,6 +652,7 @@ Release:	0.20040810.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-id
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-id = %{version}
 Obsoletes:	myspell-id
@@ -636,6 +670,7 @@ Release:	0.20040624.%{_rel}
 License:	LGPL/GPL
 Group:		Applications/Text
 #Requires:	locales-it
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-it = %{version}
 Obsoletes:	myspell-it
@@ -653,6 +688,7 @@ Release:	0.20031231.%{_rel}
 License:	BSD-like
 Group:		Applications/Text
 #Requires:	locales-lt
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-lt = %{version}
 Obsoletes:	myspell-lt
@@ -670,6 +706,7 @@ Release:	0.20030909.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-mi
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-mi = %{version}
 Obsoletes:	myspell-mi
@@ -687,6 +724,7 @@ Release:	0.20040907.%{_rel}
 License:	GNU Free Documentation License
 Group:		Applications/Text
 #Requires:	locales-ms
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ms = %{version}
 Obsoletes:	myspell-ms
@@ -704,6 +742,7 @@ Release:	0.20031013.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-no
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-no = %{version}
 Obsoletes:	myspell-no
@@ -718,6 +757,7 @@ Release:	0.20040222.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-nl
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-nl = %{version}
 Obsoletes:	myspell-nl
@@ -735,6 +775,7 @@ Release:	0.20031013.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-no
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-no = %{version}
 Obsoletes:	myspell-no
@@ -752,6 +793,7 @@ Release:	0.20040816.%{_rel}
 License:	Creative Commons ShareAlike, http://creativecommons.org/licenses/sa/1.0
 Group:		Applications/Text
 #Requires:	locales-pl
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-pl = %{version}
 Obsoletes:	myspell-pl
@@ -769,6 +811,7 @@ Release:	0.20030110.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-pt
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-pt = %{version}
 Obsoletes:	myspell-pt
@@ -786,6 +829,7 @@ Release:	0.20020629.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-pt
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-pt = %{version}
 Obsoletes:	myspell-pt
@@ -803,6 +847,7 @@ Release:	0.20031023.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-ro
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ro = %{version}
 Obsoletes:	myspell-ro
@@ -820,6 +865,7 @@ Release:	0.20040406.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-ru
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ru = %{version}
 Obsoletes:	myspell-ru
@@ -837,6 +883,7 @@ Release:	0.20040118.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-sk
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sk = %{version}
 Obsoletes:	myspell-sk
@@ -854,6 +901,7 @@ Release:	0.20030907.%{_rel}
 License:	BSD-like
 Group:		Applications/Text
 #Requires:	locales-sl
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sl = %{version}
 Obsoletes:	myspell-sl
@@ -871,6 +919,7 @@ Release:	0.20030814.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-sv
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sv = %{version}
 Obsoletes:	myspell-sv
@@ -888,6 +937,7 @@ Release:	0.20040516.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-sw
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sw = %{version}
 Obsoletes:	myspell-sw
@@ -905,6 +955,7 @@ Release:	0.20031016.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-uk
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-uk = %{version}
 Obsoletes:	myspell-uk
@@ -922,6 +973,7 @@ Release:	0.20040604.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-zu
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-zu = %{version}
 Obsoletes:	myspell-zu
@@ -940,6 +992,7 @@ Release:	0.20040417.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-bg
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-bg
@@ -953,6 +1006,7 @@ Release:	0.20030101.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-cs
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-cs
@@ -966,6 +1020,7 @@ Release:	0.20020727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-da
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-da
@@ -979,6 +1034,7 @@ Release:	0.20020727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-de
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-de
@@ -992,6 +1048,7 @@ Release:	0.20040409.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-el
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-el
@@ -1005,6 +1062,7 @@ Release:	0.20020727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-en
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-en
@@ -1018,6 +1076,7 @@ Release:	0.20040602.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-es
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-es
@@ -1031,6 +1090,7 @@ Release:	0.20040621.%{_rel}
 License:	free, see http://www.eki.ee/eki/licence.html
 Group:		Applications/Text
 #Requires:	locales-et
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-et
@@ -1044,6 +1104,7 @@ Release:	0.20031125.%{_rel}
 License:	freely distributable
 Group:		Applications/Text
 #Requires:	locales-fi
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-fi
@@ -1057,6 +1118,7 @@ Release:	0.20020727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-fr
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-fr
@@ -1070,6 +1132,7 @@ Release:	0.20040212.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-ga
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-ga
@@ -1083,6 +1146,7 @@ Release:	0.20031107.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-hu
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-hu
@@ -1096,6 +1160,7 @@ Release:	0.20040810.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-id
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-id
@@ -1109,6 +1174,7 @@ Release:	0.20030918.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-is
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-is
@@ -1122,6 +1188,7 @@ Release:	0.20030904.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-it
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-it
@@ -1135,6 +1202,7 @@ Release:	0.20040111.%{_rel}
 License:	LPPL
 Group:		Applications/Text
 #Requires:	locales-lt
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-lt
@@ -1148,6 +1216,7 @@ Release:	0.20040222.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-nl
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-nl
@@ -1161,6 +1230,7 @@ Release:	0.20030913.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-pl
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-pl
@@ -1174,6 +1244,7 @@ Release:	0.20030904.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-pt
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-pt
@@ -1187,6 +1258,7 @@ Release:	0.20020727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-ru
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-ru
@@ -1200,6 +1272,7 @@ Release:	0.20030101.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-sk
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-sk
@@ -1213,6 +1286,7 @@ Release:	0.20021003.%{_rel}
 License:	Copyright Matjaz Vrecko
 Group:		Applications/Text
 #Requires:	locales-sl
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-sl
@@ -1226,6 +1300,7 @@ Release:	0.20030814.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-sv
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-sv
@@ -1239,6 +1314,7 @@ Release:	0.20021219.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-uk
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-uk
@@ -1253,6 +1329,7 @@ Release:	0.20040402.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-bg
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-bg_BG
@@ -1266,6 +1343,7 @@ Release:	0.20040702.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-de
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-de_DE
@@ -1279,6 +1357,7 @@ Release:	0.20040423.%{_rel}
 License:	BSD
 Group:		Applications/Text
 #Requires:	locales-en
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-en_US
@@ -1292,6 +1371,7 @@ Release:	0.20040712.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 #Requires:	locales-es
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-es_ES
@@ -1305,6 +1385,7 @@ Release:	0.20030819.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-fr
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-fr_FR
@@ -1318,6 +1399,7 @@ Release:	0.20040222.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-it
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-it_IT
@@ -1331,6 +1413,7 @@ Release:	0.20040803.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-pl
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-pl_PL
@@ -1344,6 +1427,7 @@ Release:	0.20050218.%{_rel}
 License:	GPL
 Group:		Applications/Text
 #Requires:	locales-sk
+Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-sk_SK
@@ -1441,6 +1525,8 @@ done
 for file in dic/THES/*/*; do
 	install -m 644 $file $RPM_BUILD_ROOT%{dictdir}/${file##*/}
 done
+
+touch $RPM_BUILD_ROOT%{dictdir}/dictionary.lst
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -2641,6 +2727,11 @@ if [[ "$1" = "0" ]]; then
 	perl -ni -e "/^THES\s*sk\s*SK\s*th_sk_SK$/ or print" %{dictdir}/dictionary.lst
 fi
 
+
+%files -n myspell-common
+%defattr(644,root,root,755)
+%dir %{dictdir}
+%config(noreplace) %verify(not md5 mtime size) %{dictdir}/dictionary.lst
 
 ##
 ## Files for spell checking
