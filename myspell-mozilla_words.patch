@@ -3,8 +3,8 @@ Index: en-US.dic
 RCS file: /cvsroot/mozilla/extensions/spellcheck/locales/en-US/myspell/en-US.dic,v
 retrieving revision 1.1
 diff -u -u -8 -p -r1.1 en-US.dic
---- myspell-dictionaries-1.0.2/dic/DICT/en_US/en-US.dic	16 Jul 2005 18:45:10 -0000	1.1
-+++ myspell-dictionaries-1.0.2/dic/DICT/en_US/en-US.dic	29 Jul 2006 19:29:16 -0000
+--- myspell-dictionaries-1.0.2/dic/DICT/en_US/en_US.dic	16 Jul 2005 18:45:10 -0000	1.1
++++ myspell-dictionaries-1.0.2/dic/DICT/en_US/en_US.dic	29 Jul 2006 19:29:16 -0000
 @@ -6136,16 +6136,21 @@ blockbusting/MS
  blocker/MS
  blockhead/MS
