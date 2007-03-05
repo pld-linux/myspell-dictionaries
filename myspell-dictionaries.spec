@@ -1530,7 +1530,30 @@ rm -rf $RPM_BUILD_ROOT
 
 ##
 ## Scripts for spell checking
-##
+
+# ooo-build-ooe680-m6/build/ooe680-m6/dictionaries/diclst/dictionary.lst describes:
+# List of All Dictionaries to be Loaded by OpenOffice
+# ---------------------------------------------------
+# Each Entry in the list have the following space delimited fields
+#
+# Field 1: Entry Type "DICT" - spellchecking dictionary
+#                     "HYPH" - hyphenation dictionary
+#                     "THES" - thesaurus files
+# List of All Dictionaries to be Loaded by OpenOffice
+# ---------------------------------------------------
+# Each Entry in the list have the following space delimited fields
+#
+# Field 1: Entry Type "DICT" - spellchecking dictionary
+#                     "HYPH" - hyphenation dictionary
+#                     "THES" - thesaurus files
+#
+# Field 2: Language code from Locale "en" or "de" or "pt" ...
+#
+# Field 3: Country Code from Locale "US" or "GB" or "PT"
+#
+# Field 4: Root name of file(s) "en_US" or "hyph_de" or "th_en_US
+#          (do not add extensions to the name)
+
 %post -n myspell-af_ZA
 umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*af[ \t]*ZA[ \t]*af_ZA" %{dictdir}/dictionary.lst; then
