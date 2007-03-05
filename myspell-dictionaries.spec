@@ -1,5 +1,5 @@
 %define		_ver	1.0.2
-%define		_rel	0.5
+%define		_rel	0.6
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Name:		myspell-dictionaries
 Version:	%{_ver}
@@ -1617,6 +1617,17 @@ fi
 %preun -n myspell-el_GR
 if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*el\s*GR\s*el_GR$/ or print" %{dictdir}/dictionary.lst
+fi
+
+%post -n myspell-en_US
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*en[ \t]*US[ \t]*en_US" %{dictdir}/dictionary.lst; then
+	echo "DICT en US en_US" >> %{dictdir}/dictionary.lst
+fi
+
+%preun -n myspell-en_US
+if [ "$1" = "0" ]; then
+	perl -ni -e "/^DICT\s*en\s*US\s*en_US$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-en_NZ
