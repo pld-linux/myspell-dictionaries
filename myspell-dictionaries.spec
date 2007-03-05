@@ -1,5 +1,5 @@
 %define		_ver	1.0.2
-%define		_rel	0.6
+%define		_rel	1
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Name:		myspell-dictionaries
 Version:	%{_ver}
