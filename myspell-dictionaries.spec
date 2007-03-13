@@ -1,5 +1,9 @@
+# TODO
+# - add dictionaries currently obsoleted in -common
+# - merge (compare) changes with mozilla-thunderbird-dictionary-* (on Attic) and myspell-common Obsoletes
+#
 %define		_ver	1.0.2
-%define		_rel	1
+%define		_rel	2
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Name:		myspell-dictionaries
 Version:	%{_ver}
@@ -84,7 +88,6 @@ Source134:	ftp://ftp.linux.ee/pub/openoffice/contrib/dictionaries/et_EE.zip
 #Source135:	http://dl.sourceforge.net/translate/myspell-af_ZA-20060117.zip
 Source135:	af_ZA.zip
 # Source135-md5:	44a526eb5005fde76c964e4180d47f3f
-
 Source136:	cy_GB.zip
 # Source136-md5:	accdb94f38555af45a54494e046a88f3
 Source137:	en_NZ.zip
@@ -191,6 +194,16 @@ particular set of languages.
 Summary:	Common files for myspell and hunspell dictionaries
 License:	Public Domain
 Group:		Applications/Text
+Provides:	mozilla-thunderbird-dictionary-he-IL
+Provides:	mozilla-thunderbird-dictionary-ia
+Provides:	mozilla-thunderbird-dictionary-la
+Provides:	mozilla-thunderbird-dictionary-lv-LV
+Provides:	mozilla-thunderbird-dictionary-ru-IE
+Obsoletes:	mozilla-thunderbird-dictionary-he-IL
+Obsoletes:	mozilla-thunderbird-dictionary-ia
+Obsoletes:	mozilla-thunderbird-dictionary-la
+Obsoletes:	mozilla-thunderbird-dictionary-lv-LV
+Obsoletes:	mozilla-thunderbird-dictionary-ru-IE
 
 %description -n myspell-common
 Common files for myspell and hunspell dictionaries
@@ -202,10 +215,11 @@ Version:	%{_ver}
 Release:	0.20040727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-af
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-af-ZA
 Provides:	myspell-af = %{version}
 Provides:	myspell-dictionary = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-af-ZA
 Obsoletes:	myspell-af
 
 %description -n myspell-af_ZA
@@ -220,10 +234,11 @@ Version:	%{_ver}
 Release:	0.20040402.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-bg
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-bg
 Provides:	myspell-bg = %{version}
 Provides:	myspell-dictionary = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-bg
 Obsoletes:	myspell-bg
 
 %description -n myspell-bg_BG
@@ -238,10 +253,11 @@ Version:	%{_ver}
 Release:	0.20030907.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-ca
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-ca
 Provides:	myspell-ca = %{version}
 Provides:	myspell-dictionary = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-ca
 Obsoletes:	myspell-ca
 
 %description -n myspell-ca_ES
@@ -256,10 +272,11 @@ Version:	%{_ver}
 Release:	0.20030907.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-cs
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-cs
 Provides:	myspell-cs = %{version}
 Provides:	myspell-dictionary = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-cs
 Obsoletes:	myspell-cs
 
 %description -n myspell-cs_CZ
@@ -274,10 +291,11 @@ Version:	%{_ver}
 Release:	0.20040425.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-cy
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-cy-GB
 Provides:	myspell-cy = %{version}
 Provides:	myspell-dictionary = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-cy-GB
 Obsoletes:	myspell-cy
 
 %description -n myspell-cy_GB
@@ -292,10 +310,11 @@ Version:	%{_ver}
 Release:	0.20040609.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-da
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-da
 Provides:	myspell-da = %{version}
 Provides:	myspell-dictionary = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-da
 Obsoletes:	myspell-da
 
 %description -n myspell-da_DK
@@ -310,10 +329,11 @@ Version:	%{_ver}
 Release:	0.20030905.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-de
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-de-AT
 Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-de-AT
 Obsoletes:	myspell-de
 
 %description -n myspell-de_AT
@@ -328,10 +348,11 @@ Version:	%{_ver}
 Release:	0.20030905.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-de
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-de-CH
 Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-de-CH
 Obsoletes:	myspell-de
 
 %description -n myspell-de_CH
@@ -346,10 +367,11 @@ Version:	%{_ver}
 Release:	0.20030905.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-de
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-de-DE
 Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-de-DE
 Obsoletes:	myspell-de
 
 %description -n myspell-de_DE
@@ -364,10 +386,11 @@ Version:	%{_ver}
 Release:	0.20040424.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-el
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-el
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-el = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-el
 Obsoletes:	myspell-el
 
 %description -n myspell-el_GR
@@ -382,10 +405,11 @@ Version:	%{_ver}
 Release:	0.20030329.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-en
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-en-AU
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-en-AU
 Obsoletes:	myspell-en
 
 %description -n myspell-en_AU
@@ -400,10 +424,11 @@ Version:	%{_ver}
 Release:	0.20020315.%{_rel}
 License:	Public Domain
 Group:		Applications/Text
-#Requires:	locales-en
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-en-CA
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-en-CA
 Obsoletes:	myspell-en
 
 %description -n myspell-en_CA
@@ -418,10 +443,11 @@ Version:	%{_ver}
 Release:	0.20040208.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-en
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-en-GB
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-en-GB
 Obsoletes:	myspell-en
 
 %description -n myspell-en_GB
@@ -436,10 +462,11 @@ Version:	%{_ver}
 Release:	0.20030907.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-en
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-en-NZ
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-en-NZ
 Obsoletes:	myspell-en
 
 %description -n myspell-en_NZ
@@ -454,10 +481,11 @@ Version:	%{_ver}
 Release:	0.20040623.%{_rel}
 License:	BSD
 Group:		Applications/Text
-#Requires:	locales-en
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-en-US
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-en-US
 Obsoletes:	myspell-en
 
 %description -n myspell-en_US
@@ -472,10 +500,11 @@ Version:	%{_ver}
 Release:	0.20040626.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-es
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-es-ES
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-es = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-es-ES
 Obsoletes:	myspell-es
 
 %description -n myspell-es_ES
@@ -490,10 +519,11 @@ Version:	%{_ver}
 Release:	0.20030818.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-es
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-es-MX
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-es = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-es-MX
 Obsoletes:	myspell-es
 
 %description -n myspell-es_MX
@@ -508,7 +538,6 @@ Version:	%{_ver}
 Release:	0.20040621.%{_rel}
 License:	free, see http://www.eki.ee/eki/licence.html
 Group:		Applications/Text
-#Requires:	locales-et
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-et = %{version}
@@ -526,10 +555,11 @@ Version:	%{_ver}
 Release:	0.20040403.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-fo
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-fo
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fo = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-fo
 Obsoletes:	myspell-fo
 
 %description -n myspell-fo_FO
@@ -544,7 +574,6 @@ Version:	%{_ver}
 Release:	0.20030619.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-fr
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fr = %{version}
@@ -562,7 +591,6 @@ Version:	%{_ver}
 Release:	0.20020608.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-fr
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fr = %{version}
@@ -580,10 +608,11 @@ Version:	%{_ver}
 Release:	0.20040404.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-ga
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-ga
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ga = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-ga
 Obsoletes:	myspell-ga
 
 %description -n myspell-ga_IE
@@ -598,10 +627,11 @@ Version:	%{_ver}
 Release:	0.20030905.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-gl
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-gl
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-gl = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-gl
 Obsoletes:	myspell-gl
 
 %description -n myspell-gl_ES
@@ -616,10 +646,11 @@ Version:	%{_ver}
 Release:	0.20020411.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-hr
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-hr
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-hr = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-hr
 Obsoletes:	myspell-hr
 
 %description -n myspell-hr_HR
@@ -634,10 +665,11 @@ Version:	%{_ver}
 Release:	0.20040331.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-hu
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-hu
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-hu = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-hu
 Obsoletes:	myspell-hu
 
 %description -n myspell-hu_HU
@@ -652,7 +684,6 @@ Version:	%{_ver}
 Release:	0.20040810.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-id
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-id = %{version}
@@ -670,10 +701,11 @@ Version:	%{_ver}
 Release:	0.20040624.%{_rel}
 License:	LGPL/GPL
 Group:		Applications/Text
-#Requires:	locales-it
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-it
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-it = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-it
 Obsoletes:	myspell-it
 
 %description -n myspell-it_IT
@@ -688,10 +720,11 @@ Version:	%{_ver}
 Release:	0.20031231.%{_rel}
 License:	BSD-like
 Group:		Applications/Text
-#Requires:	locales-lt
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-lt
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-lt = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-lt
 Obsoletes:	myspell-lt
 
 %description -n myspell-lt_LT
@@ -706,10 +739,11 @@ Version:	%{_ver}
 Release:	0.20030909.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-mi
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-mi
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-mi = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-mi
 Obsoletes:	myspell-mi
 
 %description -n myspell-mi_NZ
@@ -724,10 +758,11 @@ Version:	%{_ver}
 Release:	0.20040907.%{_rel}
 License:	GNU Free Documentation License
 Group:		Applications/Text
-#Requires:	locales-ms
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-ms
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ms = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-ms
 Obsoletes:	myspell-ms
 
 %description -n myspell-ms_MY
@@ -742,10 +777,11 @@ Version:	%{_ver}
 Release:	0.20031013.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-no
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-nb
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-no = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-nb
 Obsoletes:	myspell-no
 
 %description -n myspell-nb_NO
@@ -757,10 +793,11 @@ Version:	%{_ver}
 Release:	0.20040222.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-nl
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-nl
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-nl = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-nl
 Obsoletes:	myspell-nl
 
 %description -n myspell-nl_NL
@@ -775,10 +812,11 @@ Version:	%{_ver}
 Release:	0.20031013.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-no
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-nn
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-no = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-nn
 Obsoletes:	myspell-no
 
 %description -n myspell-nn_NO
@@ -793,10 +831,11 @@ Version:	%{_ver}
 Release:	0.20040816.%{_rel}
 License:	Creative Commons ShareAlike, http://creativecommons.org/licenses/sa/1.0
 Group:		Applications/Text
-#Requires:	locales-pl
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-pl
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-pl = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-pl
 Obsoletes:	myspell-pl
 
 %description -n myspell-pl_PL
@@ -811,11 +850,10 @@ Version:	%{_ver}
 Release:	0.20030110.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-pt
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-pt-BR
 Provides:	myspell-dictionary = %{version}
-Provides:	myspell-pt = %{version}
-Obsoletes:	myspell-pt
+Obsoletes:	mozilla-thunderbird-dictionary-pt-BR
 
 %description -n myspell-pt_BR
 myspell-pt_BR contains spell checking data in Portuguese (Brasil) to
@@ -829,10 +867,11 @@ Version:	%{_ver}
 Release:	0.20020629.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-pt
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-pt
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-pt = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-pt
 Obsoletes:	myspell-pt
 
 %description -n myspell-pt_PT
@@ -847,10 +886,11 @@ Version:	%{_ver}
 Release:	0.20031023.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-ro
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-ro
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ro = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-ro
 Obsoletes:	myspell-ro
 
 %description -n myspell-ro_RO
@@ -865,10 +905,11 @@ Version:	%{_ver}
 Release:	0.20040406.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-ru
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-ru
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ru = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-ru
 Obsoletes:	myspell-ru
 
 %description -n myspell-ru_RU
@@ -883,10 +924,11 @@ Version:	%{_ver}
 Release:	0.20040118.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-sk
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-sk
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sk = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-sk
 Obsoletes:	myspell-sk
 
 %description -n myspell-sk_SK
@@ -901,10 +943,11 @@ Version:	%{_ver}
 Release:	0.20030907.%{_rel}
 License:	BSD-like
 Group:		Applications/Text
-#Requires:	locales-sl
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-sl
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sl = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-sl
 Obsoletes:	myspell-sl
 
 %description -n myspell-sl_SI
@@ -919,10 +962,11 @@ Version:	%{_ver}
 Release:	0.20030814.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-sv
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-sv
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sv = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-sv
 Obsoletes:	myspell-sv
 
 %description -n myspell-sv_SE
@@ -937,7 +981,6 @@ Version:	%{_ver}
 Release:	0.20040516.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-sw
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sw = %{version}
@@ -955,10 +998,11 @@ Version:	%{_ver}
 Release:	0.20031016.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-uk
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-uk
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-uk = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-uk
 Obsoletes:	myspell-uk
 
 %description -n myspell-uk_UA
@@ -973,10 +1017,11 @@ Version:	%{_ver}
 Release:	0.20040604.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-zu
 Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	mozilla-thunderbird-dictionary-zu-ZA
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-zu = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-zu-ZA
 Obsoletes:	myspell-zu
 
 %description -n myspell-zu_ZA
@@ -992,7 +1037,6 @@ Version:	%{_ver}
 Release:	0.20040417.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-bg
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1006,7 +1050,6 @@ Version:	%{_ver}
 Release:	0.20030101.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-cs
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1020,7 +1063,6 @@ Version:	%{_ver}
 Release:	0.20020727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-da
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1034,7 +1076,6 @@ Version:	%{_ver}
 Release:	0.20020727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-de
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1048,7 +1089,6 @@ Version:	%{_ver}
 Release:	0.20040409.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-el
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1062,7 +1102,6 @@ Version:	%{_ver}
 Release:	0.20020727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-en
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1076,7 +1115,6 @@ Version:	%{_ver}
 Release:	0.20040602.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-es
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1090,7 +1128,6 @@ Version:	%{_ver}
 Release:	0.20040621.%{_rel}
 License:	free, see http://www.eki.ee/eki/licence.html
 Group:		Applications/Text
-#Requires:	locales-et
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1104,7 +1141,6 @@ Version:	%{_ver}
 Release:	0.20031125.%{_rel}
 License:	freely distributable
 Group:		Applications/Text
-#Requires:	locales-fi
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1118,7 +1154,6 @@ Version:	%{_ver}
 Release:	0.20020727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-fr
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1132,7 +1167,6 @@ Version:	%{_ver}
 Release:	0.20040212.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-ga
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1146,7 +1180,6 @@ Version:	%{_ver}
 Release:	0.20031107.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-hu
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1160,7 +1193,6 @@ Version:	%{_ver}
 Release:	0.20040810.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-id
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1174,7 +1206,6 @@ Version:	%{_ver}
 Release:	0.20030918.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-is
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1188,7 +1219,6 @@ Version:	%{_ver}
 Release:	0.20030904.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-it
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1202,7 +1232,6 @@ Version:	%{_ver}
 Release:	0.20040111.%{_rel}
 License:	LPPL
 Group:		Applications/Text
-#Requires:	locales-lt
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1216,7 +1245,6 @@ Version:	%{_ver}
 Release:	0.20040222.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-nl
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1230,7 +1258,6 @@ Version:	%{_ver}
 Release:	0.20030913.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-pl
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1244,7 +1271,6 @@ Version:	%{_ver}
 Release:	0.20030904.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-pt
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1258,7 +1284,6 @@ Version:	%{_ver}
 Release:	0.20020727.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-ru
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1272,7 +1297,6 @@ Version:	%{_ver}
 Release:	0.20030101.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-sk
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1286,7 +1310,6 @@ Version:	%{_ver}
 Release:	0.20021003.%{_rel}
 License:	Copyright Matjaz Vrecko
 Group:		Applications/Text
-#Requires:	locales-sl
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1300,7 +1323,6 @@ Version:	%{_ver}
 Release:	0.20030814.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-sv
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1314,7 +1336,6 @@ Version:	%{_ver}
 Release:	0.20021219.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-uk
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-hyphenation = %{version}
 
@@ -1329,7 +1350,6 @@ Version:	%{_ver}
 Release:	0.20040402.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-bg
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
@@ -1343,7 +1363,6 @@ Version:	%{_ver}
 Release:	0.20040702.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-de
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
@@ -1357,7 +1376,6 @@ Version:	%{_ver}
 Release:	0.20040423.%{_rel}
 License:	BSD
 Group:		Applications/Text
-#Requires:	locales-en
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
@@ -1371,7 +1389,6 @@ Version:	%{_ver}
 Release:	0.20040712.%{_rel}
 License:	LGPL
 Group:		Applications/Text
-#Requires:	locales-es
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
@@ -1385,7 +1402,6 @@ Version:	%{_ver}
 Release:	0.20030819.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-fr
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
@@ -1399,7 +1415,6 @@ Version:	%{_ver}
 Release:	0.20040222.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-it
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
@@ -1413,7 +1428,6 @@ Version:	%{_ver}
 Release:	0.20040803.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-pl
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
@@ -1427,7 +1441,6 @@ Version:	%{_ver}
 Release:	0.20050218.%{_rel}
 License:	GPL
 Group:		Applications/Text
-#Requires:	locales-sk
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
 
