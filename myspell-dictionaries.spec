@@ -3,7 +3,7 @@
 # - merge (compare) changes with mozilla-thunderbird-dictionary-* (on Attic) and myspell-common Obsoletes
 #
 %define		_ver	1.0.2
-%define		_rel	2
+%define		_rel	3
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Name:		myspell-dictionaries
 Version:	%{_ver}
@@ -194,11 +194,13 @@ particular set of languages.
 Summary:	Common files for myspell and hunspell dictionaries
 License:	Public Domain
 Group:		Applications/Text
+Provides:	mozilla-thunderbird-dictionary-fr-FR
 Provides:	mozilla-thunderbird-dictionary-he-IL
 Provides:	mozilla-thunderbird-dictionary-ia
 Provides:	mozilla-thunderbird-dictionary-la
 Provides:	mozilla-thunderbird-dictionary-lv-LV
 Provides:	mozilla-thunderbird-dictionary-ru-IE
+Obsoletes:	mozilla-thunderbird-dictionary-fr-FR
 Obsoletes:	mozilla-thunderbird-dictionary-he-IL
 Obsoletes:	mozilla-thunderbird-dictionary-ia
 Obsoletes:	mozilla-thunderbird-dictionary-la
