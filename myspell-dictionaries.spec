@@ -5,6 +5,7 @@
 %define		_ver	1.0.2
 %define		_rel	3
 Summary:	MySpell Spelling and Hyphenation dictionaries
+Summary(pl.UTF-8):	Słowniki dla MySpella do sprawdzania pisowni i przenoszenia wyrazów
 Name:		myspell-dictionaries
 Version:	%{_ver}
 Release:	%{_rel}
@@ -190,8 +191,15 @@ OpenOffice.org or any other MySpell-capable application, like Mozilla.
 myspell-hyph-* packages contain hyphenation dictionaries for a
 particular set of languages.
 
+%description -l pl.UTF-8
+Pakiety myspell-* zawierają dane do sprawdzania pisowni przeznaczone
+do używania przez OpenOffice.org i inne aplikacje korzystające z
+MySpella, takie jak Mozilla. Pakiety myspell-hyph-* zawierają słowniki
+przenoszenia wyrazów dla pewnego zbioru języków.
+
 %package -n myspell-common
 Summary:	Common files for myspell and hunspell dictionaries
+Summary(pl.UTF-8):	Pliki wspólne dla słowników myspella i hunspella
 License:	Public Domain
 Group:		Applications/Text
 Provides:	mozilla-thunderbird-dictionary-fr-FR
@@ -208,11 +216,15 @@ Obsoletes:	mozilla-thunderbird-dictionary-lv-LV
 Obsoletes:	mozilla-thunderbird-dictionary-ru-IE
 
 %description -n myspell-common
-Common files for myspell and hunspell dictionaries
+Common files for myspell and hunspell dictionaries.
+
+%description -n myspell-common -l pl.UTF-8
+Pliki wspólne dla słowników myspella i hunspella.
 
 # Spelling dictionaries
 %package -n myspell-af_ZA
-Summary:	MySpell spelling dictionaries for Afrikaans (Africa)
+Summary:	MySpell spelling dictionaries for Afrikaans (South Africa)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka afrykanerskiego (dla Republiki Południowej Afryki)
 Version:	%{_ver}
 Release:	0.20040727.%{_rel}
 License:	LGPL
@@ -225,13 +237,21 @@ Obsoletes:	mozilla-thunderbird-dictionary-af-ZA
 Obsoletes:	myspell-af
 
 %description -n myspell-af_ZA
-myspell-af_ZA contains spell checking data in Afrikaans (Africa) to be
-used by OpenOffice.org or MySpell-capable applications like Mozilla.
-With this extension, you can compose a document in Afrikaans and check
-for the typos easily.
+myspell-af_ZA contains spell checking data in Afrikaans (South Africa)
+to be used by OpenOffice.org or MySpell-capable applications like
+Mozilla. With this extension, you can compose a document in Afrikaans
+and check for the typos easily.
+
+%description -n myspell-af_ZA -l pl.UTF-8
+myspell-af_ZA zawiera dane do sprawdzania pisowni w języku
+afrykanerskim (dla Republiki Południowej Afryki), przeznaczone do
+używania przez OpenOffice.org i inne aplikacje korzystające z
+MySpella, takie jak Mozilla. Przy użyciu tego rozszerzenia można łatwo
+tworzyć dokumenty w języku afrykanerskim i poprawiać w nich błędy.
 
 %package -n myspell-bg_BG
 Summary:	MySpell spelling dictionaries for Bulgarian (Bulgaria)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka bułgarskiego (dla Bułgarii)
 Version:	%{_ver}
 Release:	0.20040402.%{_rel}
 License:	GPL
@@ -249,8 +269,16 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Bulgarian
 and check for the typos easily.
 
+%description -n myspell-bg_BG -l pl.UTF-8
+myspell-bg_BG zawiera dane do sprawdzania pisowni w języku bułgarskim
+(dla Bułgarii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku bułgarskim i
+poprawiać w nich błędy.
+
 %package -n myspell-ca_ES
 Summary:	MySpell spelling dictionaries for Catalan
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka katalońskiego
 Version:	%{_ver}
 Release:	0.20030907.%{_rel}
 License:	GPL
@@ -268,8 +296,16 @@ OpenOffice.org or MySpell-capable applications like Mozilla. With this
 extension, you can compose a document in Catalan and check for the
 typos easily.
 
+%description -n myspell-ca_ES -l pl.UTF-8
+myspell-ca_ES zawiera dane do sprawdzania pisowni w języku
+katalońskim, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku katalońskim i
+poprawiać w nich błędy.
+
 %package -n myspell-cs_CZ
 Summary:	MySpell spelling dictionaries for Czech (Czech Republic)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka czeskiego (dla Czech)
 Version:	%{_ver}
 Release:	0.20030907.%{_rel}
 License:	GPL
@@ -287,8 +323,16 @@ to be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Czech and
 check for the typos easily.
 
+%description -n myspell-cs_CZ -l pl.UTF-8
+myspell-cs_CZ zawiera dane do sprawdzania pisowni w języku czeskim
+(dla Czech), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku czeskim i
+poprawiać w nich błędy.
+
 %package -n myspell-cy_GB
 Summary:	MySpell spelling dictionaries for Welsh (Wales)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka walijskiego (dla Walii)
 Version:	%{_ver}
 Release:	0.20040425.%{_rel}
 License:	GPL
@@ -306,8 +350,16 @@ by OpenOffice.org or MySpell-capable applications like Mozilla. With
 this extension, you can compose a document in Welsh and check for the
 typos easily.
 
+%description -n myspell-cy_GB -l pl.UTF-8
+myspell-cy_GB zawiera dane do sprawdzania pisowni w języku walijskim
+(dla Walii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku walijskim i
+poprawiać w nich błędy.
+
 %package -n myspell-da_DK
 Summary:	MySpell spelling dictionaries for Danish (Denmark)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka duńskiego (dla Danii)
 Version:	%{_ver}
 Release:	0.20040609.%{_rel}
 License:	GPL
@@ -325,8 +377,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Danish and check
 for the typos easily.
 
+%description -n myspell-da_DK -l pl.UTF-8
+myspell-da_DK zawiera dane do sprawdzania pisowni w języku duńskim
+(dla Danii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku duńskim i
+poprawiać w nich błędy.
+
 %package -n myspell-de_AT
 Summary:	MySpell spelling dictionaries for German (Austria)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka niemieckiego (dla Austrii)
 Version:	%{_ver}
 Release:	0.20030905.%{_rel}
 License:	GPL
@@ -344,8 +404,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in German and check
 for the typos easily.
 
+%description -n myspell-de_AT -l pl.UTF-8
+myspell-de_AT zawiera dane do sprawdzania pisowni w języku niemieckim
+(dla Austrii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku niemieckim i
+poprawiać w nich błędy.
+
 %package -n myspell-de_CH
 Summary:	MySpell spelling dictionaries for German (Switzerland)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka niemieckiego (dla Szwajcarii)
 Version:	%{_ver}
 Release:	0.20030905.%{_rel}
 License:	GPL
@@ -363,8 +431,16 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in German and
 check for the typos easily.
 
+%description -n myspell-de_CH -l pl.UTF-8
+myspell-de_CH zawiera dane do sprawdzania pisowni w języku niemieckim
+(dla Szwajcarii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku niemieckim i
+poprawiać w nich błędy.
+
 %package -n myspell-de_DE
 Summary:	MySpell spelling dictionaries for German (Germany)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka niemieckiego (dla Niemiec)
 Version:	%{_ver}
 Release:	0.20030905.%{_rel}
 License:	GPL
@@ -382,8 +458,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in German and check
 for the typos easily.
 
+%description -n myspell-de_DE -l pl.UTF-8
+myspell-de_DE zawiera dane do sprawdzania pisowni w języku niemieckim
+(dla Niemiec), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku niemieckim i
+poprawiać w nich błędy.
+
 %package -n myspell-el_GR
 Summary:	MySpell spelling dictionaries for Greek (Greece)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka greckiego (dla Grecji)
 Version:	%{_ver}
 Release:	0.20040424.%{_rel}
 License:	GPL
@@ -401,8 +485,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Greek and check for
 the typos easily.
 
+%description -n myspell-el_GR -l pl.UTF-8
+myspell-el_GR zawiera dane do sprawdzania pisowni w języku greckim
+(dla Grecji), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku greckim i
+poprawiać w nich błędy.
+
 %package -n myspell-en_AU
 Summary:	MySpell spelling dictionaries for English (Australian)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Australii)
 Version:	%{_ver}
 Release:	0.20030329.%{_rel}
 License:	LGPL
@@ -420,8 +512,16 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in English
 and check for the typos easily.
 
+%description -n myspell-en_AU -l pl.UTF-8
+myspell-en_AU zawiera dane do sprawdzania pisowni w języku angielskim
+(dla Australii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku angielskim i
+poprawiać w nich błędy.
+
 %package -n myspell-en_CA
 Summary:	MySpell spelling dictionaries for English (Canada)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Kanady)
 Version:	%{_ver}
 Release:	0.20020315.%{_rel}
 License:	Public Domain
@@ -439,8 +539,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in English and check
 for the typos easily.
 
+%description -n myspell-en_CA -l pl.UTF-8
+myspell-en_CA zawiera dane do sprawdzania pisowni w języku angielskim
+(dla Kanady), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku angielskim i
+poprawiać w nich błędy.
+
 %package -n myspell-en_GB
 Summary:	MySpell spelling dictionaries for English (United Kingdom)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Wielkiej Brytanii)
 Version:	%{_ver}
 Release:	0.20040208.%{_rel}
 License:	LGPL
@@ -458,8 +566,16 @@ to be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in English
 and check for the typos easily.
 
+%description -n myspell-en_GB -l pl.UTF-8
+myspell-en_GB zawiera dane do sprawdzania pisowni w języku angielskim
+(dla Wielkiej Brytanii), przeznaczone do używania przez OpenOffice.org
+i inne aplikacje korzystające z MySpella, takie jak Mozilla. Przy
+użyciu tego rozszerzenia można łatwo tworzyć dokumenty w języku
+angielskim i poprawiać w nich błędy.
+
 %package -n myspell-en_NZ
 Summary:	MySpell spelling dictionaries for English (New Zealand)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Nowej Zelandii)
 Version:	%{_ver}
 Release:	0.20030907.%{_rel}
 License:	LGPL
@@ -477,8 +593,16 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in English
 and check for the typos easily.
 
+%description -n myspell-en_NZ -l pl.UTF-8
+myspell-en_NZ zawiera dane do sprawdzania pisowni w języku angielskim
+(dla Nowej Zelandii), przeznaczone do używania przez OpenOffice.org
+i inne aplikacje korzystające z MySpella, takie jak Mozilla. Przy
+użyciu tego rozszerzenia można łatwo tworzyć dokumenty w języku
+angielskim i poprawiać w nich błędy.
+
 %package -n myspell-en_US
 Summary:	MySpell spelling dictionaries for English (US)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Stanów Zjednoczonych)
 Version:	%{_ver}
 Release:	0.20040623.%{_rel}
 License:	BSD
@@ -496,8 +620,16 @@ by OpenOffice.org or MySpell-capable applications like Mozilla. With
 this extension, you can compose a document in English and check for
 the typos easily.
 
+%description -n myspell-en_US -l pl.UTF-8
+myspell-en_US zawiera dane do sprawdzania pisowni w języku angielskim
+(dla Stanów Zjednoczonych), przeznaczone do używania przez
+OpenOffice.org i inne aplikacje korzystające z MySpella, takie jak
+Mozilla. Przy użyciu tego rozszerzenia można łatwo tworzyć dokumenty w
+języku angielskim i poprawiać w nich błędy.
+
 %package -n myspell-es_ES
 Summary:	MySpell spelling dictionaries for Spanish (Spain)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka hiszpańskiego (dla Hiszpanii)
 Version:	%{_ver}
 Release:	0.20040626.%{_rel}
 License:	GPL
@@ -515,8 +647,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Spanish and check
 for the typos easily.
 
+%description -n myspell-es_ES -l pl.UTF-8
+myspell-es_ES zawiera dane do sprawdzania pisowni w języku hiszpańskim
+(dla Hiszpanii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku hiszpańskim i
+poprawiać w nich błędy.
+
 %package -n myspell-es_MX
 Summary:	MySpell spelling dictionaries for Spanish (Mexico)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka hiszpańskiego (dla Meksyku)
 Version:	%{_ver}
 Release:	0.20030818.%{_rel}
 License:	GPL
@@ -534,8 +674,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Spanish and check
 for the typos easily.
 
+%description -n myspell-es_MX -l pl.UTF-8
+myspell-es_MX zawiera dane do sprawdzania pisowni w języku hiszpańskim
+(dla Meksyku), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku hiszpańskim i
+poprawiać w nich błędy.
+
 %package -n myspell-et_EE
 Summary:	MySpell spelling dictionaries for Estonian (Estonia)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka estońskiego (dla Estonii)
 Version:	%{_ver}
 Release:	0.20040621.%{_rel}
 License:	free, see http://www.eki.ee/eki/licence.html
@@ -551,8 +699,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Estonian and check
 for the typos easily.
 
+%description -n myspell-et_EE -l pl.UTF-8
+myspell-et_EE zawiera dane do sprawdzania pisowni w języku estońskim
+(dla Estonii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku estońskim i
+poprawiać w nich błędy.
+
 %package -n myspell-fo_FO
 Summary:	MySpell spelling dictionaries for Faroese (Faroe Islands)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka farerskiego (dla Wysp Owczych)
 Version:	%{_ver}
 Release:	0.20040403.%{_rel}
 License:	GPL
@@ -570,8 +726,16 @@ to be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Faroese
 and check for the typos easily.
 
+%description -n myspell-fo_FO -l pl.UTF-8
+myspell-fo_FO zawiera dane do sprawdzania pisowni w języku farerskim
+(dla Wysp Owczych), przeznaczone do używania przez OpenOffice.org i
+inne aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu
+tego rozszerzenia można łatwo tworzyć dokumenty w języku fareskim i
+poprawiać w nich błędy.
+
 %package -n myspell-fr_BE
 Summary:	MySpell spelling dictionaries for French (Belgium)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka francuskiego (dla Belgii)
 Version:	%{_ver}
 Release:	0.20030619.%{_rel}
 License:	GPL
@@ -587,8 +751,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in French and check
 for the typos easily.
 
+%description -n myspell-fr_BE -l pl.UTF-8
+myspell-fr_BE zawiera dane do sprawdzania pisowni w języku francuskim
+(dla Belgii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku francuskim i
+poprawiać w nich błędy.
+
 %package -n myspell-fr_FR
 Summary:	MySpell spelling dictionaries for French (France)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka francuskiego (dla Francji)
 Version:	%{_ver}
 Release:	0.20020608.%{_rel}
 License:	GPL
@@ -604,8 +776,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in French and check
 for the typos easily.
 
+%description -n myspell-fr_FR -l pl.UTF-8
+myspell-fr_FR zawiera dane do sprawdzania pisowni w języku francuskim
+(dla Francji), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku francuskim i
+poprawiać w nich błędy.
+
 %package -n myspell-ga_IE
 Summary:	MySpell spelling dictionaries for Irish (Ireland)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka irlandzkiego (dla Irlandii)
 Version:	%{_ver}
 Release:	0.20040404.%{_rel}
 License:	GPL
@@ -623,8 +803,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Irish and check for
 the typos easily.
 
+%description -n myspell-ga_IE -l pl.UTF-8
+myspell-ga_IE zawiera dane do sprawdzania pisowni w języku irlandzkim
+(dla Irlandii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku irlandzkim i
+poprawiać w nich błędy.
+
 %package -n myspell-gl_ES
 Summary:	MySpell spelling dictionaries for Galician (Spain)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka galicyjskiego (dla Hiszpanii)
 Version:	%{_ver}
 Release:	0.20030905.%{_rel}
 License:	GPL
@@ -642,8 +830,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Galician and check
 for the typos easily.
 
+%description -n myspell-gl_ES -l pl.UTF-8
+myspell-gl_ES zawiera dane do sprawdzania pisowni w języku galicyjskim
+(dla Hiszpanii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku galicyjskim i
+poprawiać w nich błędy.
+
 %package -n myspell-hr_HR
 Summary:	MySpell spelling dictionaries for Croatian (Croatia)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka chorwackiego (dla Chorwacji)
 Version:	%{_ver}
 Release:	0.20020411.%{_rel}
 License:	GPL
@@ -661,8 +857,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Croatian and check
 for the typos easily.
 
+%description -n myspell-hr_HR -l pl.UTF-8
+myspell-hr_HR zawiera dane do sprawdzania pisowni w języku chorwackim
+(dla Chorwacji), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku chorwackim i
+poprawiać w nich błędy.
+
 %package -n myspell-hu_HU
 Summary:	MySpell spelling dictionaries for Hungarian (Hungary)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka węgierskiego (dla Węgier)
 Version:	%{_ver}
 Release:	0.20040331.%{_rel}
 License:	GPL
@@ -680,8 +884,16 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Hungarian
 and check for the typos easily.
 
+%description -n myspell-hu_HU -l pl.UTF-8
+myspell-hu_HU zawiera dane do sprawdzania pisowni w języku węgierskim
+(dla Węgier), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku węgierskim i
+poprawiać w nich błędy.
+
 %package -n myspell-id_ID
 Summary:	MySpell spelling dictionaries for Indonesian (Indonesia)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka indonezyjskiego (dla Indonezji)
 Version:	%{_ver}
 Release:	0.20040810.%{_rel}
 License:	GPL
@@ -697,8 +909,16 @@ to be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Indonesian
 and check for the typos easily.
 
+%description -n myspell-id_ID -l pl.UTF-8
+myspell-id_ID zawiera dane do sprawdzania pisowni w języku
+indonezyjskim (dla Indonezji), przeznaczone do używania przez
+OpenOffice.org i inne aplikacje korzystające z MySpella, takie jak
+Mozilla. Przy użyciu tego rozszerzenia można łatwo tworzyć dokumenty w
+języku indonezyjskim i poprawiać w nich błędy.
+
 %package -n myspell-it_IT
 Summary:	MySpell spelling dictionaries for Italian (Italy)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka włoskiego (dla Włoch)
 Version:	%{_ver}
 Release:	0.20040624.%{_rel}
 License:	LGPL/GPL
@@ -716,8 +936,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Italian and check
 for the typos easily.
 
+%description -n myspell-it_IT -l pl.UTF-8
+myspell-it_IT zawiera dane do sprawdzania pisowni w języku włoskim
+(dla Włoch), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku włoskim i
+poprawiać w nich błędy.
+
 %package -n myspell-lt_LT
 Summary:	MySpell spelling dictionaries for Lithuanian (Lithuania)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka litewskiego (dla Litwy)
 Version:	%{_ver}
 Release:	0.20031231.%{_rel}
 License:	BSD-like
@@ -735,8 +963,16 @@ to be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Lithuanian
 and check for the typos easily.
 
+%description -n myspell-lt_LT -l pl.UTF-8
+myspell-lt_LT zawiera dane do sprawdzania pisowni w języku litewskim
+(dla Litwy), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku litewskim i
+poprawiać w nich błędy.
+
 %package -n myspell-mi_NZ
 Summary:	MySpell spelling dictionaries for Maori (New Zealand)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka maoryjskiego (dla Nowej Zelandii)
 Version:	%{_ver}
 Release:	0.20030909.%{_rel}
 License:	LGPL
@@ -754,8 +990,16 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Maori and
 check for the typos easily.
 
+%description -n myspell-mi_NZ -l pl.UTF-8
+myspell-mi_NZ zawiera dane do sprawdzania pisowni w języku maoryjskim
+(dla Nowej Zelandii), przeznaczone do używania przez OpenOffice.org i
+inne aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu
+tego rozszerzenia można łatwo tworzyć dokumenty w języku maoryjskim i
+poprawiać w nich błędy.
+
 %package -n myspell-ms_MY
 Summary:	MySpell spelling dictionaries for Malay (Malaysia)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka malajskiego (dla Malezji)
 Version:	%{_ver}
 Release:	0.20040907.%{_rel}
 License:	GNU Free Documentation License
@@ -773,8 +1017,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Malay and check for
 the typos easily.
 
+%description -n myspell-ms_MY -l pl.UTF-8
+myspell-ms_MY zawiera dane do sprawdzania pisowni w języku malajskim
+(dla Malezji), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku malajskim i
+poprawiać w nich błędy.
+
 %package -n myspell-nb_NO
-Summary:	MySpell spelling dictionaries for Norwegian/Bokm�l (Norway)
+Summary:	MySpell spelling dictionaries for Norwegian/Bokmaal (Norway)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka norweskiego bokmaal (dla Norwegii)
 Version:	%{_ver}
 Release:	0.20031013.%{_rel}
 License:	GPL
@@ -787,10 +1039,21 @@ Obsoletes:	mozilla-thunderbird-dictionary-nb
 Obsoletes:	myspell-no
 
 %description -n myspell-nb_NO
-myspell-nb_NO contains spell checking data in Norwegian/Bokm
+myspell-nb_NO contains spell checking data in Norwegian Bokmaal
+(Norway) to be used by OpenOffice.org or MySpell-capable applications
+like Mozilla. With this extension, you can compose a document in
+Norwegian Bokmaal and check for the typos easily.
+
+%description -n myspell-nb_NO -l pl.UTF-8
+myspell-nb_NO zawiera dane do sprawdzania pisowni w języku norweskim
+bokmaal (dla Norwegii), przeznaczone do używania przez OpenOffice.org
+i inne aplikacje korzystające z MySpella, takie jak Mozilla. Przy
+użyciu tego rozszerzenia można łatwo tworzyć dokumenty w języku
+norweskim bokmaal i poprawiać w nich błędy.
 
 %package -n myspell-nl_NL
 Summary:	MySpell spelling dictionaries for Dutch (Netherland)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka holenderskiego (dla Holandii)
 Version:	%{_ver}
 Release:	0.20040222.%{_rel}
 License:	GPL
@@ -808,8 +1071,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Dutch and check for
 the typos easily.
 
+%description -n myspell-nl_NL -l pl.UTF-8
+myspell-nl_NL zawiera dane do sprawdzania pisowni w języku
+holenderskim (dla Holandii), przeznaczone do używania przez
+OpenOffice.org i inne aplikacje korzystające z MySpella, takie jak
+Mozilla. Przy użyciu tego rozszerzenia można łatwo tworzyć dokumenty w
+języku holenderskim i poprawiać w nich błędy.
+
 %package -n myspell-nn_NO
 Summary:	MySpell spelling dictionaries for Norwegian/Nynorsk (Norway)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka norweskiego nynorsk (dla Norwegii)
 Version:	%{_ver}
 Release:	0.20031013.%{_rel}
 License:	GPL
@@ -827,8 +1098,16 @@ myspell-nn_NO contains spell checking data in Norwegian/Nynorsk
 like Mozilla. With this extension, you can compose a document in
 Norwegian/Nynorsk and check for the typos easily.
 
+%description -n myspell-nn_NO -l pl.UTF-8
+myspell-nn_NO zawiera dane do sprawdzania pisowni w języku norweskim
+nynorsk (dla Norwegii), przeznaczone do używania przez OpenOffice.org
+i inne aplikacje korzystające z MySpella, takie jak Mozilla. Przy
+użyciu tego rozszerzenia można łatwo tworzyć dokumenty w języku
+norweskim nynorsk i poprawiać w nich błędy.
+
 %package -n myspell-pl_PL
 Summary:	MySpell spelling dictionaries for Polish (Poland)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka polskiego (dla Polski)
 Version:	%{_ver}
 Release:	0.20040816.%{_rel}
 License:	Creative Commons ShareAlike, http://creativecommons.org/licenses/sa/1.0
@@ -846,8 +1125,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Polish and check
 for the typos easily.
 
+%description -n myspell-pl_PL -l pl.UTF-8
+myspell-pl_PL zawiera dane do sprawdzania pisowni w języku polskim
+(dla Polski), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku polskim i
+poprawiać w nich błędy.
+
 %package -n myspell-pt_BR
 Summary:	MySpell spelling dictionaries for Portuguese (Brasil)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka portugalskiego (dla Brazylii)
 Version:	%{_ver}
 Release:	0.20030110.%{_rel}
 License:	GPL
@@ -863,8 +1150,16 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Portuguese
 and check for the typos easily.
 
+%description -n myspell-pt_BR -l pl.UTF-8
+myspell-pt_BR zawiera dane do sprawdzania pisowni w języku
+portugalskim (dla Brazylii), przeznaczone do używania przez
+OpenOffice.org i inne aplikacje korzystające z MySpella, takie jak
+Mozilla. Przy użyciu tego rozszerzenia można łatwo tworzyć dokumenty w
+języku portugalskim i poprawiać w nich błędy.
+
 %package -n myspell-pt_PT
 Summary:	MySpell spelling dictionaries for Portuguese (Portugal)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka portugalskiego (dla Portugalii)
 Version:	%{_ver}
 Release:	0.20020629.%{_rel}
 License:	GPL
@@ -882,8 +1177,16 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Portuguese
 and check for the typos easily.
 
+%description -n myspell-pt_PT -l pl.UTF-8
+myspell-pt_PT zawiera dane do sprawdzania pisowni w języku
+portugalskim (dla Portugalii), przeznaczone do używania przez
+OpenOffice.org i inne aplikacje korzystające z MySpella, takie jak
+Mozilla. Przy użyciu tego rozszerzenia można łatwo tworzyć dokumenty w
+języku portugalskim i poprawiać w nich błędy.
+
 %package -n myspell-ro_RO
 Summary:	MySpell spelling dictionaries for Romanian (Romania)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka rumuńskiego (dla Rumunii)
 Version:	%{_ver}
 Release:	0.20031023.%{_rel}
 License:	GPL
@@ -901,8 +1204,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Romanian and check
 for the typos easily.
 
+%description -n myspell-ro_RO -l pl.UTF-8
+myspell-ro_RO zawiera dane do sprawdzania pisowni w języku rumuńskim
+(dla Rumunii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku rumuńskim i
+poprawiać w nich błędy.
+
 %package -n myspell-ru_RU
 Summary:	MySpell spelling dictionaries for Russian (Russia)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka rosyjskiego (dla Rosji)
 Version:	%{_ver}
 Release:	0.20040406.%{_rel}
 License:	GPL
@@ -920,8 +1231,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Russian and check
 for the typos easily.
 
+%description -n myspell-ru_RU -l pl.UTF-8
+myspell-ru_RU zawiera dane do sprawdzania pisowni w języku rosyjskim
+(dla Rosji), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku rosyjskim i
+poprawiać w nich błędy.
+
 %package -n myspell-sk_SK
 Summary:	MySpell spelling dictionaries for Slovak (Slovak Republic)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka słowackiego (dla Słowacji)
 Version:	%{_ver}
 Release:	0.20040118.%{_rel}
 License:	GPL
@@ -939,8 +1258,16 @@ to be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Slovak and
 check for the typos easily.
 
+%description -n myspell-sk_SK -l pl.UTF-8
+myspell-sk_SK zawiera dane do sprawdzania pisowni w języku słowackim
+(dla Słowacji), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku słowackim i
+poprawiać w nich błędy.
+
 %package -n myspell-sl_SI
 Summary:	MySpell spelling dictionaries for Slovenian (Slovenia)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka słoweńskiego (dla Słowenii)
 Version:	%{_ver}
 Release:	0.20030907.%{_rel}
 License:	BSD-like
@@ -958,8 +1285,16 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Slovenian
 and check for the typos easily.
 
+%description -n myspell-sl_SI -l pl.UTF-8
+myspell-sl_SI zawiera dane do sprawdzania pisowni w języku słoweńskim
+(dla Słowenii), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku słoweńskim i
+poprawiać w nich błędy.
+
 %package -n myspell-sv_SE
 Summary:	MySpell spelling dictionaries for Swedish (Sweden)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka szwedzkiego (dla Szwecji)
 Version:	%{_ver}
 Release:	0.20030814.%{_rel}
 License:	GPL
@@ -977,8 +1312,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Swedish and check
 for the typos easily.
 
+%description -n myspell-sv_SE -l pl.UTF-8
+myspell-sv_SE zawiera dane do sprawdzania pisowni w języku szwedzkim
+(dla Szwecji), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku szwedzkim i
+poprawiać w nich błędy.
+
 %package -n myspell-sw_KE
 Summary:	MySpell spelling dictionaries for Kiswahili (Africa)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka suahili (dla Afryki)
 Version:	%{_ver}
 Release:	0.20040516.%{_rel}
 License:	LGPL
@@ -994,8 +1337,16 @@ used by OpenOffice.org or MySpell-capable applications like Mozilla.
 With this extension, you can compose a document in Kiswahili and check
 for the typos easily.
 
+%description -n myspell-sw_KE -l pl.UTF-8
+myspell-sw_KE zawiera dane do sprawdzania pisowni w języku suahili
+(dla Afryki), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku suahili i
+poprawiać w nich błędy.
+
 %package -n myspell-uk_UA
 Summary:	MySpell spelling dictionaries for Ukrainian (Ukraine)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka ukraińskiego (dla Ukrainy)
 Version:	%{_ver}
 Release:	0.20031016.%{_rel}
 License:	LGPL
@@ -1013,8 +1364,16 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Ukrainian
 and check for the typos easily.
 
+%description -n myspell-uk_UA -l pl.UTF-8
+myspell-uk_UA zawiera dane do sprawdzania pisowni w języku ukraińskim
+(dla Ukrainy), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku ukraińskim i
+poprawiać w nich błędy.
+
 %package -n myspell-zu_ZA
 Summary:	MySpell spelling dictionaries for Zulu (South Africa)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka zuluskiego (dla Republiki Południowej Afryki)
 Version:	%{_ver}
 Release:	0.20040604.%{_rel}
 License:	LGPL
@@ -1032,9 +1391,17 @@ be used by OpenOffice.org or MySpell-capable applications like
 Mozilla. With this extension, you can compose a document in Zulu and
 check for the typos easily.
 
+%description -n myspell-zu_ZA -l pl.UTF-8
+myspell-zu_ZA zawiera dane do sprawdzania pisowni w języku zuluskim
+(dla Republiki Południowej Afryki), przeznaczone do używania przez
+OpenOffice.org i inne aplikacje korzystające z MySpella, takie jak
+Mozilla. Przy użyciu tego rozszerzenia można łatwo tworzyć dokumenty w
+języku zuluskim i poprawiać w nich błędy.
+
 # Hyphenation
 %package -n myspell-hyph-bg
 Summary:	MySpell hyphenation dictionaries for Bulgarian
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka bułgarskiego
 Version:	%{_ver}
 Release:	0.20040417.%{_rel}
 License:	LGPL
@@ -1046,8 +1413,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-bg contains hyphenation data for Bulgarian to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-bg -l pl.UTF-8
+myspell-hyph-bg zawiera dane do przenoszenia wyrazów dla języka
+bułgarskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-cs
 Summary:	MySpell hyphenation dictionaries for Czech
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka czeskiego
 Version:	%{_ver}
 Release:	0.20030101.%{_rel}
 License:	GPL
@@ -1059,8 +1432,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-cs contains hyphenation data for Czech to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-cs -l pl.UTF-8
+myspell-hyph-cs zawiera dane do przenoszenia wyrazów dla języka
+czeskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-da
 Summary:	MySpell hyphenation dictionaries for Danish
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka duńskiego
 Version:	%{_ver}
 Release:	0.20020727.%{_rel}
 License:	LGPL
@@ -1072,8 +1451,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-da contains hyphenation data for Danish to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-da -l pl.UTF-8
+myspell-hyph-da zawiera dane do przenoszenia wyrazów dla języka
+duńskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-de
 Summary:	MySpell hyphenation dictionaries for German
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka niemieckiego
 Version:	%{_ver}
 Release:	0.20020727.%{_rel}
 License:	LGPL
@@ -1085,8 +1470,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-de contains hyphenation data for German to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-de -l pl.UTF-8
+myspell-hyph-da zawiera dane do przenoszenia wyrazów dla języka
+niemieckiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-el
 Summary:	MySpell hyphenation dictionaries for Greek
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka greckiego
 Version:	%{_ver}
 Release:	0.20040409.%{_rel}
 License:	LGPL
@@ -1098,8 +1489,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-el contains hyphenation data for Greek to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-el -l pl.UTF-8
+myspell-hyph-el zawiera dane do przenoszenia wyrazów dla języka
+greckiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-en
 Summary:	MySpell hyphenation dictionaries for English
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka angielskiego
 Version:	%{_ver}
 Release:	0.20020727.%{_rel}
 License:	LGPL
@@ -1111,8 +1508,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-en contains hyphenation data for English to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-en -l pl.UTF-8
+myspell-hyph-en zawiera dane do przenoszenia wyrazów dla języka
+angielskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-es
 Summary:	MySpell hyphenation dictionaries for Spanish
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka hiszpańskiego
 Version:	%{_ver}
 Release:	0.20040602.%{_rel}
 License:	LGPL
@@ -1124,8 +1527,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-es contains hyphenation data for Spanish to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-es -l pl.UTF-8
+myspell-hyph-es zawiera dane do przenoszenia wyrazów dla języka
+hiszpańskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-et
 Summary:	MySpell hyphenation dictionaries for Estonian
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka estońskiego
 Version:	%{_ver}
 Release:	0.20040621.%{_rel}
 License:	free, see http://www.eki.ee/eki/licence.html
@@ -1137,8 +1546,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-et contains hyphenation data for Estonian to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-et -l pl.UTF-8
+myspell-hyph-et zawiera dane do przenoszenia wyrazów dla języka
+estońskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-fi
 Summary:	MySpell hyphenation dictionaries for Finnish
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka fińskiego
 Version:	%{_ver}
 Release:	0.20031125.%{_rel}
 License:	freely distributable
@@ -1150,8 +1565,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-fi contains hyphenation data for Finnish to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-fi -l pl.UTF-8
+myspell-hyph-fi zawiera dane do przenoszenia wyrazów dla języka
+fińskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-fr
 Summary:	MySpell hyphenation dictionaries for French
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka francuskiego
 Version:	%{_ver}
 Release:	0.20020727.%{_rel}
 License:	LGPL
@@ -1163,8 +1584,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-fr contains hyphenation data for French to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-fr -l pl.UTF-8
+myspell-hyph-fr zawiera dane do przenoszenia wyrazów dla języka
+francuskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-ga
 Summary:	MySpell hyphenation dictionaries for Irish
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka irlandzkiego
 Version:	%{_ver}
 Release:	0.20040212.%{_rel}
 License:	GPL
@@ -1176,8 +1603,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-ga contains hyphenation data for Irish to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-ga -l pl.UTF-8
+myspell-hyph-ga zawiera dane do przenoszenia wyrazów dla języka
+irlandzkiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-hu
 Summary:	MySpell hyphenation dictionaries for Hungarian
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka węgierskiego
 Version:	%{_ver}
 Release:	0.20031107.%{_rel}
 License:	GPL
@@ -1189,8 +1622,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-hu contains hyphenation data for Hungarian to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-hu -l pl.UTF-8
+myspell-hyph-hu zawiera dane do przenoszenia wyrazów dla języka
+węgierskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-id
 Summary:	MySpell hyphenation dictionaries for Indonesian
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka indonezyjskiego
 Version:	%{_ver}
 Release:	0.20040810.%{_rel}
 License:	GPL
@@ -1202,8 +1641,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-id contains hyphenation data for Indonesian to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-id -l pl.UTF-8
+myspell-hyph-id zawiera dane do przenoszenia wyrazów dla języka
+indonezyjskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-is
 Summary:	MySpell hyphenation dictionaries for Icelandic
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka islandzkiego
 Version:	%{_ver}
 Release:	0.20030918.%{_rel}
 License:	LGPL
@@ -1215,8 +1660,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-is contains hyphenation data for Icelandic to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-is -l pl.UTF-8
+myspell-hyph-is zawiera dane do przenoszenia wyrazów dla języka
+islandzkiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-it
 Summary:	MySpell hyphenation dictionaries for Italian
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka włoskiego
 Version:	%{_ver}
 Release:	0.20030904.%{_rel}
 License:	GPL
@@ -1228,8 +1679,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-it contains hyphenation data for Italian to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-it -l pl.UTF-8
+myspell-hyph-it zawiera dane do przenoszenia wyrazów dla języka
+włoskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-lt
 Summary:	MySpell hyphenation dictionaries for Lithuanian
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka litewskiego
 Version:	%{_ver}
 Release:	0.20040111.%{_rel}
 License:	LPPL
@@ -1241,8 +1698,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-lt contains hyphenation data for Lithuanian to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-lt -l pl.UTF-8
+myspell-hyph-lt zawiera dane do przenoszenia wyrazów dla języka
+litewskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-nl
 Summary:	MySpell hyphenation dictionaries for Dutch
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka holenderskiego
 Version:	%{_ver}
 Release:	0.20040222.%{_rel}
 License:	GPL
@@ -1254,8 +1717,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-nl contains hyphenation data for Dutch to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-nl -l pl.UTF-8
+myspell-hyph-nl zawiera dane do przenoszenia wyrazów dla języka
+holenderskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-pl
 Summary:	MySpell hyphenation dictionaries for Polish
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka polskiego
 Version:	%{_ver}
 Release:	0.20030913.%{_rel}
 License:	LGPL
@@ -1267,8 +1736,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-pl contains hyphenation data for Polish to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-pl -l pl.UTF-8
+myspell-hyph-pl zawiera dane do przenoszenia wyrazów dla języka
+polskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-pt
 Summary:	MySpell hyphenation dictionaries for Portuguese
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka portugalskiego
 Version:	%{_ver}
 Release:	0.20030904.%{_rel}
 License:	GPL
@@ -1280,8 +1755,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-pt contains hyphenation data for Portuguese to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-pt -l pl.UTF-8
+myspell-hyph-pt zawiera dane do przenoszenia wyrazów dla języka
+portugalskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-ru
 Summary:	MySpell hyphenation dictionaries for Russian
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka rosyjskiego
 Version:	%{_ver}
 Release:	0.20020727.%{_rel}
 License:	LGPL
@@ -1293,8 +1774,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-ru contains hyphenation data for Russian to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-ru -l pl.UTF-8
+myspell-hyph-ru zawiera dane do przenoszenia wyrazów dla języka
+rosyjskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-sk
 Summary:	MySpell hyphenation dictionaries for Slovak
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka słowackiego
 Version:	%{_ver}
 Release:	0.20030101.%{_rel}
 License:	GPL
@@ -1306,8 +1793,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-sk contains hyphenation data for Slovak to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-sk -l pl.UTF-8
+myspell-hyph-sk zawiera dane do przenoszenia wyrazów dla języka
+słowackiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-sl
 Summary:	MySpell hyphenation dictionaries for Slovenian
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka słoweńskiego
 Version:	%{_ver}
 Release:	0.20021003.%{_rel}
 License:	Copyright Matjaz Vrecko
@@ -1319,8 +1812,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-sl contains hyphenation data for Slovenian to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-sl -l pl.UTF-8
+myspell-hyph-sl zawiera dane do przenoszenia wyrazów dla języka
+słoweńskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-sv
 Summary:	MySpell hyphenation dictionaries for Swedish
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka szwedzkiego
 Version:	%{_ver}
 Release:	0.20030814.%{_rel}
 License:	LGPL
@@ -1332,8 +1831,14 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-sv contains hyphenation data for Swedish to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-sv -l pl.UTF-8
+myspell-hyph-sv zawiera dane do przenoszenia wyrazów dla języka
+szwedzkiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-uk
 Summary:	MySpell hyphenation dictionaries for Ukrainian
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka ukraińskiego
 Version:	%{_ver}
 Release:	0.20021219.%{_rel}
 License:	GPL
@@ -1345,9 +1850,15 @@ Provides:	myspell-hyphenation = %{version}
 myspell-hyph-uk contains hyphenation data for Ukrainian to be used by
 OpenOffice.org or MySpell-capable applications like Mozilla.
 
+%description -n myspell-hyph-uk -l pl.UTF-8
+myspell-hyph-uk zawiera dane do przenoszenia wyrazów dla języka
+ukraińskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 # Thesaurus
 %package -n myspell-thes-bg_BG
 Summary:	MySpell thesaurus for Bulgarian (Bulgaria)
+Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka bułgarskiego (dla Bułgarii)
 Version:	%{_ver}
 Release:	0.20040402.%{_rel}
 License:	GPL
@@ -1359,8 +1870,14 @@ Provides:	myspell-thesaurus = %{version}
 myspell-thes-bg_BG contains thesaurus data in Bulgarian (Bulgaria) to
 be used by MySpell-capable applications like OpenOffice.org.
 
+%description -n myspell-thes-bg_BG -l pl.UTF-8
+myspell-thes-bg_BG zawiera dane wyrazów bliskoznacznych w języku
+bułgarskim (dla Bułgarii), przeznaczone do używania przez aplikacje
+korzystające z MySpella, takie jak OpenOffice.org.
+
 %package -n myspell-thes-de_DE
 Summary:	MySpell thesaurus for German (Germany)
+Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka niemieckiego (dla Niemiec)
 Version:	%{_ver}
 Release:	0.20040702.%{_rel}
 License:	GPL
@@ -1372,8 +1889,14 @@ Provides:	myspell-thesaurus = %{version}
 myspell-thes-de_DE contains thesaurus data in German (Germany) to be
 used by MySpell-capable applications like OpenOffice.org.
 
+%description -n myspell-thes-de_DE -l pl.UTF-8
+myspell-thes-de_DE zawiera dane wyrazów bliskoznacznych w języku
+niemieckim (dla Niemiec), przeznaczone do używania przez aplikacje
+korzystające z MySpella, takie jak OpenOffice.org.
+
 %package -n myspell-thes-en_US
 Summary:	MySpell thesaurus for English (US)
+Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka angielskiego (dla Stanów Zjednoczonych)
 Version:	%{_ver}
 Release:	0.20040423.%{_rel}
 License:	BSD
@@ -1385,8 +1908,14 @@ Provides:	myspell-thesaurus = %{version}
 myspell-thes-en_US contains thesaurus data in English (US) to be used
 by MySpell-capable applications like OpenOffice.org.
 
+%description -n myspell-thes-en_US -l pl.UTF-8
+myspell-thes-en_US zawiera dane wyrazów bliskoznacznych w języku
+angielskim (dla Stanów Zjednoczonych), przeznaczone do używania przez
+aplikacje korzystające z MySpella, takie jak OpenOffice.org.
+
 %package -n myspell-thes-es_ES
 Summary:	MySpell thesaurus for Spanish (Spain)
+Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka hiszpańskiego (dla Hiszpanii)
 Version:	%{_ver}
 Release:	0.20040712.%{_rel}
 License:	LGPL
@@ -1398,8 +1927,14 @@ Provides:	myspell-thesaurus = %{version}
 myspell-thes-es_ES contains thesaurus data in Spanish (Spain) to be
 used by MySpell-capable applications like OpenOffice.org.
 
+%description -n myspell-thes-es_ES -l pl.UTF-8
+myspell-thes-es_ES zawiera dane wyrazów bliskoznacznych w języku
+hiszpańskim (dla Hiszpanii), przeznaczone do używania przez aplikacje
+korzystające z MySpella, takie jak OpenOffice.org.
+
 %package -n myspell-thes-fr_FR
 Summary:	MySpell thesaurus for French (France)
+Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka francuskiego (dla Francji)
 Version:	%{_ver}
 Release:	0.20030819.%{_rel}
 License:	GPL
@@ -1411,8 +1946,14 @@ Provides:	myspell-thesaurus = %{version}
 myspell-thes-fr_FR contains thesaurus data in French (France) to be
 used by MySpell-capable applications like OpenOffice.org.
 
+%description -n myspell-thes-fr_FR -l pl.UTF-8
+myspell-thes-fr_FR zawiera dane wyrazów bliskoznacznych w języku
+francuskim (dla Francji), przeznaczone do używania przez aplikacje
+korzystające z MySpella, takie jak OpenOffice.org.
+
 %package -n myspell-thes-it_IT
 Summary:	MySpell thesaurus for Italian (Italy)
+Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka włoskiego (dla Włoch)
 Version:	%{_ver}
 Release:	0.20040222.%{_rel}
 License:	GPL
@@ -1424,8 +1965,14 @@ Provides:	myspell-thesaurus = %{version}
 myspell-thes-it_IT contains thesaurus data in Italian (Italy) to be
 used by MySpell-capable applications like OpenOffice.org.
 
+%description -n myspell-thes-it_IT -l pl.UTF-8
+myspell-thes-it_IT zawiera dane wyrazów bliskoznacznych w języku
+włoskim (dla Włoch), przeznaczone do używania przez aplikacje
+korzystające z MySpella, takie jak OpenOffice.org.
+
 %package -n myspell-thes-pl_PL
 Summary:	MySpell thesaurus for Polish (Poland)
+Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka polskiego (dla Polski)
 Version:	%{_ver}
 Release:	0.20040803.%{_rel}
 License:	GPL
@@ -1437,8 +1984,14 @@ Provides:	myspell-thesaurus = %{version}
 myspell-thes-pl_PL contains thesaurus data in Polish (Poland) to be
 used by MySpell-capable applications like OpenOffice.org.
 
+%description -n myspell-thes-pl_PL -l pl.UTF-8
+myspell-thes-pl_PL zawiera dane wyrazów bliskoznacznych w języku
+polskim (dla Polski), przeznaczone do używania przez aplikacje
+korzystające z MySpella, takie jak OpenOffice.org.
+
 %package -n myspell-thes-sk_SK
 Summary:	MySpell thesaurus for Slovak (Slovak Republic)
+Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka słowackiego (dla Słowacji)
 Version:	%{_ver}
 Release:	0.20050218.%{_rel}
 License:	GPL
@@ -1449,6 +2002,11 @@ Provides:	myspell-thesaurus = %{version}
 %description -n myspell-thes-sk_SK
 myspell-thes-sk_SK contains thesaurus data in Slovak (Slovak Republic)
 to be used by MySpell-capable applications like OpenOffice.org.
+
+%description -n myspell-thes-sk_SK -l pl.UTF-8
+myspell-thes-sk_SK zawiera dane wyrazów bliskoznacznych w języku
+słowackim (dla Słowacji), przeznaczone do używania przez aplikacje
+korzystające z MySpella, takie jak OpenOffice.org.
 
 %prep
 %setup -q -c -T
@@ -2807,10 +3365,10 @@ fi
 %doc doc/DICT/zu_ZA/*
 %{dictdir}/zu_ZA.*
 
+#
+# Files for hyphenation
+#
 
-##
-## Files for hyphenation
-##
 %files -n myspell-hyph-bg
 %defattr(644,root,root,755)
 %doc doc/HYPH/hyph_bg/*
