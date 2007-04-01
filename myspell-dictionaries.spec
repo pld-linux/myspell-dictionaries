@@ -8,7 +8,7 @@
 #  - openoffice-thesaurus-{de,en,es}.spec
 #
 %define		_ver	1.0.2
-%define		_rel	5
+%define		_rel	6
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Summary(pl):	S³owniki dla MySpella do sprawdzania pisowni i przenoszenia wyrazów
 Name:		myspell-dictionaries
@@ -173,8 +173,8 @@ Source303:	th_de_DE.zip
 # Source303-md5:	bb8de5610dd6f16d69193c7e689b081a
 # http://synonimy.sourceforge.net/
 Source304:	th_pl_PL.zip
-# Source304-md5:	844dbb339719f07bed24e5bf4eda0436
-#Source304:	http://dl.sourceforge.net/synonimy/OOo-Thesaurus-1.3.zip
+# Source304-md5:	f6f096f8349f460fb3de7bb493c7e7d8
+#Source304:	http://dl.sourceforge.net/synonimy/OOo2-Thesaurus-1.3.zip
 Source305:	th_es_ES.zip
 # Source305-md5:	6bf2f4bbca189d8c0976c84d835e2c72
 ## http://bgoffice.sourceforge.net/ooo/
