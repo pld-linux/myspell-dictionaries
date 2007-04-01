@@ -1,10 +1,14 @@
 # TODO
 # - add dictionaries currently obsoleted in -common
-# - merge (compare) changes with mozilla-thunderbird-dictionary-* (on Attic) and myspell-common Obsoletes
-# - merge (compare) with openoffice-dict.spec dictionaries (on Attic)
+# - merge (compare) changes with
+#  - mozilla-thunderbird-dictionary-*.spec
+#  - openoffice-dict.spec
+#  - openoffice-dict-pl-alt.spec
+#  - openoffice.org-thesaurus-pl-alt
+#  - openoffice-thesaurus-{de,en,es}.spec
 #
 %define		_ver	1.0.2
-%define		_rel	4
+%define		_rel	5
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Summary(pl.UTF-8):	Słowniki dla MySpella do sprawdzania pisowni i przenoszenia wyrazów
 Name:		myspell-dictionaries
@@ -1147,6 +1151,7 @@ Provides:	myspell-pl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-pl
 Obsoletes:	myspell-pl
 Obsoletes:	openoffice-dict-pl
+Obsoletes:	openoffice-dict-pl-alt
 
 %description -n myspell-pl_PL
 myspell-pl_PL contains spell checking data in Polish (Poland) to be
@@ -1920,6 +1925,7 @@ License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
+Obsoletes:	openoffice-thesaurus-de
 
 %description -n myspell-thes-de_DE
 myspell-thes-de_DE contains thesaurus data in German (Germany) to be
@@ -1939,6 +1945,7 @@ License:	BSD
 Group:		Applications/Text
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
+Obsoletes:	openoffice-thesaurus-en
 
 %description -n myspell-thes-en_US
 myspell-thes-en_US contains thesaurus data in English (US) to be used
@@ -1958,6 +1965,7 @@ License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
+Obsoletes:	openoffice-thesaurus-es
 
 %description -n myspell-thes-es_ES
 myspell-thes-es_ES contains thesaurus data in Spanish (Spain) to be
@@ -2015,6 +2023,7 @@ License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
+Obsoletes:	openoffice.org-thesaurus-pl-alt
 
 %description -n myspell-thes-pl_PL
 myspell-thes-pl_PL contains thesaurus data in Polish (Poland) to be
