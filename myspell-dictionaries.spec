@@ -1,9 +1,10 @@
 # TODO
 # - add dictionaries currently obsoleted in -common
 # - merge (compare) changes with mozilla-thunderbird-dictionary-* (on Attic) and myspell-common Obsoletes
+# - merge (compare) with openoffice-dict.spec dictionaries (on Attic)
 #
 %define		_ver	1.0.2
-%define		_rel	3
+%define		_rel	4
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Summary(pl.UTF-8):	Słowniki dla MySpella do sprawdzania pisowni i przenoszenia wyrazów
 Name:		myspell-dictionaries
@@ -214,6 +215,7 @@ Obsoletes:	mozilla-thunderbird-dictionary-ia
 Obsoletes:	mozilla-thunderbird-dictionary-la
 Obsoletes:	mozilla-thunderbird-dictionary-lv-LV
 Obsoletes:	mozilla-thunderbird-dictionary-ru-IE
+Obsoletes:	openoffice-dict-la
 
 %description -n myspell-common
 Common files for myspell and hunspell dictionaries.
@@ -262,6 +264,7 @@ Provides:	myspell-bg = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-bg
 Obsoletes:	myspell-bg
+Obsoletes:	openoffice-dict-bg
 
 %description -n myspell-bg_BG
 myspell-bg_BG contains spell checking data in Bulgarian (Bulgaria) to
@@ -289,6 +292,7 @@ Provides:	myspell-ca = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ca
 Obsoletes:	myspell-ca
+Obsoletes:	openoffice-dict-ca
 
 %description -n myspell-ca_ES
 myspell-ca_ES contains spell checking data in Catalan to be used by
@@ -316,6 +320,7 @@ Provides:	myspell-cs = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-cs
 Obsoletes:	myspell-cs
+Obsoletes:	openoffice-dict-cs
 
 %description -n myspell-cs_CZ
 myspell-cs_CZ contains spell checking data in Czech (Czech Republic)
@@ -370,6 +375,7 @@ Provides:	myspell-da = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-da
 Obsoletes:	myspell-da
+Obsoletes:	openoffice-dict-da
 
 %description -n myspell-da_DK
 myspell-da_DK contains spell checking data in Danish (Denmark) to be
@@ -397,6 +403,7 @@ Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-de-AT
 Obsoletes:	myspell-de
+Obsoletes:	openoffice-dict-de
 
 %description -n myspell-de_AT
 myspell-de_AT contains spell checking data in German (Austria) to be
@@ -424,6 +431,7 @@ Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-de-CH
 Obsoletes:	myspell-de
+Obsoletes:	openoffice-dict-de
 
 %description -n myspell-de_CH
 myspell-de_CH contains spell checking data in German (Switzerland) to
@@ -451,6 +459,7 @@ Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-de-DE
 Obsoletes:	myspell-de
+Obsoletes:	openoffice-dict-de
 
 %description -n myspell-de_DE
 myspell-de_DE contains spell checking data in German (Germany) to be
@@ -478,6 +487,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-el = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-el
 Obsoletes:	myspell-el
+Obsoletes:	openoffice-dict-el
 
 %description -n myspell-el_GR
 myspell-el_GR contains spell checking data in Greek (Greece) to be
@@ -505,6 +515,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-AU
 Obsoletes:	myspell-en
+Obsoletes:	openoffice-dict-en
 
 %description -n myspell-en_AU
 myspell-en_AU contains spell checking data in English (Australian) to
@@ -532,6 +543,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-CA
 Obsoletes:	myspell-en
+Obsoletes:	openoffice-dict-en
 
 %description -n myspell-en_CA
 myspell-en_CA contains spell checking data in English (Canada) to be
@@ -559,6 +571,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-GB
 Obsoletes:	myspell-en
+Obsoletes:	openoffice-dict-en
 
 %description -n myspell-en_GB
 myspell-en_GB contains spell checking data in English (United Kingdom)
@@ -586,6 +599,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-NZ
 Obsoletes:	myspell-en
+Obsoletes:	openoffice-dict-en
 
 %description -n myspell-en_NZ
 myspell-en_NZ contains spell checking data in English (New Zealand) to
@@ -613,6 +627,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-US
 Obsoletes:	myspell-en
+Obsoletes:	openoffice-dict-en
 
 %description -n myspell-en_US
 myspell-en_US contains spell checking data in English (US) to be used
@@ -640,6 +655,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-es = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-es-ES
 Obsoletes:	myspell-es
+Obsoletes:	openoffice-dict-es
 
 %description -n myspell-es_ES
 myspell-es_ES contains spell checking data in Spanish (Spain) to be
@@ -667,6 +683,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-es = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-es-MX
 Obsoletes:	myspell-es
+Obsoletes:	openoffice-dict-es
 
 %description -n myspell-es_MX
 myspell-es_MX contains spell checking data in Spanish (Mexico) to be
@@ -744,6 +761,7 @@ Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fr = %{version}
 Obsoletes:	myspell-fr
+Obsoletes:	openoffice-dict-fr
 
 %description -n myspell-fr_BE
 myspell-fr_BE contains spell checking data in French (Belgium) to be
@@ -769,6 +787,7 @@ Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fr = %{version}
 Obsoletes:	myspell-fr
+Obsoletes:	openoffice-dict-fr
 
 %description -n myspell-fr_FR
 myspell-fr_FR contains spell checking data in French (France) to be
@@ -796,6 +815,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ga = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ga
 Obsoletes:	myspell-ga
+Obsoletes:	openoffice-dict-ga
 
 %description -n myspell-ga_IE
 myspell-ga_IE contains spell checking data in Irish (Ireland) to be
@@ -823,6 +843,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-gl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-gl
 Obsoletes:	myspell-gl
+Obsoletes:	openoffice-dict-gl
 
 %description -n myspell-gl_ES
 myspell-gl_ES contains spell checking data in Galician (Spain) to be
@@ -850,6 +871,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-hr = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-hr
 Obsoletes:	myspell-hr
+Obsoletes:	openoffice-dict-hr
 
 %description -n myspell-hr_HR
 myspell-hr_HR contains spell checking data in Croatian (Croatia) to be
@@ -877,6 +899,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-hu = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-hu
 Obsoletes:	myspell-hu
+Obsoletes:	openoffice-dict-hu
 
 %description -n myspell-hu_HU
 myspell-hu_HU contains spell checking data in Hungarian (Hungary) to
@@ -929,6 +952,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-it = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-it
 Obsoletes:	myspell-it
+Obsoletes:	openoffice-dict-it
 
 %description -n myspell-it_IT
 myspell-it_IT contains spell checking data in Italian (Italy) to be
@@ -956,6 +980,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-lt = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-lt
 Obsoletes:	myspell-lt
+Obsoletes:	openoffice-dict-lt
 
 %description -n myspell-lt_LT
 myspell-lt_LT contains spell checking data in Lithuanian (Lithuania)
@@ -1037,6 +1062,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-no = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-nb
 Obsoletes:	myspell-no
+Obsoletes:	openoffice-dict-nb
 
 %description -n myspell-nb_NO
 myspell-nb_NO contains spell checking data in Norwegian Bokmaal
@@ -1064,6 +1090,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-nl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-nl
 Obsoletes:	myspell-nl
+Obsoletes:	openoffice-dict-nl
 
 %description -n myspell-nl_NL
 myspell-nl_NL contains spell checking data in Dutch (Netherland) to be
@@ -1091,6 +1118,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-no = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-nn
 Obsoletes:	myspell-no
+Obsoletes:	openoffice-dict-nn
 
 %description -n myspell-nn_NO
 myspell-nn_NO contains spell checking data in Norwegian/Nynorsk
@@ -1118,6 +1146,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-pl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-pl
 Obsoletes:	myspell-pl
+Obsoletes:	openoffice-dict-pl
 
 %description -n myspell-pl_PL
 myspell-pl_PL contains spell checking data in Polish (Poland) to be
@@ -1143,6 +1172,7 @@ Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	mozilla-thunderbird-dictionary-pt-BR
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-pt-BR
+Obsoletes:	openoffice-dict-pt
 
 %description -n myspell-pt_BR
 myspell-pt_BR contains spell checking data in Portuguese (Brasil) to
@@ -1170,6 +1200,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-pt = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-pt
 Obsoletes:	myspell-pt
+Obsoletes:	openoffice-dict-pt
 
 %description -n myspell-pt_PT
 myspell-pt_PT contains spell checking data in Portuguese (Portugal) to
@@ -1224,6 +1255,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ru = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ru
 Obsoletes:	myspell-ru
+Obsoletes:	openoffice-dict-ru
 
 %description -n myspell-ru_RU
 myspell-ru_RU contains spell checking data in Russian (Russia) to be
@@ -1251,6 +1283,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sk = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-sk
 Obsoletes:	myspell-sk
+Obsoletes:	openoffice-dict-sk
 
 %description -n myspell-sk_SK
 myspell-sk_SK contains spell checking data in Slovak (Slovak Republic)
@@ -1278,6 +1311,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-sl
 Obsoletes:	myspell-sl
+Obsoletes:	openoffice-dict-sl
 
 %description -n myspell-sl_SI
 myspell-sl_SI contains spell checking data in Slovenian (Slovenia) to
@@ -1305,6 +1339,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sv = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-sv
 Obsoletes:	myspell-sv
+Obsoletes:	openoffice-dict-sv
 
 %description -n myspell-sv_SE
 myspell-sv_SE contains spell checking data in Swedish (Sweden) to be
@@ -1357,6 +1392,7 @@ Provides:	myspell-dictionary = %{version}
 Provides:	myspell-uk = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-uk
 Obsoletes:	myspell-uk
+Obsoletes:	openoffice-dict-uk
 
 %description -n myspell-uk_UA
 myspell-uk_UA contains spell checking data in Ukrainian (Ukraine) to
