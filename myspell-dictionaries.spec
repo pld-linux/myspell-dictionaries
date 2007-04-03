@@ -2023,6 +2023,7 @@ License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-thesaurus = %{version}
+Obsoletes:	openoffice-thesaurus-pl-alt
 Obsoletes:	openoffice.org-thesaurus-pl-alt
 
 %description -n myspell-thes-pl_PL
