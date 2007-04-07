@@ -2,13 +2,10 @@
 # - add dictionaries currently obsoleted in -common
 # - merge (compare) changes with
 #  - mozilla-thunderbird-dictionary-*.spec
-#  - openoffice-dict.spec
-#  - openoffice-dict-pl-alt.spec
-#  - openoffice.org-thesaurus-pl-alt
 #  - openoffice-thesaurus-{de,en,es}.spec
 #
 %define		_ver	1.0.2
-%define		_rel	6
+%define		_rel	7
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Summary(pl):	S³owniki dla MySpella do sprawdzania pisowni i przenoszenia wyrazów
 Name:		myspell-dictionaries
@@ -50,7 +47,7 @@ Source114:	it_IT.zip
 # Source114-md5:	87f74209b5422efd9a82c97f2063b19e
 # From http://www.kurnik.pl/dictionary/alt-myspell-pl-20060823.tar.bz2
 Source115:	pl_PL.zip
-# Source115-md5:	b5fc0ebe5a455e337bdcfeef213cf706
+# Source115-md5:	5846b4b7ee1fc55d693307dffaeec21c
 #Source115:	http://www.kurnik.pl/dictionary/alt-myspell-pl-20060823.tar.bz2
 Source116:	pt_PT.zip
 # Source116-md5:	6f44ed7caf6846dca9d539bb390719c4
@@ -145,7 +142,7 @@ Source214:	hyph_et.zip
 Source215:	hyph_id.zip
 # Source215-md5:	a98334abf10af82c9358e468010d34e4
 Source216:	hyph_pl.zip
-# Source216-md5:	7d836b3c154f156a0efa87b76e9dc26a
+# Source216-md5:	5fe38726ea35db50cd045e1405f450e5
 Source217:	hyph_pt.zip
 # Source217-md5:	8b9abb106cf76c0df933b0d33847d961
 Source218:	hyph_el.zip
@@ -1141,7 +1138,7 @@ norweskim nynorsk i poprawiaæ w nich b³êdy.
 Summary:	MySpell spelling dictionaries for Polish (Poland)
 Summary(pl):	S³ownik dla MySpella do sprawdzania pisowni dla jêzyka polskiego (dla Polski)
 Version:	%{_ver}
-Release:	0.20040816.%{_rel}
+Release:	0.20070407.%{_rel}
 License:	Creative Commons ShareAlike, http://creativecommons.org/licenses/sa/1.0
 Group:		Applications/Text
 Requires:	myspell-common = %{_ver}-%{_rel}
@@ -1767,7 +1764,7 @@ aplikacje korzystaj±ce z Myspella, takie jak Mozilla.
 Summary:	MySpell hyphenation dictionaries for Polish
 Summary(pl):	S³owniki przenoszenia wyrazów dla MySpella dla jêzyka polskiego
 Version:	%{_ver}
-Release:	0.20030913.%{_rel}
+Release:	0.20060726.%{_rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{_ver}-%{_rel}
@@ -2018,7 +2015,7 @@ korzystaj±ce z MySpella, takie jak OpenOffice.org.
 Summary:	MySpell thesaurus for Polish (Poland)
 Summary(pl):	S³ownik wyrazów bliskoznacznych dla MySpella dla jêzyka polskiego (dla Polski)
 Version:	%{_ver}
-Release:	0.20040803.%{_rel}
+Release:	0.20061223.%{_rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{_ver}-%{_rel}
