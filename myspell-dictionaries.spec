@@ -47,7 +47,7 @@ Source114:	it_IT.zip
 # Source114-md5:	87f74209b5422efd9a82c97f2063b19e
 # From http://www.kurnik.pl/dictionary/alt-myspell-pl-20070407.tar.bz2
 Source115:	pl_PL.zip
-# Source115-md5:	5846b4b7ee1fc55d693307dffaeec21c
+# Source115-md5:	42150a1124f2ce408408438288f4cc09
 #Source115:	http://www.kurnik.pl/dictionary/alt-myspell-pl-20060823.tar.bz2
 Source116:	pt_PT.zip
 # Source116-md5:	6f44ed7caf6846dca9d539bb390719c4
@@ -1103,7 +1103,7 @@ norweskim nynorsk i poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Polish (Poland)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka polskiego (dla Polski)
 Version:	%{_ver}
-Release:	0.20070407.%{_rel}
+Release:	0.20071214.%{_rel}
 License:	Creative Commons ShareAlike, http://creativecommons.org/licenses/sa/1.0
 Group:		Applications/Text
 Requires:	myspell-common = %{_ver}-%{_rel}
