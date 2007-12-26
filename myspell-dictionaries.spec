@@ -5,7 +5,7 @@
 #  - openoffice-thesaurus-{de,en,es}.spec
 #
 %define		_ver	1.0.2
-%define		_rel	10
+%define		_rel	11
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Summary(pl.UTF-8):	Słowniki dla MySpella do sprawdzania pisowni i przenoszenia wyrazów
 Name:		myspell-dictionaries
