@@ -1,4 +1,5 @@
 # TODO
+# - convert perl to sed in scriptlets
 # - add dictionaries currently obsoleted in -common
 # - merge (compare) changes with
 #  - mozilla-thunderbird-dictionary-*.spec
