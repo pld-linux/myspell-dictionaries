@@ -1,11 +1,6 @@
-Index: en-US.dic
-===================================================================
-RCS file: /cvsroot/mozilla/extensions/spellcheck/locales/en-US/myspell/en-US.dic,v
-retrieving revision 1.1
-diff -u -u -8 -p -r1.1 en-US.dic
---- myspell-dictionaries-1.0.2/dic/DICT/en_US/en_US.dic	16 Jul 2005 18:45:10 -0000	1.1
-+++ myspell-dictionaries-1.0.2/dic/DICT/en_US/en_US.dic	29 Jul 2006 19:29:16 -0000
-@@ -6136,16 +6136,21 @@ blockbusting/MS
+--- myspell-dictionaries-1.0.3/dic/DICT/en_US/en_US.dic.orig	2007-05-04 17:39:41.000000000 +0200
++++ myspell-dictionaries-1.0.3/dic/DICT/en_US/en_US.dic	2010-03-11 12:18:09.000000000 +0100
+@@ -6162,16 +6162,21 @@
  blocker/MS
  blockhead/MS
  blockhouse/SM
@@ -27,7 +22,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  blonde's
  Blondie/M
  blondish
-@@ -7923,19 +7928,21 @@ Cad/M
+@@ -7949,19 +7954,21 @@
  cadmium/MS
  cadre/SM
  cad/SM
@@ -49,7 +44,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  cagey/P
  cagier
  cagiest
-@@ -14120,16 +14127,17 @@ debaucher/M
+@@ -14146,16 +14153,17 @@
  debauchery/SM
  debauch/GDRS
  Debbie/M
@@ -67,7 +62,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  deb/MS
  Deb/MS
  debonairness/SM
-@@ -17101,16 +17109,17 @@ eatery/MS
+@@ -17127,16 +17135,17 @@
  eating/M
  Eaton/M
  eat/SJZGNRB
@@ -85,25 +80,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  Ebeneser/M
  Ebenezer/M
  Eben/M
-@@ -20567,16 +20576,17 @@ firebrand/MS
- firebreak/SM
- firebrick/SM
- firebug/SM
- firecracker/SM
- firedamp/SM
- fired/U
- firefight/JRGZS
- firefly/MS
-+Firefox/M
- fireguard/M
- firehouse/MS
- firelight/GZSM
- fireman/M
- firemen
- fire/MS
- fireplace/MS
- fireplug/MS
-@@ -21108,16 +21118,17 @@ foamy/RPT
+@@ -21135,16 +21144,17 @@
  fobbed
  fobbing
  fob/SM
@@ -121,7 +98,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  foetid
  FOFL
  fogbound
-@@ -21982,17 +21993,17 @@ Frye/M
+@@ -22009,17 +22019,17 @@
  fryer/MS
  Fry/M
  fry/NGDS
@@ -134,13 +111,13 @@ diff -u -u -8 -p -r1.1 en-US.dic
 +ftp
  fuchsia/MS
  Fuchs/M
- fucker/M
- fuck/GZJRDMS
+ fucker/M!
+ fuck/GZJRDMS!
  FUD
  fuddle/GSD
  fudge/GMSD
  fuel/ASDG
-@@ -22540,16 +22551,17 @@ Gatsby/M
+@@ -22567,16 +22577,17 @@
  Gatun/M
  gaucheness/SM
  gaucherie/SM
@@ -158,7 +135,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  Gaul/MS
  Gaultiero/M
  gauntlet/GSDM
-@@ -22748,16 +22760,17 @@ gentlemanliness/M
+@@ -22775,16 +22786,17 @@
  gentlemanly/U
  gentleman/YM
  gentlemen
@@ -176,25 +153,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  genuflection/MS
  genuineness/SM
  genuine/PY
-@@ -23528,16 +23541,17 @@ good/SYP
- goodwill/MS
- Goodwin/M
- Goodyear/M
- goody/SM
- gooey
- goofiness/MS
- goof/SDMG
- goofy/RPT
-+Google/M
- gooier
- gooiest
- gook/SM
- goo/MS
- goon/SM
- goop/SM
- gooseberry/MS
- goosebumps
-@@ -26520,17 +26534,18 @@ Hrothgar/M
+@@ -26551,17 +26563,18 @@
  hrs
  h's
  H's
@@ -214,7 +173,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  hubbub/SM
  hubby/SM
  hubcap/SM
-@@ -28137,16 +28152,17 @@ inkling/SM
+@@ -28168,16 +28181,17 @@
  inkstand/SM
  inkwell/SM
  inky/TP
@@ -232,7 +191,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  innate/YP
  innermost/S
  innersole/S
-@@ -28533,17 +28549,17 @@ internationalism/SM
+@@ -28564,17 +28578,17 @@
  internationalist/SM
  internationality/M
  internationalization/MS
@@ -251,7 +210,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  internship/MS
  internuclear
  interocular
-@@ -29397,16 +29413,17 @@ Jasun/M
+@@ -29428,16 +29442,17 @@
  jato/SM
  jaundice/DSMG
  jaundiced/U
@@ -269,25 +228,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  jawline
  jaw/SMDG
  Jaxartes/M
-@@ -36915,16 +36932,17 @@ moxie/MS
- Moyer/M
- Moyna/M
- Moyra/M
- Mozambican/S
- Mozambique/M
- Mozart/M
- Mozelle/M
- Mozes/M
-+Mozilla/M
- mozzarella/MS
- mp
- MP
- mpg
- mph
- MPH
- MRI
- Mr/M
-@@ -39555,16 +39573,17 @@ oneself
+@@ -39591,16 +39606,17 @@
  onetime
  oneupmanship
  Onfre/M
@@ -305,7 +246,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  onomatopoeia/SM
  onomatopoeic
  onomatopoetic
-@@ -41364,16 +41383,17 @@ paycheck/SM
+@@ -41402,16 +41418,17 @@
  payday/MS
  payed
  payee/SM
@@ -323,7 +264,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  Payson/M
  Payton/M
  Paz/M
-@@ -42188,16 +42208,18 @@ philosophizer/M
+@@ -42226,16 +42243,18 @@
  philosophizes/U
  philosophize/ZDRSG
  philosophy/MS
@@ -342,7 +283,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  phlegm/SM
  phloem/MS
  phlox/M
-@@ -42989,16 +43011,17 @@ pocketbook/SM
+@@ -43027,16 +43046,17 @@
  pocketful/SM
  pocketing/M
  pocketknife/M
@@ -360,7 +301,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  podiatry/MS
  podium/MS
  pod/SM
-@@ -43538,16 +43561,17 @@ powdery
+@@ -43576,16 +43596,17 @@
  Powell/M
  powerboat/MS
  powerfulness/M
@@ -378,25 +319,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  Poznan/M
  pp
  PP
-@@ -44487,16 +44511,17 @@ provabilities
- provability's
- provability/U
- provableness/M
- provable/P
- provably
- prov/DRGZB
- proved/U
- prove/ESDAG
-+proven
- provenance/SM
- Provençal
- Provencals
- Provence/M
- provender/SDG
- provenience/SM
- provenly
- proverb/DG
-@@ -49224,16 +49249,17 @@ sealskin/SM
+@@ -49265,16 +49286,17 @@
  seals/UA
  seamail
  seamanship/SM
@@ -414,7 +337,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  seamy/TRP
  Seana/M
  séance/SM
-@@ -51022,16 +51048,17 @@ skyway/M
+@@ -51064,16 +51086,17 @@
  skywriter/MS
  skywriting/MS
  slabbed
@@ -432,7 +355,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  slain
  slake/DSG
  slaked/U
-@@ -51961,17 +51988,19 @@ spadework/SM
+@@ -52003,17 +52026,19 @@
  spadices
  spadix/M
  Spafford/M
@@ -453,7 +376,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  Spanglish/S
  Spaniard/SM
  spanielled
-@@ -53901,16 +53930,17 @@ sunbathe
+@@ -53943,16 +53968,17 @@
  sunbather/M
  sunbathing/M
  sunbaths
@@ -471,7 +394,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  Sundas
  Sunday/MS
  sunder/SDG
-@@ -54204,16 +54234,17 @@ Susan/M
+@@ -54246,16 +54272,17 @@
  Susannah/M
  Susanna/M
  Susanne/M
@@ -489,7 +412,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  suspect/GSDR
  suspecting/U
  suspend/DRZGS
-@@ -55976,16 +56007,17 @@ thuggish
+@@ -56019,16 +56046,17 @@
  thug/MS
  Thule/M
  thulium/SM
@@ -507,7 +430,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  thundering/Y
  thunderous/Y
  thundershower/MS
-@@ -57810,16 +57842,17 @@ Tzeltal/M
+@@ -57853,16 +57881,17 @@
  u
  U
  UAR
@@ -525,7 +448,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  udder/SM
  Udell/M
  Ufa/M
-@@ -58323,16 +58356,18 @@ unimodal
+@@ -58366,16 +58395,18 @@
  unimpeachably
  unimportance
  unimportant
@@ -544,7 +467,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  unintuitive
  uninviting
  union/AEMS
-@@ -58526,16 +58561,17 @@ unstilted
+@@ -58569,16 +58600,17 @@
  unstinting/Y
  unstopping
  unstrapping
@@ -562,7 +485,7 @@ diff -u -u -8 -p -r1.1 en-US.dic
  unsystematic
  unsystematized/Y
  untactful
-@@ -60384,16 +60420,18 @@ Webber/M
+@@ -60427,16 +60459,18 @@
  webbing/MS
  Webb/RM
  weber/M
