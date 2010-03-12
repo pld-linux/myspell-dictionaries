@@ -13,163 +13,163 @@ License:	BSD/GPL/LGPL
 Group:		Applications/Text
 URL:		http://lingucomponent.openoffice.org/download_dictionary.html
 ## Sources for spell checking dictionaries
-Source100:	bg_BG.zip
-# Source100-md5:	b7d595082a0efdb32cef053771383be4
-Source101:	ca_ES.zip
-# Source101-md5:	8cac267447a5502c35dde43819efd162
-Source102:	hr_HR.zip
-# Source102-md5:	3269437ec54bda0e7f3438f1130ad676
+Source100:	af_ZA.zip
+# Source100-md5:	5950ed4e9dfccb1592de3f385404578c
+Source101:	bg_BG.zip
+# Source101-md5:	b7d595082a0efdb32cef053771383be4
+Source102:	ca_ES.zip
+# Source102-md5:	8cac267447a5502c35dde43819efd162
 Source103:	cs_CZ.zip
 # Source103-md5:	da978932a97adfc92a16a802a199efcb
-Source104:	da_DK.zip
-# Source104-md5:	db20b8a28174a96eaea35710898407a1
-Source105:	nl_NL.zip
-# Source105-md5:	24de690c4d9f9656a4d68693caa7b96c
-Source106:	en_CA.zip
-# Source106-md5:	c14942ea471a5182f376802c68933880
-Source107:	en_GB.zip
-# Source107-md5:	89de459a37ed6b7d9f54ad9626047e68
-Source108:	en_US.zip
-# Source108-md5:	ee6bb9a3c533e5d65b4cc8ed3e32ae10
-Source109:	fr_FR.zip
-# Source109-md5:	5fd3aa778fe4c0ae77941c1bce18fcf7
-Source110:	de_DE.zip
-# Source110-md5:	886b8c3a539212ff3660a3d5eb1a8147
-Source111:	de_CH.zip
-# Source111-md5:	4cef76956bf62b8eda12566c6884f70d
-Source112:	el_GR.zip
-# Source112-md5:	afc685caee5cbcfd8886bd5c14b3eaf3
-Source113:	hu_HU.zip
-# Source113-md5:	7c83480778c78cc8bef9a50d84284314
-Source114:	it_IT.zip
-# Source114-md5:	4b616ce3cc57c1f9f190e3733841911e
+Source104:	cy_GB.zip
+# Source104-md5:	5cd020448b2c5c19f6157543e4fe79d6
+Source105:	da_DK.zip
+# Source105-md5:	db20b8a28174a96eaea35710898407a1
+Source106:	de_AT.zip
+# Source106-md5:	5d079b9935f3a470960bf4bc0556179b
+Source107:	de_CH.zip
+# Source107-md5:	4cef76956bf62b8eda12566c6884f70d
+Source108:	de_DE.zip
+# Source108-md5:	886b8c3a539212ff3660a3d5eb1a8147
+Source109:	el_GR.zip
+# Source109-md5:	afc685caee5cbcfd8886bd5c14b3eaf3
+Source110:	en_AU.zip
+# Source110-md5:	c39f529173d8bb0e15b1fade11dfe780
+Source111:	en_CA.zip
+# Source111-md5:	c14942ea471a5182f376802c68933880
+Source112:	en_GB.zip
+# Source112-md5:	89de459a37ed6b7d9f54ad9626047e68
+Source113:	en_NZ.zip
+# Source113-md5:	aaf2cdd1597abdf4cfa0d9b12cfb8a29
+Source114:	en_US.zip
+# Source114-md5:	ee6bb9a3c533e5d65b4cc8ed3e32ae10
+Source115:	es_ES.zip
+# Source115-md5:	eb539abf2b93816eaa0c71df2ae06dc1
+Source116:	es_MX.zip
+# Source116-md5:	2f33174f46369634ebd3e0011baa1726
+Source117:	ftp://ftp.linux.ee/pub/openoffice/contrib/dictionaries/et_EE.zip
+# Source117-md5:	2a1e97d61132c537aa03df4d0fee9b89
+Source118:	fo_FO.zip
+# Source118-md5:	74bf95820869527f2e2ecced592ce62b
+Source119:	fr_BE.zip
+# Source119-md5:	6eac149eb16fc6279e93901d24b350a2
+Source120:	fr_FR.zip
+# Source120-md5:	5fd3aa778fe4c0ae77941c1bce18fcf7
+Source121:	ga_IE.zip
+# Source121-md5:	42d27da49daf068584be9592a58f3b98
+Source122:	gl_ES.zip
+# Source122-md5:	c9feb9d9d99baebf97d6924b81c8ecf2
+Source123:	hr_HR.zip
+# Source123-md5:	3269437ec54bda0e7f3438f1130ad676
+Source124:	hu_HU.zip
+# Source124-md5:	7c83480778c78cc8bef9a50d84284314
+Source125:	id_ID.zip
+# Source125-md5:	1174ccbde370dfc64fe0ec2d27269492
+Source126:	it_IT.zip
+# Source126-md5:	4b616ce3cc57c1f9f190e3733841911e
+Source127:	lt_LT.zip
+# Source127-md5:	4d38192054bbd4dc2946c0e973b9e2c0
+Source128:	mi_NZ.zip
+# Source128-md5:	f691ca67df4570821f931574295715b5
+Source129:	ms_MY.zip
+# Source129-md5:	a8d8f8c248f10c9399e5fbbeb8842c60
+Source130:	nb_NO.zip
+# Source130-md5:	c42de27e4c12e29560f22f266f51655f
+Source131:	nl_NL.zip
+# Source131-md5:	24de690c4d9f9656a4d68693caa7b96c
+Source132:	nn_NO.zip
+# Source132-md5:	8df2f49ff333cee4cb75df444937040c
 #http://www.sjp.pl/slownik/en/
-Source115:	pl_PL.zip
-# Source115-md5:	a1a7c9cd3f158764862329a834b44906
-Source116:	pt_PT.zip
-# Source116-md5:	622f05d1e3f4d9ec6b7b691550458389
-Source117:	pt_BR.zip
-# Source117-md5:	e1cb7a2093f72487541b8f54364469ee
-Source118:	es_ES.zip
-# Source118-md5:	eb539abf2b93816eaa0c71df2ae06dc1
-Source119:	sk_SK.zip
-# Source119-md5:	b699bb18648e62248e4a5ae05f9b4a7b
-Source120:	sv_SE.zip
-# Source120-md5:	702d4dc9dc135e194086a6a270fe478d
-Source121:	nb_NO.zip
-# Source121-md5:	c42de27e4c12e29560f22f266f51655f
-Source122:	nn_NO.zip
-# Source122-md5:	8df2f49ff333cee4cb75df444937040c
-Source123:	ga_IE.zip
-# Source123-md5:	42d27da49daf068584be9592a58f3b98
-Source124:	gl_ES.zip
-# Source124-md5:	c9feb9d9d99baebf97d6924b81c8ecf2
-Source125:	ru_RU.zip
-# Source125-md5:	a6c98684e95035cf3b49e90d4a4824b2
-Source126:	sl_SI.zip
-# Source126-md5:	728b7a694fec9a234a115881fbf9b14f
-Source127:	uk_UA.zip
-# Source127-md5:	091a1cfd1557b5e8c0741b7d43164353
-Source128:	de_AT.zip
-# Source128-md5:	5d079b9935f3a470960bf4bc0556179b
-Source129:	en_AU.zip
-# Source129-md5:	c39f529173d8bb0e15b1fade11dfe780
-Source130:	es_MX.zip
-# Source130-md5:	2f33174f46369634ebd3e0011baa1726
-Source131:	fo_FO.zip
-# Source131-md5:	74bf95820869527f2e2ecced592ce62b
-Source132:	fr_BE.zip
-# Source132-md5:	6eac149eb16fc6279e93901d24b350a2
-Source133:	lt_LT.zip
-# Source133-md5:	4d38192054bbd4dc2946c0e973b9e2c0
-Source134:	ftp://ftp.linux.ee/pub/openoffice/contrib/dictionaries/et_EE.zip
-# Source134-md5:	2a1e97d61132c537aa03df4d0fee9b89
-Source135:	af_ZA.zip
-# Source135-md5:	5950ed4e9dfccb1592de3f385404578c
-Source136:	cy_GB.zip
-# Source136-md5:	5cd020448b2c5c19f6157543e4fe79d6
-Source137:	en_NZ.zip
-# Source137-md5:	aaf2cdd1597abdf4cfa0d9b12cfb8a29
-Source138:	id_ID.zip
-# Source138-md5:	1174ccbde370dfc64fe0ec2d27269492
-Source139:	zu_ZA.zip
-# Source139-md5:	0f86570c4d69984f23333fbbdd478953
-Source140:	ro_RO.zip
-# Source140-md5:	d326256440b8f9744a8b803cbbb4422a
-Source141:	mi_NZ.zip
-# Source141-md5:	f691ca67df4570821f931574295715b5
-Source142:	sw_KE.zip
-# Source142-md5:	baf4d97ec843114fd543f8e4cc362a79
-Source143:	ms_MY.zip
-# Source143-md5:	a8d8f8c248f10c9399e5fbbeb8842c60
+Source133:	pl_PL.zip
+# Source133-md5:	a1a7c9cd3f158764862329a834b44906
+Source134:	pt_BR.zip
+# Source134-md5:	e1cb7a2093f72487541b8f54364469ee
+Source135:	pt_PT.zip
+# Source135-md5:	622f05d1e3f4d9ec6b7b691550458389
+Source136:	ro_RO.zip
+# Source136-md5:	d326256440b8f9744a8b803cbbb4422a
+Source137:	ru_RU.zip
+# Source137-md5:	a6c98684e95035cf3b49e90d4a4824b2
+Source138:	sk_SK.zip
+# Source138-md5:	b699bb18648e62248e4a5ae05f9b4a7b
+Source139:	sl_SI.zip
+# Source139-md5:	728b7a694fec9a234a115881fbf9b14f
+Source140:	sv_SE.zip
+# Source140-md5:	702d4dc9dc135e194086a6a270fe478d
+Source141:	sw_KE.zip
+# Source141-md5:	baf4d97ec843114fd543f8e4cc362a79
+Source142:	uk_UA.zip
+# Source142-md5:	091a1cfd1557b5e8c0741b7d43164353
+Source143:	zu_ZA.zip
+# Source143-md5:	0f86570c4d69984f23333fbbdd478953
 
 ## Sources for hyphenation dictionaries
-Source200:	hyph_da.zip
-# Source200-md5:	392af1b75300b0deffe5996ebf54584a
-Source201:	hyph_en.zip
-# Source201-md5:	96fa5a6596fb41be94dde6427fc235cb
-Source202:	hyph_fr.zip
-# Source202-md5:	2e2181e7358634fe927f7726ef4a958d
+Source200:	hyph_bg.zip
+# Source200-md5:	ca6a69d405475b14d68716e2b1f2ce8d
+Source201:	hyph_cs.zip
+# Source201-md5:	b2684e33da7f82d676539a5a7230a55d
+Source202:	hyph_da.zip
+# Source202-md5:	392af1b75300b0deffe5996ebf54584a
 Source203:	hyph_de.zip
 # Source203-md5:	f1e532e3acc986382eb86faf7f34aa66
-Source204:	hyph_it.zip
-# Source204-md5:	96898e7f6320d6d95cf77e8d4dd4fab2
-Source205:	hyph_ru.zip
-# Source205-md5:	8db755d136adce60109c148fa66800f8
-Source206:	hyph_nl.zip
-# Source206-md5:	5c92b647750f310e5a432f7ffa222528
-Source207:	hyph_cs.zip
-# Source207-md5:	b2684e33da7f82d676539a5a7230a55d
-Source208:	hyph_es.zip
-# Source208-md5:	66f86d65aab4c459eb4bc120b452f509
-Source209:	hyph_sk.zip
-# Source209-md5:	e1eaad327299188eeb74856be8dcfb59
-Source210:	hyph_sl.zip
-# Source210-md5:	8fe35a17d0252417cba7a8df50f44f38
-Source211:	hyph_uk.zip
-# Source211-md5:	a5379b3141c2f0cd3c663c2a73eb3b94
-Source212:	hyph_hu.zip
-# Source212-md5:	6dc2c19e6047c7faa9548cf85e93ae90
-Source213:	hyph_sv.zip
-# Source213-md5:	0475db87ac1f0c25fb2191f298317b27
+Source204:	hyph_el.zip
+# Source204-md5:	263af85c144a19fe90417520b095b74d
+Source205:	hyph_en.zip
+# Source205-md5:	96fa5a6596fb41be94dde6427fc235cb
+Source206:	hyph_es.zip
+# Source206-md5:	66f86d65aab4c459eb4bc120b452f509
 #ftp://ftp.linux.ee/pub/openoffice/contrib/dictionaries/hyph_et_EE.zip
-Source214:	hyph_et.zip
-# Source214-md5:	866e01bd74b729be6fe09db075314007
-Source215:	hyph_id.zip
-# Source215-md5:	a98334abf10af82c9358e468010d34e4
-Source216:	hyph_pl.zip
-# Source216-md5:	5fe38726ea35db50cd045e1405f450e5
-Source217:	hyph_pt.zip
-# Source217-md5:	8b9abb106cf76c0df933b0d33847d961
-Source218:	hyph_el.zip
-# Source218-md5:	263af85c144a19fe90417520b095b74d
-Source219:	hyph_bg.zip
-# Source219-md5:	ca6a69d405475b14d68716e2b1f2ce8d
-Source220:	hyph_lt.zip
-# Source220-md5:	d1801298677d0e2e7e56702c7a0c406a
-Source221:	hyph_is.zip
-# Source221-md5:	d2a599bb65e607eedfcb8123d9016d03
-Source222:	hyph_ga.zip
-# Source222-md5:	23fb9ccc5d7193da8e7daaa34f00235c
-Source223:	hyph_fi.zip
-# Source223-md5:	df10e1430ab31d46e7afffb63598a3e4
+Source207:	hyph_et.zip
+# Source207-md5:	866e01bd74b729be6fe09db075314007
+Source208:	hyph_fi.zip
+# Source208-md5:	df10e1430ab31d46e7afffb63598a3e4
+Source209:	hyph_fr.zip
+# Source209-md5:	2e2181e7358634fe927f7726ef4a958d
+Source210:	hyph_ga.zip
+# Source210-md5:	23fb9ccc5d7193da8e7daaa34f00235c
+Source211:	hyph_hu.zip
+# Source211-md5:	6dc2c19e6047c7faa9548cf85e93ae90
+Source212:	hyph_id.zip
+# Source212-md5:	a98334abf10af82c9358e468010d34e4
+Source213:	hyph_is.zip
+# Source213-md5:	d2a599bb65e607eedfcb8123d9016d03
+Source214:	hyph_it.zip
+# Source214-md5:	96898e7f6320d6d95cf77e8d4dd4fab2
+Source215:	hyph_lt.zip
+# Source215-md5:	d1801298677d0e2e7e56702c7a0c406a
+Source216:	hyph_nl.zip
+# Source216-md5:	5c92b647750f310e5a432f7ffa222528
+Source217:	hyph_pl.zip
+# Source217-md5:	5fe38726ea35db50cd045e1405f450e5
+Source218:	hyph_pt.zip
+# Source218-md5:	8b9abb106cf76c0df933b0d33847d961
+Source219:	hyph_ru.zip
+# Source219-md5:	8db755d136adce60109c148fa66800f8
+Source220:	hyph_sk.zip
+# Source220-md5:	e1eaad327299188eeb74856be8dcfb59
+Source221:	hyph_sl.zip
+# Source221-md5:	8fe35a17d0252417cba7a8df50f44f38
+Source222:	hyph_sv.zip
+# Source222-md5:	0475db87ac1f0c25fb2191f298317b27
+Source223:	hyph_uk.zip
+# Source223-md5:	a5379b3141c2f0cd3c663c2a73eb3b94
 
 ## Sources for thesaurus dictionaries
-Source300:	th_en_US.zip
-# Source300-md5:	62c1dd5ced0b8f1be73eaab61526e02e
-Source301:	th_fr_FR.zip
-# Source301-md5:	4a8a55f7b1d855791e0adaa74851c90c
-Source302:	th_it_IT.zip
-# Source302-md5:	67735eb5aa22f084518c678a5e3a5736
-Source303:	th_de_DE.zip
-# Source303-md5:	2c466662e7bfe3466192ef3e6bf53d2c
+Source300:	th_bg_BG.zip
+# Source300-md5:	3c04f8df022e819e6ac5f161acc08229
+Source301:	th_de_DE.zip
+# Source301-md5:	2c466662e7bfe3466192ef3e6bf53d2c
+Source302:	th_en_US.zip
+# Source302-md5:	62c1dd5ced0b8f1be73eaab61526e02e
+Source303:	th_es_ES.zip
+# Source303-md5:	1951c3be40534bd5645e95ac7882110e
+Source304:	th_fr_FR.zip
+# Source304-md5:	4a8a55f7b1d855791e0adaa74851c90c
+Source305:	th_it_IT.zip
+# Source305-md5:	67735eb5aa22f084518c678a5e3a5736
 #http://synonimy.ux.pl/
-Source304:	th_pl_PL.zip
-# Source304-md5:	dbae9faf043ab7faf58b03bd90e6b4e1
-Source305:	th_es_ES.zip
-# Source305-md5:	1951c3be40534bd5645e95ac7882110e
-Source306:	th_bg_BG.zip
-# Source306-md5:	3c04f8df022e819e6ac5f161acc08229
+Source306:	th_pl_PL.zip
+# Source306-md5:	dbae9faf043ab7faf58b03bd90e6b4e1
 Source307:	th_sk_SK.zip
 # Source307-md5:	c9842a1fb6353d5a5cf06c1757839f03
 Patch0:		myspell-mozilla_words.patch
