@@ -1,7 +1,3 @@
-# TODO
-# - convert perl to sed in scriptlets
-# - add dictionaries currently obsoleted in -common
-#
 %define		_ver	1.0.3
 %define		_rel	1
 Summary:	MySpell Spelling and Hyphenation dictionaries
@@ -209,13 +205,7 @@ Summary:	Common files for myspell and hunspell dictionaries
 Summary(pl.UTF-8):	Pliki wspólne dla słowników myspella i hunspella
 License:	Public Domain
 Group:		Applications/Text
-Obsoletes:	mozilla-thunderbird-dictionary-fr-FR
-Obsoletes:	mozilla-thunderbird-dictionary-he-IL
-Obsoletes:	mozilla-thunderbird-dictionary-ia
-Obsoletes:	mozilla-thunderbird-dictionary-la
-Obsoletes:	mozilla-thunderbird-dictionary-lv-LV
 Obsoletes:	mozilla-thunderbird-dictionary-ru-IE
-Obsoletes:	openoffice-dict-la
 
 %description -n myspell-common
 Common files for myspell and hunspell dictionaries.
@@ -1005,6 +995,7 @@ Requires:	myspell-common = %{_ver}-%{_rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-la = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-la
+Obsoletes:	openoffice-dict-la
 
 %description -n myspell-la_VA
 myspell-it_IT contains spell checking data in Latin (Vatican) to be
@@ -2278,7 +2269,7 @@ fi
 
 %preun -n myspell-af_ZA
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*af\s*ZA\s*af_ZA$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*af.*ZA.*af_ZA$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-bg_BG
@@ -2289,7 +2280,7 @@ fi
 
 %preun -n myspell-bg_BG
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*bg\s*BG\s*bg_BG$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*bg.*BG.*bg_BG$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ca_ES
@@ -2300,7 +2291,7 @@ fi
 
 %preun -n myspell-ca_ES
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*ca\s*ES\s*ca_ES$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*ca.*ES.*ca_ES$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-cs_CZ
@@ -2311,7 +2302,7 @@ fi
 
 %preun -n myspell-cs_CZ
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*cs\s*CZ\s*cs_CZ$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*cs.*CZ.*cs_CZ$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-cy_GB
@@ -2322,7 +2313,7 @@ fi
 
 %preun -n myspell-cy_GB
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*cy\s*GB\s*cy_GB$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*cy.*GB.*cy_GB$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-da_DK
@@ -2333,7 +2324,7 @@ fi
 
 %preun -n myspell-da_DK
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*da\s*DK\s*da_DK$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*da.*DK.*da_DK$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-de_AT
@@ -2344,7 +2335,7 @@ fi
 
 %preun -n myspell-de_AT
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*de\s*AT\s*de_AT$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*de.*AT.*de_AT$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-el_GR
@@ -2355,7 +2346,7 @@ fi
 
 %preun -n myspell-el_GR
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*el\s*GR\s*el_GR$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*el.*GR.*el_GR$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-en_US
@@ -2366,7 +2357,7 @@ fi
 
 %preun -n myspell-en_US
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*en\s*US\s*en_US$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*en.*US.*en_US$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-en_NZ
@@ -2377,7 +2368,7 @@ fi
 
 %preun -n myspell-en_NZ
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*en\s*NZ\s*en_NZ$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*en.*NZ.*en_NZ$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-es_MX
@@ -2394,9 +2385,9 @@ fi
 
 %preun -n myspell-es_MX
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*es\s*MX\s*es_MX$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^DICT\s*es\s*AR\s*es_MX$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^DICT\s*es\s*CO\s*es_MX$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*es.*MX.*es_MX$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*es.*AR.*es_MX$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*es.*CO.*es_MX$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-et_EE
@@ -2407,7 +2398,7 @@ fi
 
 %preun -n myspell-et_EE
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*et\s*EE\s*et_EE$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*et.*EE.*et_EE$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-fo_FO
@@ -2418,7 +2409,7 @@ fi
 
 %preun -n myspell-fo_FO
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*fo\s*FO\s*fo_FO$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*fo.*FO.*fo_FO$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-fr_BE
@@ -2429,7 +2420,7 @@ fi
 
 %preun -n myspell-fr_BE
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*fr\s*BE\s*fr_BE$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*fr.*BE.*fr_BE$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ga_IE
@@ -2440,7 +2431,7 @@ fi
 
 %preun -n myspell-ga_IE
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*ga\s*IE\s*ga_IE$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*ga.*IE.*ga_IE$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-gl_ES
@@ -2451,7 +2442,7 @@ fi
 
 %preun -n myspell-gl_ES
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*gl\s*ES\s*gl_ES$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*gl.*ES.*gl_ES$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-he_IL
@@ -2462,7 +2453,7 @@ fi
 
 %preun -n myspell-he_IL
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*he\s*IL\s*he_IL$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*he.*IL.*he_IL$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hr_HR
@@ -2473,7 +2464,7 @@ fi
 
 %preun -n myspell-hr_HR
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*hr\s*HR\s*hr_HR$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*hr.*HR.*hr_HR$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hu_HU
@@ -2484,7 +2475,7 @@ fi
 
 %preun -n myspell-hu_HU
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*hu\s*HU\s*hu_HU$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*hu.*HU.*hu_HU$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ia_IA
@@ -2495,7 +2486,7 @@ fi
 
 %preun -n myspell-ia_IA
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*ia\s*IA\s*ia_IA$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*ia.*IA.*ia_IA$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-id_ID
@@ -2506,7 +2497,7 @@ fi
 
 %preun -n myspell-id_ID
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*id\s*ID\s*id_ID$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*id.*ID.*id_ID$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-it_IT
@@ -2517,7 +2508,7 @@ fi
 
 %preun -n myspell-it_IT
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*it\s*IT\s*it_IT$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*it.*IT.*it_IT$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-la_VA
@@ -2528,7 +2519,7 @@ fi
 
 %preun -n myspell-la_VA
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*la\s*VA\s*la_VA$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*la.*VA.*la_VA$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-lt_LT
@@ -2539,7 +2530,7 @@ fi
 
 %preun -n myspell-lt_LT
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*lt\s*LT\s*lt_LT$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*lt.*LT.*lt_LT$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-mi_NZ
@@ -2550,7 +2541,7 @@ fi
 
 %preun -n myspell-mi_NZ
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*mi\s*NZ\s*mi_NZ$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*mi.*NZ.*mi_NZ$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ms_MY
@@ -2561,7 +2552,7 @@ fi
 
 %preun -n myspell-ms_MY
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*ms\s*MY\s*ms_MY$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*ms.*MY.*ms_MY$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-nb_NO
@@ -2572,7 +2563,7 @@ fi
 
 %preun -n myspell-nb_NO
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*nb\s*NO\s*nb_NO$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*nb.*NO.*nb_NO$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-nl_NL
@@ -2583,7 +2574,7 @@ fi
 
 %preun -n myspell-nl_NL
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*nl\s*NL\s*nl_NL$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*nl.*NL.*nl_NL$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-nn_NO
@@ -2594,7 +2585,7 @@ fi
 
 %preun -n myspell-nn_NO
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*nn\s*NO\s*nn_NO$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*nn.*NO.*nn_NO$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-pl_PL
@@ -2605,7 +2596,7 @@ fi
 
 %preun -n myspell-pl_PL
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*pl\s*PL\s*pl_PL$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*pl.*PL.*pl_PL$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-pt_BR
@@ -2616,7 +2607,7 @@ fi
 
 %preun -n myspell-pt_BR
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*pt\s*BR\s*pt_BR$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*pt.*BR.*pt_BR$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ro_RO
@@ -2627,7 +2618,7 @@ fi
 
 %preun -n myspell-ro_RO
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*ro\s*RO\s*ro_RO$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*ro.*RO.*ro_RO$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-ru_RU
@@ -2638,7 +2629,7 @@ fi
 
 %preun -n myspell-ru_RU
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*ru\s*RU\s*ru_RU$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*ru.*RU.*ru_RU$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-sk_SK
@@ -2649,7 +2640,7 @@ fi
 
 %preun -n myspell-sk_SK
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*sk\s*SK\s*sk_SK$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*sk.*SK.*sk_SK$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-sl_SI
@@ -2660,7 +2651,7 @@ fi
 
 %preun -n myspell-sl_SI
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*sl\s*SI\s*sl_SI$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*sl.*SI.*sl_SI$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-sv_SE
@@ -2671,7 +2662,7 @@ fi
 
 %preun -n myspell-sv_SE
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*sv\s*SE\s*sv_SE$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*sv.*SE.*sv_SE$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-sw_KE
@@ -2682,7 +2673,7 @@ fi
 
 %preun -n myspell-sw_KE
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*sw\s*KE\s*sw_KE$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*sw.*KE.*sw_KE$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-uk_UA
@@ -2693,7 +2684,7 @@ fi
 
 %preun -n myspell-uk_UA
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*uk\s*UA\s*uk_UA$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*uk.*UA.*uk_UA$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-zu_ZA
@@ -2704,7 +2695,7 @@ fi
 
 %preun -n myspell-zu_ZA
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^DICT\s*zu\s*ZA\s*zu_ZA$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^DICT.*zu.*ZA.*zu_ZA$/d' %{dictdir}/dictionary.lst
 fi
 
 ##
@@ -2718,7 +2709,7 @@ fi
 
 %preun -n myspell-hyph-bg
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*bg\s*BG\s*hyph_bg$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*bg.*BG.*hyph_bg$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-cs
@@ -2729,7 +2720,7 @@ fi
 
 %preun -n myspell-hyph-cs
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*cs\s*CZ\s*hyph_cs$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*cs.*CZ.*hyph_cs$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-da
@@ -2740,7 +2731,7 @@ fi
 
 %preun -n myspell-hyph-da
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*da\s*DA\s*hyph_da$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*da.*DA.*hyph_da$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-de
@@ -2763,11 +2754,11 @@ fi
 
 %preun -n myspell-hyph-de
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*de\s*DE\s*hyph_de$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*de\s*AT\s*hyph_de$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*de\s*CH\s*hyph_de$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*de\s*LI\s*hyph_de$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*de\s*LU\s*hyph_de$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*de.*AT.*hyph_de$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*de.*CH.*hyph_de$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*de.*DE.*hyph_de$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*de.*LI.*hyph_de$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*de.*LU.*hyph_de$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-el
@@ -2778,7 +2769,7 @@ fi
 
 %preun -n myspell-hyph-el
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*el\s*GR\s*hyph_el$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*el.*GR.*hyph_el$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-en
@@ -2797,6 +2788,9 @@ if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*NZ[ \t]
 fi
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*AU[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en AU hyph_en" >> %{dictdir}/dictionary.lst
+fi
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*BZ[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
+	echo "HYPH en BZ hyph_en" >> %{dictdir}/dictionary.lst
 fi
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*en[ \t]*ZA[ \t]*hyph_en" %{dictdir}/dictionary.lst; then
 	echo "HYPH en ZA hyph_en" >> %{dictdir}/dictionary.lst
@@ -2819,17 +2813,18 @@ fi
 
 %preun -n myspell-hyph-en
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*en\s*US\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*en\s*CA\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*en\s*GB\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*en\s*NZ\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*en\s*AU\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*en\s*ZA\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*en\s*IE\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*en\s*JM\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*en\s*PH\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*en\s*TT\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*en\s*ZW\s*hyph_en$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*AU.*hyph_en$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*BZ.*hyph_en$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*CA.*hyph_en$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*GB.*hyph_en$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*IE.*hyph_en$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*JM.*hyph_en$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*NZ.*hyph_bg$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*PH.*hyph_en$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*TT.*hyph_bg$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*US.*hyph_en$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*ZA.*hyph_en$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*ZW.*hyph_en$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-es
@@ -2900,27 +2895,27 @@ fi
 
 %preun -n myspell-hyph-es
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*es\s*ES\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*AR\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*BZ\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*BO\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*CL\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*CO\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*CR\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*CU\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*DO\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*EC\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*SV\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*GU\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*JN\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*MX\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*NI\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*PA\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*PU\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*PE\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*PR\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*UY\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*es\s*VE\s*hyph_es$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*AR.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*BZ.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*BO.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*CL.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*CO.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*CR.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*CU.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*DO.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*EC.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*ES.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*GU.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*JN.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*MX.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*NI.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*PA.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*PU.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*PE.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*PR.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*SV.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*UY.*hyph_es$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*es.*VE.*hyph_es$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-et
@@ -2930,7 +2925,7 @@ if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*et[ \t]*EE[ \t]
 fi
 %preun -n myspell-hyph-et
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*et\s*EE\s*hyph_et$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*et.*EE.*hyph_et$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-fi
@@ -2941,7 +2936,7 @@ fi
 
 %preun -n myspell-hyph-fi
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*fi\s*FI\s*hyph_fi$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*fi.*FI.*hyph_fi$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-fr
@@ -2967,12 +2962,12 @@ fi
 
 %preun -n myspell-hyph-fr
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*fr\s*FR\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*fr\s*BE\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*fr\s*CA\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*fr\s*LU\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*fr\s*MC\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*fr\s*CH\s*hyph_fr$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*fr.*BE.*hyph_fr$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*fr.*CA.*hyph_fr$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*fr.*CH.*hyph_fr$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*fr.*FR.*hyph_fr$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*fr.*LU.*hyph_fr$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*fr.*MC.*hyph_fr$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-ga
@@ -2983,7 +2978,7 @@ fi
 
 %preun -n myspell-hyph-ga
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*ga\s*IE\s*hyph_ga$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*ga.*IE.*hyph_ga$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-hu
@@ -2994,7 +2989,7 @@ fi
 
 %preun -n myspell-hyph-hu
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*hu\s*HU\s*hyph_hu$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*hu.*HU.*hyph_hu$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-ia
@@ -3005,7 +3000,7 @@ fi
 
 %preun -n myspell-hyph-ia
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*ia\s*IA\s*hyph_ia$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*ia.*IA.*hyph_ia$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-id
@@ -3016,7 +3011,7 @@ fi
 
 %preun -n myspell-hyph-id
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*id\s*ID\s*hyph_id$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*id.*ID.*hyph_id$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-is
@@ -3027,7 +3022,7 @@ fi
 
 %preun -n myspell-hyph-is
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*is\s*IS\s*hyph_is$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*is.*IS.*hyph_is$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-it
@@ -3041,8 +3036,8 @@ fi
 
 %preun -n myspell-hyph-it
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*it\s*IT\s*hyph_it$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*it\s*CH\s*hyph_it$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*it.*CH.*hyph_it$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*it.*IT.*hyph_it$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-lt
@@ -3053,7 +3048,7 @@ fi
 
 %preun -n myspell-hyph-lt
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*lt\s*LT\s*hyph_lt$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*lt.*LT.*hyph_lt$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-lv
@@ -3064,7 +3059,7 @@ fi
 
 %preun -n myspell-hyph-lv
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*lv\s*LV\s*hyph_lv$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*lv.*LV.*hyph_lv$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-nl
@@ -3075,7 +3070,7 @@ fi
 
 %preun -n myspell-hyph-nl
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*nl\s*NL\s*hyph_nl$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*nl.*NL.*hyph_nl$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-pl
@@ -3086,7 +3081,7 @@ fi
 
 %preun -n myspell-hyph-pl
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*pl\s*PL\s*hyph_pl$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*pl.*PL.*hyph_pl$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-pt
@@ -3101,8 +3096,8 @@ fi
 
 %preun -n myspell-hyph-pt
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*pt\s*PT\s*hyph_pt$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^HYPH\s*pt\s*BR\s*hyph_pt$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*pt.*BR.*hyph_pt$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*pt.*PT.*hyph_pt$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-ru
@@ -3113,7 +3108,7 @@ fi
 
 %preun -n myspell-hyph-ru
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*ru\s*RU\s*hyph_ru$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*ru.*RU.*hyph_ru$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-sk
@@ -3124,7 +3119,7 @@ fi
 
 %preun -n myspell-hyph-sk
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*sk\s*SK\s*hyph_sk$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*sk.*SK.*hyph_sk$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-sl
@@ -3135,7 +3130,7 @@ fi
 
 %preun -n myspell-hyph-sl
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*sl\s*SI\s*hyph_sl$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*sl.*SI.*hyph_sl$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-sv
@@ -3146,7 +3141,7 @@ fi
 
 %preun -n myspell-hyph-sv
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*sv\s*SE\s*hyph_sv$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*sv.*SE.*hyph_sv$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-uk
@@ -3157,7 +3152,7 @@ fi
 
 %preun -n myspell-hyph-uk
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^HYPH\s*uk\s*UA\s*hyph_uk$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*uk.*UA.*hyph_uk$/d' %{dictdir}/dictionary.lst
 fi
 
 ##
@@ -3170,7 +3165,7 @@ if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*bg[ \t]*BG[ \t]
 fi
 %preun -n myspell-thes-bg_BG
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^THES\s*bg\s*BG\s*th_bg_BG$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*bg.*BG.*th_bg_BG$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-de_DE
@@ -3193,11 +3188,11 @@ fi
 
 %preun -n myspell-thes-de_DE
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^THES\s*de\s*DE\s*th_de_DE$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*de\s*AT\s*th_de_DE$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*de\s*CH\s*th_de_DE$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*de\s*LI\s*th_de_DE$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*de\s*LU\s*th_de_DE$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*de.*AT.*th_de_DE$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*de.*CH.*th_de_DE$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*de.*DE.*th_de_DE$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*de.*LI.*th_de_DE$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*de.*LU.*th_de_DE$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-en_US
@@ -3241,18 +3236,18 @@ fi
 
 %preun -n myspell-thes-en_US
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^THES\s*en\s*US\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*CA\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*GB\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*AU\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*BZ\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*IE\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*JM\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*NZ\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*PH\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*TT\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*ZA\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*en\s*ZW\s*th_en_US$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*AU.*th_en_US$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*BZ.*th_en_US$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*CA.*th_en_US$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*GB.*th_en_US$/d' %{dictdir}/dictionary.lst	
+	%{__sed} -i -e '/^THES.*en.*IE.*th_en_US$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*JM.*th_en_US$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*NZ.*th_en_US$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*PH.*th_en_US$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*TT.*th_en_US$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*US.*th_en_US$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*ZA.*th_en_US$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*en.*ZW.*th_en_US$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-es_ES
@@ -3266,8 +3261,8 @@ fi
 
 %preun -n myspell-thes-es_ES
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^THES\s*es\s*ES\s*th_es_ES$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*es\s*AR\s*th_es_ES$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*es.*AR.*th_es_ES$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*es.*ES.*th_es_ES$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-fr_FR
@@ -3293,23 +3288,27 @@ fi
 
 %preun -n myspell-thes-fr_FR
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^THES\s*fr\s*FR\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*fr\s*BE\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*fr\s*CA\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*fr\s*CH\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*fr\s*LU\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
-	perl -ni -e "/^THES\s*fr\s*MC\s*th_fr_FR$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*fr.*BE.*th_fr_FR$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*fr.*CA.*th_fr_FR$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*fr.*CH.*th_fr_FR$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*fr.*FR.*th_fr_FR$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*fr.*LU.*th_fr_FR$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*fr.*MC.*th_fr_FR$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-it_IT
 umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*it[ \t]*CH[ \t]*th_it_IT" %{dictdir}/dictionary.lst; then
+	cho "THES it CH th_it_IT" >> %{dictdir}/dictionary.lst
+fi
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*it[ \t]*IT[ \t]*th_it_IT" %{dictdir}/dictionary.lst; then
 	echo "THES it IT th_it_IT" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-thes-it_IT
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^THES\s*it\s*IT\s*th_it_IT$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*it.*CH.*th_it_IT$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*it.*IT.*th_it_IT$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-pl_PL
@@ -3320,7 +3319,7 @@ fi
 
 %preun -n myspell-thes-pl_PL
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^THES\s*pl\s*PL\s*th_pl_PL$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*pl.*PL.*th_pl_PL$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-thes-sk_SK
@@ -3331,7 +3330,7 @@ fi
 
 %preun -n myspell-thes-sk_SK
 if [ "$1" = "0" ]; then
-	perl -ni -e "/^THES\s*sk\s*SK\s*th_sk_SK$/ or print" %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^THES.*sk.*SK.*th_sk_SK$/d' %{dictdir}/dictionary.lst
 fi
 
 
