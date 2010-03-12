@@ -47,7 +47,8 @@ Source115:	es_ES.zip
 # Source115-md5:	eb539abf2b93816eaa0c71df2ae06dc1
 Source116:	es_MX.zip
 # Source116-md5:	2f33174f46369634ebd3e0011baa1726
-Source117:	ftp://ftp.linux.ee/pub/openoffice/contrib/dictionaries/et_EE.zip
+#ftp://ftp.linux.ee/pub/openoffice/contrib/dictionaries/et_EE.zip
+Source117:	et_EE.zip
 # Source117-md5:	2a1e97d61132c537aa03df4d0fee9b89
 Source118:	fo_FO.zip
 # Source118-md5:	74bf95820869527f2e2ecced592ce62b
@@ -59,49 +60,57 @@ Source121:	ga_IE.zip
 # Source121-md5:	42d27da49daf068584be9592a58f3b98
 Source122:	gl_ES.zip
 # Source122-md5:	c9feb9d9d99baebf97d6924b81c8ecf2
-Source123:	hr_HR.zip
-# Source123-md5:	3269437ec54bda0e7f3438f1130ad676
-Source124:	hu_HU.zip
-# Source124-md5:	7c83480778c78cc8bef9a50d84284314
-Source125:	id_ID.zip
-# Source125-md5:	1174ccbde370dfc64fe0ec2d27269492
-Source126:	it_IT.zip
-# Source126-md5:	4b616ce3cc57c1f9f190e3733841911e
-Source127:	lt_LT.zip
-# Source127-md5:	4d38192054bbd4dc2946c0e973b9e2c0
-Source128:	mi_NZ.zip
-# Source128-md5:	f691ca67df4570821f931574295715b5
-Source129:	ms_MY.zip
-# Source129-md5:	a8d8f8c248f10c9399e5fbbeb8842c60
-Source130:	nb_NO.zip
-# Source130-md5:	c42de27e4c12e29560f22f266f51655f
-Source131:	nl_NL.zip
-# Source131-md5:	24de690c4d9f9656a4d68693caa7b96c
-Source132:	nn_NO.zip
-# Source132-md5:	8df2f49ff333cee4cb75df444937040c
+Source123:	he_IL.zip
+# Source123-md5:	5ff2bf971a2185f65c004150ccae9965
+Source124:	hr_HR.zip
+# Source124-md5:	3269437ec54bda0e7f3438f1130ad676
+Source125:	hu_HU.zip
+# Source125-md5:	7c83480778c78cc8bef9a50d84284314
+Source126:	ia_IA.zip
+# Source126-md5:	b5b26537d6b8ad8ce2a84d3eb4840b62
+Source127:	id_ID.zip
+# Source127-md5:	1174ccbde370dfc64fe0ec2d27269492
+Source128:	it_IT.zip
+# Source128-md5:	4b616ce3cc57c1f9f190e3733841911e
+Source129:	la_VA.zip
+# Source129-md5:	299b9155bd1d3cc7555bde413d887a0e
+Source130:	lt_LT.zip
+# Source130-md5:	4d38192054bbd4dc2946c0e973b9e2c0
+Source131:	lv_LV.zip
+# Source131-md5:	a50182656dccf65c2138222ce9afc437
+Source132:	mi_NZ.zip
+# Source132-md5:	f691ca67df4570821f931574295715b5
+Source133:	ms_MY.zip
+# Source133-md5:	a8d8f8c248f10c9399e5fbbeb8842c60
+Source134:	nb_NO.zip
+# Source134-md5:	c42de27e4c12e29560f22f266f51655f
+Source135:	nl_NL.zip
+# Source135-md5:	24de690c4d9f9656a4d68693caa7b96c
+Source136:	nn_NO.zip
+# Source136-md5:	8df2f49ff333cee4cb75df444937040c
 #http://www.sjp.pl/slownik/en/
-Source133:	pl_PL.zip
-# Source133-md5:	a1a7c9cd3f158764862329a834b44906
-Source134:	pt_BR.zip
-# Source134-md5:	e1cb7a2093f72487541b8f54364469ee
-Source135:	pt_PT.zip
-# Source135-md5:	622f05d1e3f4d9ec6b7b691550458389
-Source136:	ro_RO.zip
-# Source136-md5:	d326256440b8f9744a8b803cbbb4422a
-Source137:	ru_RU.zip
-# Source137-md5:	a6c98684e95035cf3b49e90d4a4824b2
-Source138:	sk_SK.zip
-# Source138-md5:	b699bb18648e62248e4a5ae05f9b4a7b
-Source139:	sl_SI.zip
-# Source139-md5:	728b7a694fec9a234a115881fbf9b14f
-Source140:	sv_SE.zip
-# Source140-md5:	702d4dc9dc135e194086a6a270fe478d
-Source141:	sw_KE.zip
-# Source141-md5:	baf4d97ec843114fd543f8e4cc362a79
-Source142:	uk_UA.zip
-# Source142-md5:	091a1cfd1557b5e8c0741b7d43164353
-Source143:	zu_ZA.zip
-# Source143-md5:	0f86570c4d69984f23333fbbdd478953
+Source137:	pl_PL.zip
+# Source137-md5:	a1a7c9cd3f158764862329a834b44906
+Source138:	pt_BR.zip
+# Source138-md5:	e1cb7a2093f72487541b8f54364469ee
+Source139:	pt_PT.zip
+# Source139-md5:	622f05d1e3f4d9ec6b7b691550458389
+Source140:	ro_RO.zip
+# Source140-md5:	d326256440b8f9744a8b803cbbb4422a
+Source141:	ru_RU.zip
+# Source141-md5:	a6c98684e95035cf3b49e90d4a4824b2
+Source142:	sk_SK.zip
+# Source142-md5:	b699bb18648e62248e4a5ae05f9b4a7b
+Source143:	sl_SI.zip
+# Source143-md5:	728b7a694fec9a234a115881fbf9b14f
+Source144:	sv_SE.zip
+# Source144-md5:	702d4dc9dc135e194086a6a270fe478d
+Source145:	sw_KE.zip
+# Source145-md5:	baf4d97ec843114fd543f8e4cc362a79
+Source146:	uk_UA.zip
+# Source146-md5:	091a1cfd1557b5e8c0741b7d43164353
+Source147:	zu_ZA.zip
+# Source147-md5:	0f86570c4d69984f23333fbbdd478953
 
 ## Sources for hyphenation dictionaries
 Source200:	hyph_bg.zip
@@ -129,30 +138,34 @@ Source210:	hyph_ga.zip
 # Source210-md5:	23fb9ccc5d7193da8e7daaa34f00235c
 Source211:	hyph_hu.zip
 # Source211-md5:	6dc2c19e6047c7faa9548cf85e93ae90
-Source212:	hyph_id.zip
-# Source212-md5:	a98334abf10af82c9358e468010d34e4
-Source213:	hyph_is.zip
-# Source213-md5:	d2a599bb65e607eedfcb8123d9016d03
-Source214:	hyph_it.zip
-# Source214-md5:	96898e7f6320d6d95cf77e8d4dd4fab2
-Source215:	hyph_lt.zip
-# Source215-md5:	d1801298677d0e2e7e56702c7a0c406a
-Source216:	hyph_nl.zip
-# Source216-md5:	5c92b647750f310e5a432f7ffa222528
-Source217:	hyph_pl.zip
-# Source217-md5:	5fe38726ea35db50cd045e1405f450e5
-Source218:	hyph_pt.zip
-# Source218-md5:	8b9abb106cf76c0df933b0d33847d961
-Source219:	hyph_ru.zip
-# Source219-md5:	8db755d136adce60109c148fa66800f8
-Source220:	hyph_sk.zip
-# Source220-md5:	e1eaad327299188eeb74856be8dcfb59
-Source221:	hyph_sl.zip
-# Source221-md5:	8fe35a17d0252417cba7a8df50f44f38
-Source222:	hyph_sv.zip
-# Source222-md5:	0475db87ac1f0c25fb2191f298317b27
-Source223:	hyph_uk.zip
-# Source223-md5:	a5379b3141c2f0cd3c663c2a73eb3b94
+Source212:	hyph_ia.zip
+# Source212-md5:	63752d6c43cb6bc2eb749121ebbd9726
+Source213:	hyph_id.zip
+# Source213-md5:	a98334abf10af82c9358e468010d34e4
+Source214:	hyph_is.zip
+# Source214-md5:	d2a599bb65e607eedfcb8123d9016d03
+Source215:	hyph_it.zip
+# Source215-md5:	96898e7f6320d6d95cf77e8d4dd4fab2
+Source216:	hyph_lt.zip
+# Source216-md5:	d1801298677d0e2e7e56702c7a0c406a
+Source217:	hyph_lv.zip
+# Source217-md5:	fc5626d171cb0aacfa165990f86017e5
+Source218:	hyph_nl.zip
+# Source218-md5:	5c92b647750f310e5a432f7ffa222528
+Source219:	hyph_pl.zip
+# Source219-md5:	5fe38726ea35db50cd045e1405f450e5
+Source220:	hyph_pt.zip
+# Source220-md5:	8b9abb106cf76c0df933b0d33847d961
+Source221:	hyph_ru.zip
+# Source221-md5:	8db755d136adce60109c148fa66800f8
+Source222:	hyph_sk.zip
+# Source222-md5:	e1eaad327299188eeb74856be8dcfb59
+Source223:	hyph_sl.zip
+# Source223-md5:	8fe35a17d0252417cba7a8df50f44f38
+Source224:	hyph_sv.zip
+# Source224-md5:	0475db87ac1f0c25fb2191f298317b27
+Source225:	hyph_uk.zip
+# Source225-md5:	a5379b3141c2f0cd3c663c2a73eb3b94
 
 ## Sources for thesaurus dictionaries
 Source300:	th_bg_BG.zip
@@ -825,6 +838,31 @@ aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
 rozszerzenia można łatwo tworzyć dokumenty w języku galicyjskim i
 poprawiać w nich błędy.
 
+%package -n myspell-he_IL
+Summary:	MySpell spelling dictionaries for Hebrew (Israel)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka hebrajskiego (dla Izraela)
+Version:	%{_ver}
+Release:	0.20060517.%{_rel}
+License:	GPL
+Group:		Applications/Text
+Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	myspell-dictionary = %{version}
+Provides:	myspell-he = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-he-IL
+
+%description -n myspell-he_IL
+myspell-he_IL contains spell checking data in Hebrew (Israel) to be
+used by OpenOffice.org or MySpell-capable applications like Mozilla.
+With this extension, you can compose a document in Hebrew and check
+for the typos easily.
+
+%description -n myspell-he_IL -l pl.UTF-8
+myspell-he_IL zawiera dane do sprawdzania pisowni w języku hebrajskim
+(dla Izraela), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku hebrajskim i
+poprawiać w nich błędy.
+
 %package -n myspell-hr_HR
 Summary:	MySpell spelling dictionaries for Croatian (Croatia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka chorwackiego (dla Chorwacji)
@@ -879,6 +917,31 @@ aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
 rozszerzenia można łatwo tworzyć dokumenty w języku węgierskim i
 poprawiać w nich błędy.
 
+%package -n myspell-ia_IA
+Summary:	MySpell spelling dictionaries for Interlingua
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla pomocniczego języka międzynarodowego
+Version:	%{_ver}
+Release:	0.20050101.%{_rel}
+License:	GPL
+Group:		Applications/Text
+Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	myspell-dictionary = %{version}
+Provides:	myspell-ia = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-ia
+
+%description -n myspell-ia_IA
+myspell-hu_HU contains spell checking data in Interlingua to
+be used by OpenOffice.org or MySpell-capable applications like
+Mozilla. With this extension, you can compose a document in Interlingua
+and check for the typos easily.
+
+%description -n myspell-ia_IA -l pl.UTF-8
+myspell-hu_HU zawiera dane do sprawdzania pisowni w pomocniczym języku
+międzynarodowym, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w pomocniczym języku międzynarodowym i
+poprawiać w nich błędy.
+
 %package -n myspell-id_ID
 Summary:	MySpell spelling dictionaries for Indonesian (Indonesia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka indonezyjskiego (dla Indonezji)
@@ -931,6 +994,31 @@ aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
 rozszerzenia można łatwo tworzyć dokumenty w języku włoskim i
 poprawiać w nich błędy.
 
+%package -n myspell-la_VA
+Summary:	MySpell spelling dictionaries for Latin (Vatican)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka łacińskiego (dla Watykanu)
+Version:	%{_ver}
+Release:	0.20060303.%{_rel}
+License:	LGPL/GPL
+Group:		Applications/Text
+Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	myspell-dictionary = %{version}
+Provides:	myspell-la = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-la
+
+%description -n myspell-la_VA
+myspell-it_IT contains spell checking data in Latin (Vatican) to be
+used by OpenOffice.org or MySpell-capable applications like Mozilla.
+With this extension, you can compose a document in Latin and check
+for the typos easily.
+
+%description -n myspell-la_VA -l pl.UTF-8
+myspell-it_IT zawiera dane do sprawdzania pisowni w języku łacińskim
+(dla Watykanu), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku łacińskim i
+poprawiać w nich błędy.
+
 %package -n myspell-lt_LT
 Summary:	MySpell spelling dictionaries for Lithuanian (Lithuania)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka litewskiego (dla Litwy)
@@ -956,6 +1044,31 @@ myspell-lt_LT zawiera dane do sprawdzania pisowni w języku litewskim
 (dla Litwy), przeznaczone do używania przez OpenOffice.org i inne
 aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
 rozszerzenia można łatwo tworzyć dokumenty w języku litewskim i
+poprawiać w nich błędy.
+
+%package -n myspell-lv_LV
+Summary:	MySpell spelling dictionaries for Latvian (Latvia)
+Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka łotewskiego (dla Łotwy)
+Version:	%{_ver}
+Release:	0.20080222.%{_rel}
+License:	BSD-like
+Group:		Applications/Text
+Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	myspell-dictionary = %{version}
+Provides:	myspell-lv = %{version}
+Obsoletes:	mozilla-thunderbird-dictionary-lv_LV
+
+%description -n myspell-lv_LV
+myspell-lt_LT contains spell checking data in Latvian (Latvia)
+to be used by OpenOffice.org or MySpell-capable applications like
+Mozilla. With this extension, you can compose a document in Latvian
+and check for the typos easily.
+
+%description -n myspell-lv_LV -l pl.UTF-8
+myspell-lt_LT zawiera dane do sprawdzania pisowni w języku łotewskim
+(dla Łotwy), przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
+rozszerzenia można łatwo tworzyć dokumenty w języku łotewskim i
 poprawiać w nich błędy.
 
 %package -n myspell-mi_NZ
@@ -1612,6 +1725,25 @@ myspell-hyph-hu zawiera dane do przenoszenia wyrazów dla języka
 węgierskiego, przeznaczone do używania przez OpenOffice.org i inne
 aplikacje korzystające z Myspella, takie jak Mozilla.
 
+%package -n myspell-hyph-ia
+Summary:	MySpell hyphenation dictionaries for Interlingua
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla pomocniczego języka międzynarodowego
+Version:	%{_ver}
+Release:	0.20050228.%{_rel}
+License:	GPL
+Group:		Applications/Text
+Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	myspell-hyphenation = %{version}
+
+%description -n myspell-hyph-ia
+myspell-hyph-ia contains hyphenation data for Interlingua to be used by
+OpenOffice.org or MySpell-capable applications like Mozilla.
+
+%description -n myspell-hyph-ia -l pl.UTF-8
+myspell-hyph-ia zawiera dane do przenoszenia wyrazów dla pomocniczego języka
+międzynarodowego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
 %package -n myspell-hyph-id
 Summary:	MySpell hyphenation dictionaries for Indonesian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka indonezyjskiego
@@ -1686,6 +1818,25 @@ OpenOffice.org or MySpell-capable applications like Mozilla.
 %description -n myspell-hyph-lt -l pl.UTF-8
 myspell-hyph-lt zawiera dane do przenoszenia wyrazów dla języka
 litewskiego, przeznaczone do używania przez OpenOffice.org i inne
+aplikacje korzystające z Myspella, takie jak Mozilla.
+
+%package -n myspell-hyph-lv
+Summary:	MySpell hyphenation dictionaries for Latvian
+Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka łotewskiego
+Version:	%{_ver}
+Release:	0.20050914.%{_rel}
+License:	LPPL
+Group:		Applications/Text
+Requires:	myspell-common = %{_ver}-%{_rel}
+Provides:	myspell-hyphenation = %{version}
+
+%description -n myspell-hyph-lv
+myspell-hyph-lv contains hyphenation data for Latvian to be used by
+OpenOffice.org or MySpell-capable applications like Mozilla.
+
+%description -n myspell-hyph-lv -l pl.UTF-8
+myspell-hyph-lv zawiera dane do przenoszenia wyrazów dla języka
+łotewskiego, przeznaczone do używania przez OpenOffice.org i inne
 aplikacje korzystające z Myspella, takie jak Mozilla.
 
 %package -n myspell-hyph-nl
@@ -2010,7 +2161,8 @@ for dictfile in %{SOURCE100} %{SOURCE101} %{SOURCE102} %{SOURCE103} %{SOURCE104}
 		%{SOURCE125} %{SOURCE126} %{SOURCE127} %{SOURCE128} %{SOURCE129} \
 		%{SOURCE130} %{SOURCE131} %{SOURCE132} %{SOURCE133} %{SOURCE134} \
 		%{SOURCE135} %{SOURCE136} %{SOURCE137} %{SOURCE138} %{SOURCE139} \
-		%{SOURCE140} %{SOURCE141} %{SOURCE142} %{SOURCE143}; do
+		%{SOURCE140} %{SOURCE141} %{SOURCE142} %{SOURCE143} %{SOURCE144} \
+		%{SOURCE145} %{SOURCE146} %{SOURCE147}; do
 	basefile="${dictfile##*/}"
 	langpack="${basefile%.zip}"
 	echo "LANGPACK=$langpack"
@@ -2031,7 +2183,8 @@ for hyphfile in %{SOURCE200} %{SOURCE201} %{SOURCE202} %{SOURCE203} %{SOURCE204}
 		%{SOURCE205} %{SOURCE206} %{SOURCE207} %{SOURCE208} %{SOURCE209} \
 		%{SOURCE210} %{SOURCE211} %{SOURCE212} %{SOURCE213} %{SOURCE214} \
 		%{SOURCE215} %{SOURCE216} %{SOURCE217} %{SOURCE218} %{SOURCE219} \
-		%{SOURCE220} %{SOURCE221} %{SOURCE222} %{SOURCE223}; do
+		%{SOURCE220} %{SOURCE221} %{SOURCE222} %{SOURCE223} %{SOURCE224} \
+		%{SOURCE225}; do
 	basefile="${hyphfile##*/}"
 	langpack="${basefile%.zip}"
 	echo "LANGPACK/(HPY)=$langpack"
@@ -2301,6 +2454,17 @@ if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*gl\s*ES\s*gl_ES$/ or print" %{dictdir}/dictionary.lst
 fi
 
+%post -n myspell-he_IL
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*he[ \t]*IL[ \t]*he_IL" %{dictdir}/dictionary.lst; then
+	echo "DICT he IL he_IL" >> %{dictdir}/dictionary.lst
+fi
+
+%preun -n myspell-he_IL
+if [ "$1" = "0" ]; then
+	perl -ni -e "/^DICT\s*he\s*IL\s*he_IL$/ or print" %{dictdir}/dictionary.lst
+fi
+
 %post -n myspell-hr_HR
 umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*hr[ \t]*HR[ \t]*hr_HR" %{dictdir}/dictionary.lst; then
@@ -2323,6 +2487,17 @@ if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*hu\s*HU\s*hu_HU$/ or print" %{dictdir}/dictionary.lst
 fi
 
+%post -n myspell-ia_IA
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*ia[ \t]*IA[ \t]*ia_IA" %{dictdir}/dictionary.lst; then
+	echo "DICT ia IA ia_IA" >> %{dictdir}/dictionary.lst
+fi
+
+%preun -n myspell-ia_IA
+if [ "$1" = "0" ]; then
+	perl -ni -e "/^DICT\s*ia\s*IA\s*ia_IA$/ or print" %{dictdir}/dictionary.lst
+fi
+
 %post -n myspell-id_ID
 umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*id[ \t]*ID[ \t]*id_ID" %{dictdir}/dictionary.lst; then
@@ -2343,6 +2518,17 @@ fi
 %preun -n myspell-it_IT
 if [ "$1" = "0" ]; then
 	perl -ni -e "/^DICT\s*it\s*IT\s*it_IT$/ or print" %{dictdir}/dictionary.lst
+fi
+
+%post -n myspell-la_VA
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^DICT[ \t]*la[ \t]*VA[ \t]*la_VA" %{dictdir}/dictionary.lst; then
+	echo "DICT la VA la_VA" >> %{dictdir}/dictionary.lst
+fi
+
+%preun -n myspell-la_VA
+if [ "$1" = "0" ]; then
+	perl -ni -e "/^DICT\s*la\s*VA\s*la_VA$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-lt_LT
@@ -2811,6 +2997,17 @@ if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*hu\s*HU\s*hyph_hu$/ or print" %{dictdir}/dictionary.lst
 fi
 
+%post -n myspell-hyph-ia
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*ia[ \t]*IA[ \t]*hyph_ia" %{dictdir}/dictionary.lst; then
+	echo "HYPH ia IA hyph_ia" >> %{dictdir}/dictionary.lst
+fi
+
+%preun -n myspell-hyph-ia
+if [ "$1" = "0" ]; then
+	perl -ni -e "/^HYPH\s*ia\s*IA\s*hyph_ia$/ or print" %{dictdir}/dictionary.lst
+fi
+
 %post -n myspell-hyph-id
 umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*id[ \t]*ID[ \t]*hyph_id" %{dictdir}/dictionary.lst; then
@@ -2857,6 +3054,17 @@ fi
 %preun -n myspell-hyph-lt
 if [ "$1" = "0" ]; then
 	perl -ni -e "/^HYPH\s*lt\s*LT\s*hyph_lt$/ or print" %{dictdir}/dictionary.lst
+fi
+
+%post -n myspell-hyph-lv
+umask 002
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*lv[ \t]*LV[ \t]*hyph_lv" %{dictdir}/dictionary.lst; then
+	echo "HYPH lv LV hyph_lv" >> %{dictdir}/dictionary.lst
+fi
+
+%preun -n myspell-hyph-lv
+if [ "$1" = "0" ]; then
+	perl -ni -e "/^HYPH\s*lv\s*LV\s*hyph_lv$/ or print" %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-nl
@@ -3250,6 +3458,11 @@ fi
 %doc doc/DICT/gl_ES/*
 %{dictdir}/gl_ES.*
 
+%files -n myspell-he_IL
+%defattr(644,root,root,755)
+%doc doc/DICT/he_IL/*
+%{dictdir}/he_IL.*
+
 %files -n myspell-hr_HR
 %defattr(644,root,root,755)
 %doc doc/DICT/hr_HR/*
@@ -3259,6 +3472,11 @@ fi
 %defattr(644,root,root,755)
 %doc doc/DICT/hu_HU/*
 %{dictdir}/hu_HU.*
+
+%files -n myspell-ia_IA
+%defattr(644,root,root,755)
+%doc doc/DICT/ia_IA/*
+%{dictdir}/ia_IA.*
 
 %files -n myspell-id_ID
 %defattr(644,root,root,755)
@@ -3270,10 +3488,20 @@ fi
 %doc doc/DICT/it_IT/*
 %{dictdir}/it_IT.*
 
+%files -n myspell-la_VA
+%defattr(644,root,root,755)
+%doc doc/DICT/la_VA/*
+%{dictdir}/la_VA.*
+
 %files -n myspell-lt_LT
 %defattr(644,root,root,755)
 %doc doc/DICT/lt_LT/*
 %{dictdir}/lt_LT.*
+
+%files -n myspell-lv_LV
+%defattr(644,root,root,755)
+%doc doc/DICT/lv_LV/*
+%{dictdir}/lv_LV.*
 
 %files -n myspell-mi_NZ
 %defattr(644,root,root,755)
@@ -3419,6 +3647,11 @@ fi
 %doc doc/HYPH/hyph_hu/*
 %{dictdir}/hyph_hu.*
 
+%files -n myspell-hyph-ia
+%defattr(644,root,root,755)
+%doc doc/HYPH/hyph_ia/*
+%{dictdir}/hyph_ia.*
+
 %files -n myspell-hyph-id
 %defattr(644,root,root,755)
 %doc doc/HYPH/hyph_id/*
@@ -3438,6 +3671,11 @@ fi
 %defattr(644,root,root,755)
 %doc doc/HYPH/hyph_lt/*
 %{dictdir}/hyph_lt.*
+
+%files -n myspell-hyph-lv
+%defattr(644,root,root,755)
+%doc doc/HYPH/hyph_lv/*
+%{dictdir}/hyph_lv.*
 
 %files -n myspell-hyph-nl
 %defattr(644,root,root,755)
