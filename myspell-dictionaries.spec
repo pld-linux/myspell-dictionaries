@@ -585,10 +585,10 @@ and check for the typos easily.
 
 %description -n myspell-en_NZ -l pl.UTF-8
 myspell-en_NZ zawiera dane do sprawdzania pisowni w języku angielskim
-(dla Nowej Zelandii), przeznaczone do używania przez OpenOffice.org
-i inne aplikacje korzystające z MySpella, takie jak Mozilla. Przy
-użyciu tego rozszerzenia można łatwo tworzyć dokumenty w języku
-angielskim i poprawiać w nich błędy.
+(dla Nowej Zelandii), przeznaczone do używania przez OpenOffice.org i
+inne aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu
+tego rozszerzenia można łatwo tworzyć dokumenty w języku angielskim i
+poprawiać w nich błędy.
 
 %package -n myspell-en_US
 Summary:	MySpell spelling dictionaries for English (US)
@@ -920,17 +920,17 @@ Provides:	myspell-ia = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ia
 
 %description -n myspell-ia_IA
-myspell-hu_HU contains spell checking data in Interlingua to
-be used by OpenOffice.org or MySpell-capable applications like
-Mozilla. With this extension, you can compose a document in Interlingua
-and check for the typos easily.
+myspell-hu_HU contains spell checking data in Interlingua to be used
+by OpenOffice.org or MySpell-capable applications like Mozilla. With
+this extension, you can compose a document in Interlingua and check
+for the typos easily.
 
 %description -n myspell-ia_IA -l pl.UTF-8
 myspell-hu_HU zawiera dane do sprawdzania pisowni w pomocniczym języku
 międzynarodowym, przeznaczone do używania przez OpenOffice.org i inne
 aplikacje korzystające z MySpella, takie jak Mozilla. Przy użyciu tego
-rozszerzenia można łatwo tworzyć dokumenty w pomocniczym języku międzynarodowym i
-poprawiać w nich błędy.
+rozszerzenia można łatwo tworzyć dokumenty w pomocniczym języku
+międzynarodowym i poprawiać w nich błędy.
 
 %package -n myspell-id_ID
 Summary:	MySpell spelling dictionaries for Indonesian (Indonesia)
@@ -1000,8 +1000,8 @@ Obsoletes:	openoffice-dict-la
 %description -n myspell-la_VA
 myspell-it_IT contains spell checking data in Latin (Vatican) to be
 used by OpenOffice.org or MySpell-capable applications like Mozilla.
-With this extension, you can compose a document in Latin and check
-for the typos easily.
+With this extension, you can compose a document in Latin and check for
+the typos easily.
 
 %description -n myspell-la_VA -l pl.UTF-8
 myspell-it_IT zawiera dane do sprawdzania pisowni w języku łacińskim
@@ -1050,10 +1050,10 @@ Provides:	myspell-lv = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-lv_LV
 
 %description -n myspell-lv_LV
-myspell-lt_LT contains spell checking data in Latvian (Latvia)
-to be used by OpenOffice.org or MySpell-capable applications like
-Mozilla. With this extension, you can compose a document in Latvian
-and check for the typos easily.
+myspell-lt_LT contains spell checking data in Latvian (Latvia) to be
+used by OpenOffice.org or MySpell-capable applications like Mozilla.
+With this extension, you can compose a document in Latvian and check
+for the typos easily.
 
 %description -n myspell-lv_LV -l pl.UTF-8
 myspell-lt_LT zawiera dane do sprawdzania pisowni w języku łotewskim
@@ -1727,13 +1727,13 @@ Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-ia
-myspell-hyph-ia contains hyphenation data for Interlingua to be used by
-OpenOffice.org or MySpell-capable applications like Mozilla.
+myspell-hyph-ia contains hyphenation data for Interlingua to be used
+by OpenOffice.org or MySpell-capable applications like Mozilla.
 
 %description -n myspell-hyph-ia -l pl.UTF-8
-myspell-hyph-ia zawiera dane do przenoszenia wyrazów dla pomocniczego języka
-międzynarodowego, przeznaczone do używania przez OpenOffice.org i inne
-aplikacje korzystające z Myspella, takie jak Mozilla.
+myspell-hyph-ia zawiera dane do przenoszenia wyrazów dla pomocniczego
+języka międzynarodowego, przeznaczone do używania przez OpenOffice.org
+i inne aplikacje korzystające z Myspella, takie jak Mozilla.
 
 %package -n myspell-hyph-id
 Summary:	MySpell hyphenation dictionaries for Indonesian
@@ -3239,7 +3239,7 @@ if [ "$1" = "0" ]; then
 	%{__sed} -i -e '/^THES.*en.*AU.*th_en_US$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^THES.*en.*BZ.*th_en_US$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^THES.*en.*CA.*th_en_US$/d' %{dictdir}/dictionary.lst
-	%{__sed} -i -e '/^THES.*en.*GB.*th_en_US$/d' %{dictdir}/dictionary.lst	
+	%{__sed} -i -e '/^THES.*en.*GB.*th_en_US$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^THES.*en.*IE.*th_en_US$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^THES.*en.*JM.*th_en_US$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^THES.*en.*NZ.*th_en_US$/d' %{dictdir}/dictionary.lst
