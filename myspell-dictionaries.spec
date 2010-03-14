@@ -1,10 +1,10 @@
-%define		_ver	1.0.3
-%define		_rel	1
+%define		ver	1.0.3
+%define		rel	1
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Summary(pl.UTF-8):	Słowniki dla MySpella do sprawdzania pisowni i przenoszenia wyrazów
 Name:		myspell-dictionaries
-Version:	%{_ver}
-Release:	%{_rel}
+Version:	%{ver}
+Release:	%{rel}
 License:	BSD/GPL/LGPL
 Group:		Applications/Text
 URL:		http://lingucomponent.openoffice.org/download_dictionary.html
@@ -217,11 +217,11 @@ Pliki wspólne dla słowników myspella i hunspella.
 %package -n myspell-af_ZA
 Summary:	MySpell spelling dictionaries for Afrikaans (South Africa)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka afrykanerskiego (dla Republiki Południowej Afryki)
-Version:	%{_ver}
-Release:	0.20060705.%{_rel}
+Version:	%{ver}
+Release:	0.20060705.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-af = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-af-ZA
@@ -243,11 +243,11 @@ tworzyć dokumenty w języku afrykanerskim i poprawiać w nich błędy.
 %package -n myspell-bg_BG
 Summary:	MySpell spelling dictionaries for Bulgarian (Bulgaria)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka bułgarskiego (dla Bułgarii)
-Version:	%{_ver}
-Release:	0.20071210.%{_rel}
+Version:	%{ver}
+Release:	0.20071210.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-bg = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-bg
@@ -270,11 +270,11 @@ poprawiać w nich błędy.
 %package -n myspell-ca_ES
 Summary:	MySpell spelling dictionaries for Catalan
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka katalońskiego
-Version:	%{_ver}
-Release:	0.20070724.%{_rel}
+Version:	%{ver}
+Release:	0.20070724.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-ca = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ca
@@ -297,11 +297,11 @@ poprawiać w nich błędy.
 %package -n myspell-cs_CZ
 Summary:	MySpell spelling dictionaries for Czech (Czech Republic)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka czeskiego (dla Czech)
-Version:	%{_ver}
-Release:	0.20060303.%{_rel}
+Version:	%{ver}
+Release:	0.20060303.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-cs = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-cs
@@ -324,11 +324,11 @@ poprawiać w nich błędy.
 %package -n myspell-cy_GB
 Summary:	MySpell spelling dictionaries for Welsh (Wales)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka walijskiego (dla Walii)
-Version:	%{_ver}
-Release:	0.20040425.%{_rel}
+Version:	%{ver}
+Release:	0.20040425.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-cy = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-cy-GB
@@ -350,11 +350,11 @@ poprawiać w nich błędy.
 %package -n myspell-da_DK
 Summary:	MySpell spelling dictionaries for Danish (Denmark)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka duńskiego (dla Danii)
-Version:	%{_ver}
-Release:	0.20070902.%{_rel}
+Version:	%{ver}
+Release:	0.20070902.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-da = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-da
@@ -377,11 +377,11 @@ poprawiać w nich błędy.
 %package -n myspell-de_AT
 Summary:	MySpell spelling dictionaries for German (Austria)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka niemieckiego (dla Austrii)
-Version:	%{_ver}
-Release:	0.20100306.%{_rel}
+Version:	%{ver}
+Release:	0.20100306.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-de-AT
@@ -404,11 +404,11 @@ poprawiać w nich błędy.
 %package -n myspell-de_CH
 Summary:	MySpell spelling dictionaries for German (Switzerland)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka niemieckiego (dla Szwajcarii)
-Version:	%{_ver}
-Release:	0.20100306.%{_rel}
+Version:	%{ver}
+Release:	0.20100306.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-de-CH
@@ -431,11 +431,11 @@ poprawiać w nich błędy.
 %package -n myspell-de_DE
 Summary:	MySpell spelling dictionaries for German (Germany)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka niemieckiego (dla Niemiec)
-Version:	%{_ver}
-Release:	0.20100306.%{_rel}
+Version:	%{ver}
+Release:	0.20100306.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-de = %{version}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-de-DE
@@ -458,11 +458,11 @@ poprawiać w nich błędy.
 %package -n myspell-el_GR
 Summary:	MySpell spelling dictionaries for Greek (Greece)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka greckiego (dla Grecji)
-Version:	%{_ver}
-Release:	0.20041220.%{_rel}
+Version:	%{ver}
+Release:	0.20041220.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-el = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-el
@@ -485,11 +485,11 @@ poprawiać w nich błędy.
 %package -n myspell-en_AU
 Summary:	MySpell spelling dictionaries for English (Australian)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Australii)
-Version:	%{_ver}
-Release:	0.20030323.%{_rel}
+Version:	%{ver}
+Release:	0.20030323.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-AU
@@ -512,11 +512,11 @@ poprawiać w nich błędy.
 %package -n myspell-en_CA
 Summary:	MySpell spelling dictionaries for English (Canada)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Kanady)
-Version:	%{_ver}
-Release:	0.20020315.%{_rel}
+Version:	%{ver}
+Release:	0.20020315.%{rel}
 License:	Public Domain
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-CA
@@ -539,11 +539,11 @@ poprawiać w nich błędy.
 %package -n myspell-en_GB
 Summary:	MySpell spelling dictionaries for English (United Kingdom)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Wielkiej Brytanii)
-Version:	%{_ver}
-Release:	0.20050526.%{_rel}
+Version:	%{ver}
+Release:	0.20050526.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-GB
@@ -566,11 +566,11 @@ angielskim i poprawiać w nich błędy.
 %package -n myspell-en_NZ
 Summary:	MySpell spelling dictionaries for English (New Zealand)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Nowej Zelandii)
-Version:	%{_ver}
-Release:	0.20030906.%{_rel}
+Version:	%{ver}
+Release:	0.20030906.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-NZ
@@ -593,11 +593,11 @@ angielskim i poprawiać w nich błędy.
 %package -n myspell-en_US
 Summary:	MySpell spelling dictionaries for English (US)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Stanów Zjednoczonych)
-Version:	%{_ver}
-Release:	0.20070504.%{_rel}
+Version:	%{ver}
+Release:	0.20070504.%{rel}
 License:	BSD
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-US
@@ -620,11 +620,11 @@ języku angielskim i poprawiać w nich błędy.
 %package -n myspell-es_ES
 Summary:	MySpell spelling dictionaries for Spanish (Spain)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka hiszpańskiego (dla Hiszpanii)
-Version:	%{_ver}
-Release:	0.20051029.%{_rel}
+Version:	%{ver}
+Release:	0.20051029.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-es = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-es-ES
@@ -647,11 +647,11 @@ poprawiać w nich błędy.
 %package -n myspell-es_MX
 Summary:	MySpell spelling dictionaries for Spanish (Mexico)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka hiszpańskiego (dla Meksyku)
-Version:	%{_ver}
-Release:	0.20051029.%{_rel}
+Version:	%{ver}
+Release:	0.20051029.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-es = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-es-MX
@@ -674,11 +674,11 @@ poprawiać w nich błędy.
 %package -n myspell-et_EE
 Summary:	MySpell spelling dictionaries for Estonian (Estonia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka estońskiego (dla Estonii)
-Version:	%{_ver}
-Release:	0.20040621.%{_rel}
+Version:	%{ver}
+Release:	0.20040621.%{rel}
 License:	free, see http://www.eki.ee/eki/licence.html
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-et = %{version}
 Obsoletes:	myspell-et
@@ -699,11 +699,11 @@ poprawiać w nich błędy.
 %package -n myspell-fo_FO
 Summary:	MySpell spelling dictionaries for Faroese (Faroe Islands)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka farerskiego (dla Wysp Owczych)
-Version:	%{_ver}
-Release:	0.20070126.%{_rel}
+Version:	%{ver}
+Release:	0.20070126.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fo = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-fo
@@ -725,11 +725,11 @@ poprawiać w nich błędy.
 %package -n myspell-fr_BE
 Summary:	MySpell spelling dictionaries for French (Belgium)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka francuskiego (dla Belgii)
-Version:	%{_ver}
-Release:	0.20030701.%{_rel}
+Version:	%{ver}
+Release:	0.20030701.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fr = %{version}
 Obsoletes:	myspell-fr
@@ -751,11 +751,11 @@ poprawiać w nich błędy.
 %package -n myspell-fr_FR
 Summary:	MySpell spelling dictionaries for French (France)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka francuskiego (dla Francji)
-Version:	%{_ver}
-Release:	0.20090914.%{_rel}
+Version:	%{ver}
+Release:	0.20090914.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-fr = %{version}
 Obsoletes:	myspell-fr
@@ -777,11 +777,11 @@ poprawiać w nich błędy.
 %package -n myspell-ga_IE
 Summary:	MySpell spelling dictionaries for Irish (Ireland)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka irlandzkiego (dla Irlandii)
-Version:	%{_ver}
-Release:	0.20071030.%{_rel}
+Version:	%{ver}
+Release:	0.20071030.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ga = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ga
@@ -804,11 +804,11 @@ poprawiać w nich błędy.
 %package -n myspell-gl_ES
 Summary:	MySpell spelling dictionaries for Galician (Spain)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka galicyjskiego (dla Hiszpanii)
-Version:	%{_ver}
-Release:	0.20080515.%{_rel}
+Version:	%{ver}
+Release:	0.20080515.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-gl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-gl
@@ -831,11 +831,11 @@ poprawiać w nich błędy.
 %package -n myspell-he_IL
 Summary:	MySpell spelling dictionaries for Hebrew (Israel)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka hebrajskiego (dla Izraela)
-Version:	%{_ver}
-Release:	0.20060517.%{_rel}
+Version:	%{ver}
+Release:	0.20060517.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-he = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-he-IL
@@ -856,11 +856,11 @@ poprawiać w nich błędy.
 %package -n myspell-hr_HR
 Summary:	MySpell spelling dictionaries for Croatian (Croatia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka chorwackiego (dla Chorwacji)
-Version:	%{_ver}
-Release:	0.20030928.%{_rel}
+Version:	%{ver}
+Release:	0.20030928.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-hr = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-hr
@@ -883,11 +883,11 @@ poprawiać w nich błędy.
 %package -n myspell-hu_HU
 Summary:	MySpell spelling dictionaries for Hungarian (Hungary)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka węgierskiego (dla Węgier)
-Version:	%{_ver}
-Release:	0.20100206.%{_rel}
+Version:	%{ver}
+Release:	0.20100206.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-hu = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-hu
@@ -910,11 +910,11 @@ poprawiać w nich błędy.
 %package -n myspell-ia_IA
 Summary:	MySpell spelling dictionaries for Interlingua
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla pomocniczego języka międzynarodowego
-Version:	%{_ver}
-Release:	0.20050101.%{_rel}
+Version:	%{ver}
+Release:	0.20050101.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ia = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ia
@@ -935,11 +935,11 @@ poprawiać w nich błędy.
 %package -n myspell-id_ID
 Summary:	MySpell spelling dictionaries for Indonesian (Indonesia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka indonezyjskiego (dla Indonezji)
-Version:	%{_ver}
-Release:	0.20040810.%{_rel}
+Version:	%{ver}
+Release:	0.20040810.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-id = %{version}
 Obsoletes:	myspell-id
@@ -960,11 +960,11 @@ języku indonezyjskim i poprawiać w nich błędy.
 %package -n myspell-it_IT
 Summary:	MySpell spelling dictionaries for Italian (Italy)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka włoskiego (dla Włoch)
-Version:	%{_ver}
-Release:	0.20070901.%{_rel}
+Version:	%{ver}
+Release:	0.20070901.%{rel}
 License:	LGPL/GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-it = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-it
@@ -987,11 +987,11 @@ poprawiać w nich błędy.
 %package -n myspell-la_VA
 Summary:	MySpell spelling dictionaries for Latin (Vatican)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka łacińskiego (dla Watykanu)
-Version:	%{_ver}
-Release:	0.20060303.%{_rel}
+Version:	%{ver}
+Release:	0.20060303.%{rel}
 License:	LGPL/GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-la = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-la
@@ -1013,11 +1013,11 @@ poprawiać w nich błędy.
 %package -n myspell-lt_LT
 Summary:	MySpell spelling dictionaries for Lithuanian (Lithuania)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka litewskiego (dla Litwy)
-Version:	%{_ver}
-Release:	0.20031231.%{_rel}
+Version:	%{ver}
+Release:	0.20031231.%{rel}
 License:	BSD-like
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-lt = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-lt
@@ -1040,11 +1040,11 @@ poprawiać w nich błędy.
 %package -n myspell-lv_LV
 Summary:	MySpell spelling dictionaries for Latvian (Latvia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka łotewskiego (dla Łotwy)
-Version:	%{_ver}
-Release:	0.20080222.%{_rel}
+Version:	%{ver}
+Release:	0.20080222.%{rel}
 License:	BSD-like
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-lv = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-lv_LV
@@ -1065,11 +1065,11 @@ poprawiać w nich błędy.
 %package -n myspell-mi_NZ
 Summary:	MySpell spelling dictionaries for Maori (New Zealand)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka maoryjskiego (dla Nowej Zelandii)
-Version:	%{_ver}
-Release:	0.20080629.%{_rel}
+Version:	%{ver}
+Release:	0.20080629.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-mi = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-mi
@@ -1091,11 +1091,11 @@ poprawiać w nich błędy.
 %package -n myspell-ms_MY
 Summary:	MySpell spelling dictionaries for Malay (Malaysia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka malajskiego (dla Malezji)
-Version:	%{_ver}
-Release:	0.20050117.%{_rel}
+Version:	%{ver}
+Release:	0.20050117.%{rel}
 License:	GNU Free Documentation License
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ms = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ms
@@ -1117,11 +1117,11 @@ poprawiać w nich błędy.
 %package -n myspell-nb_NO
 Summary:	MySpell spelling dictionaries for Norwegian/Bokmaal (Norway)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka norweskiego bokmaal (dla Norwegii)
-Version:	%{_ver}
-Release:	0.20080310.%{_rel}
+Version:	%{ver}
+Release:	0.20080310.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-no = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-nb
@@ -1144,11 +1144,11 @@ norweskim bokmaal i poprawiać w nich błędy.
 %package -n myspell-nl_NL
 Summary:	MySpell spelling dictionaries for Dutch (Netherland)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka holenderskiego (dla Holandii)
-Version:	%{_ver}
-Release:	0.20090722.%{_rel}
+Version:	%{ver}
+Release:	0.20090722.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-nl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-nl
@@ -1171,11 +1171,11 @@ języku holenderskim i poprawiać w nich błędy.
 %package -n myspell-nn_NO
 Summary:	MySpell spelling dictionaries for Norwegian/Nynorsk (Norway)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka norweskiego nynorsk (dla Norwegii)
-Version:	%{_ver}
-Release:	0.20080310.%{_rel}
+Version:	%{ver}
+Release:	0.20080310.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-no = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-nn
@@ -1198,11 +1198,11 @@ norweskim nynorsk i poprawiać w nich błędy.
 %package -n myspell-pl_PL
 Summary:	MySpell spelling dictionaries for Polish (Poland)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka polskiego (dla Polski)
-Version:	%{_ver}
-Release:	0.20100310.%{_rel}
+Version:	%{ver}
+Release:	0.20100310.%{rel}
 License:	Creative Commons ShareAlike, http://creativecommons.org/licenses/sa/1.0
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-pl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-pl
@@ -1226,11 +1226,11 @@ poprawiać w nich błędy.
 %package -n myspell-pt_BR
 Summary:	MySpell spelling dictionaries for Portuguese (Brasil)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka portugalskiego (dla Brazylii)
-Version:	%{_ver}
-Release:	0.20070606.%{_rel}
+Version:	%{ver}
+Release:	0.20070606.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-pt-BR
 Obsoletes:	openoffice-dict-pt
@@ -1251,11 +1251,11 @@ języku portugalskim i poprawiać w nich błędy.
 %package -n myspell-pt_PT
 Summary:	MySpell spelling dictionaries for Portuguese (Portugal)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka portugalskiego (dla Portugalii)
-Version:	%{_ver}
-Release:	0.20091013.%{_rel}
+Version:	%{ver}
+Release:	0.20091013.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-pt = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-pt
@@ -1278,11 +1278,11 @@ języku portugalskim i poprawiać w nich błędy.
 %package -n myspell-ro_RO
 Summary:	MySpell spelling dictionaries for Romanian (Romania)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka rumuńskiego (dla Rumunii)
-Version:	%{_ver}
-Release:	0.20091108.%{_rel}
+Version:	%{ver}
+Release:	0.20091108.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ro = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ro
@@ -1304,11 +1304,11 @@ poprawiać w nich błędy.
 %package -n myspell-ru_RU
 Summary:	MySpell spelling dictionaries for Russian (Russia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka rosyjskiego (dla Rosji)
-Version:	%{_ver}
-Release:	0.20090603.%{_rel}
+Version:	%{ver}
+Release:	0.20090603.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-ru = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ru
@@ -1331,11 +1331,11 @@ poprawiać w nich błędy.
 %package -n myspell-sk_SK
 Summary:	MySpell spelling dictionaries for Slovak (Slovak Republic)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka słowackiego (dla Słowacji)
-Version:	%{_ver}
-Release:	0.20100208.%{_rel}
+Version:	%{ver}
+Release:	0.20100208.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sk = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-sk
@@ -1358,11 +1358,11 @@ poprawiać w nich błędy.
 %package -n myspell-sl_SI
 Summary:	MySpell spelling dictionaries for Slovenian (Slovenia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka słoweńskiego (dla Słowenii)
-Version:	%{_ver}
-Release:	0.20030907.%{_rel}
+Version:	%{ver}
+Release:	0.20030907.%{rel}
 License:	BSD-like
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-sl
@@ -1385,11 +1385,11 @@ poprawiać w nich błędy.
 %package -n myspell-sv_SE
 Summary:	MySpell spelling dictionaries for Swedish (Sweden)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka szwedzkiego (dla Szwecji)
-Version:	%{_ver}
-Release:	0.20100131.%{_rel}
+Version:	%{ver}
+Release:	0.20100131.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sv = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-sv
@@ -1412,11 +1412,11 @@ poprawiać w nich błędy.
 %package -n myspell-sw_KE
 Summary:	MySpell spelling dictionaries for Kiswahili (Africa)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka suahili (dla Afryki)
-Version:	%{_ver}
-Release:	0.20040515.%{_rel}
+Version:	%{ver}
+Release:	0.20040515.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-sw = %{version}
 Obsoletes:	myspell-sw
@@ -1437,11 +1437,11 @@ poprawiać w nich błędy.
 %package -n myspell-uk_UA
 Summary:	MySpell spelling dictionaries for Ukrainian (Ukraine)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka ukraińskiego (dla Ukrainy)
-Version:	%{_ver}
-Release:	0.20090124.%{_rel}
+Version:	%{ver}
+Release:	0.20090124.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-uk = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-uk
@@ -1464,11 +1464,11 @@ poprawiać w nich błędy.
 %package -n myspell-zu_ZA
 Summary:	MySpell spelling dictionaries for Zulu (South Africa)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka zuluskiego (dla Republiki Południowej Afryki)
-Version:	%{_ver}
-Release:	0.20060124.%{_rel}
+Version:	%{ver}
+Release:	0.20060124.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-zu = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-zu-ZA
@@ -1491,11 +1491,11 @@ języku zuluskim i poprawiać w nich błędy.
 %package -n myspell-hyph-bg
 Summary:	MySpell hyphenation dictionaries for Bulgarian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka bułgarskiego
-Version:	%{_ver}
-Release:	0.20071210.%{_rel}
+Version:	%{ver}
+Release:	0.20071210.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-bg
@@ -1510,11 +1510,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-cs
 Summary:	MySpell hyphenation dictionaries for Czech
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka czeskiego
-Version:	%{_ver}
-Release:	0.20031228.%{_rel}
+Version:	%{ver}
+Release:	0.20031228.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-cs
@@ -1529,11 +1529,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-da
 Summary:	MySpell hyphenation dictionaries for Danish
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka duńskiego
-Version:	%{_ver}
-Release:	0.20030904.%{_rel}
+Version:	%{ver}
+Release:	0.20030904.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-da
@@ -1548,11 +1548,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-de
 Summary:	MySpell hyphenation dictionaries for German
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka niemieckiego
-Version:	%{_ver}
-Release:	0.20100113.%{_rel}
+Version:	%{ver}
+Release:	0.20100113.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-de
@@ -1567,11 +1567,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-el
 Summary:	MySpell hyphenation dictionaries for Greek
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka greckiego
-Version:	%{_ver}
-Release:	0.20051017.%{_rel}
+Version:	%{ver}
+Release:	0.20051017.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-el
@@ -1586,11 +1586,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-en
 Summary:	MySpell hyphenation dictionaries for English
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka angielskiego
-Version:	%{_ver}
-Release:	0.20020608.%{_rel}
+Version:	%{ver}
+Release:	0.20020608.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-en
@@ -1605,11 +1605,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-es
 Summary:	MySpell hyphenation dictionaries for Spanish
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka hiszpańskiego
-Version:	%{_ver}
-Release:	0.20050201.%{_rel}
+Version:	%{ver}
+Release:	0.20050201.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-es
@@ -1624,11 +1624,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-et
 Summary:	MySpell hyphenation dictionaries for Estonian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka estońskiego
-Version:	%{_ver}
-Release:	0.20040718.%{_rel}
+Version:	%{ver}
+Release:	0.20040718.%{rel}
 License:	free, see http://www.eki.ee/eki/licence.html
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-et
@@ -1643,11 +1643,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-fi
 Summary:	MySpell hyphenation dictionaries for Finnish
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka fińskiego
-Version:	%{_ver}
-Release:	0.20040816.%{_rel}
+Version:	%{ver}
+Release:	0.20040816.%{rel}
 License:	freely distributable
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-fi
@@ -1662,11 +1662,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-fr
 Summary:	MySpell hyphenation dictionaries for French
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka francuskiego
-Version:	%{_ver}
-Release:	0.20080318.%{_rel}
+Version:	%{ver}
+Release:	0.20080318.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-fr
@@ -1681,11 +1681,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-ga
 Summary:	MySpell hyphenation dictionaries for Irish
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka irlandzkiego
-Version:	%{_ver}
-Release:	0.20040816.%{_rel}
+Version:	%{ver}
+Release:	0.20040816.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-ga
@@ -1700,11 +1700,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-hu
 Summary:	MySpell hyphenation dictionaries for Hungarian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka węgierskiego
-Version:	%{_ver}
-Release:	0.20100212.%{_rel}
+Version:	%{ver}
+Release:	0.20100212.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-hu
@@ -1719,11 +1719,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-ia
 Summary:	MySpell hyphenation dictionaries for Interlingua
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla pomocniczego języka międzynarodowego
-Version:	%{_ver}
-Release:	0.20050228.%{_rel}
+Version:	%{ver}
+Release:	0.20050228.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-ia
@@ -1738,11 +1738,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-id
 Summary:	MySpell hyphenation dictionaries for Indonesian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka indonezyjskiego
-Version:	%{_ver}
-Release:	0.20040816.%{_rel}
+Version:	%{ver}
+Release:	0.20040816.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-id
@@ -1757,11 +1757,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-is
 Summary:	MySpell hyphenation dictionaries for Icelandic
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka islandzkiego
-Version:	%{_ver}
-Release:	0.20040816.%{_rel}
+Version:	%{ver}
+Release:	0.20040816.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-is
@@ -1776,11 +1776,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-it
 Summary:	MySpell hyphenation dictionaries for Italian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka włoskiego
-Version:	%{_ver}
-Release:	0.20071126.%{_rel}
+Version:	%{ver}
+Release:	0.20071126.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-it
@@ -1795,11 +1795,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-lt
 Summary:	MySpell hyphenation dictionaries for Lithuanian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka litewskiego
-Version:	%{_ver}
-Release:	0.20040816.%{_rel}
+Version:	%{ver}
+Release:	0.20040816.%{rel}
 License:	LPPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-lt
@@ -1814,11 +1814,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-lv
 Summary:	MySpell hyphenation dictionaries for Latvian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka łotewskiego
-Version:	%{_ver}
-Release:	0.20050914.%{_rel}
+Version:	%{ver}
+Release:	0.20050914.%{rel}
 License:	LPPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-lv
@@ -1833,11 +1833,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-nl
 Summary:	MySpell hyphenation dictionaries for Dutch
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka holenderskiego
-Version:	%{_ver}
-Release:	0.20080829.%{_rel}
+Version:	%{ver}
+Release:	0.20080829.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-nl
@@ -1852,11 +1852,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-pl
 Summary:	MySpell hyphenation dictionaries for Polish
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka polskiego
-Version:	%{_ver}
-Release:	0.20070407.%{_rel}
+Version:	%{ver}
+Release:	0.20070407.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-pl
@@ -1871,11 +1871,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-pt
 Summary:	MySpell hyphenation dictionaries for Portuguese
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka portugalskiego
-Version:	%{_ver}
-Release:	0.20040816.%{_rel}
+Version:	%{ver}
+Release:	0.20040816.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-pt
@@ -1890,11 +1890,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-ru
 Summary:	MySpell hyphenation dictionaries for Russian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka rosyjskiego
-Version:	%{_ver}
-Release:	0.20030908.%{_rel}
+Version:	%{ver}
+Release:	0.20030908.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-ru
@@ -1909,11 +1909,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-sk
 Summary:	MySpell hyphenation dictionaries for Slovak
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka słowackiego
-Version:	%{_ver}
-Release:	0.20060323.%{_rel}
+Version:	%{ver}
+Release:	0.20060323.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-sk
@@ -1928,11 +1928,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-sl
 Summary:	MySpell hyphenation dictionaries for Slovenian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka słoweńskiego
-Version:	%{_ver}
-Release:	0.20030904.%{_rel}
+Version:	%{ver}
+Release:	0.20030904.%{rel}
 License:	Copyright Matjaz Vrecko
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-sl
@@ -1947,11 +1947,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-sv
 Summary:	MySpell hyphenation dictionaries for Swedish
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka szwedzkiego
-Version:	%{_ver}
-Release:	0.20030814.%{_rel}
+Version:	%{ver}
+Release:	0.20030814.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-sv
@@ -1966,11 +1966,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-hyph-uk
 Summary:	MySpell hyphenation dictionaries for Ukrainian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka ukraińskiego
-Version:	%{_ver}
-Release:	0.20030904.%{_rel}
+Version:	%{ver}
+Release:	0.20030904.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-uk
@@ -1986,11 +1986,11 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 %package -n myspell-thes-bg_BG
 Summary:	MySpell thesaurus for Bulgarian (Bulgaria)
 Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka bułgarskiego (dla Bułgarii)
-Version:	%{_ver}
-Release:	0.20071210.%{_rel}
+Version:	%{ver}
+Release:	0.20071210.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-bg_BG
@@ -2005,11 +2005,11 @@ korzystające z MySpella, takie jak OpenOffice.org.
 %package -n myspell-thes-de_DE
 Summary:	MySpell thesaurus for German (Germany)
 Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka niemieckiego (dla Niemiec)
-Version:	%{_ver}
-Release:	0.20100307.%{_rel}
+Version:	%{ver}
+Release:	0.20100307.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-thesaurus = %{version}
 Obsoletes:	openoffice-thesaurus-de
 
@@ -2025,11 +2025,11 @@ korzystające z MySpella, takie jak OpenOffice.org.
 %package -n myspell-thes-en_US
 Summary:	MySpell thesaurus for English (US)
 Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka angielskiego (dla Stanów Zjednoczonych)
-Version:	%{_ver}
-Release:	0.20051125.%{_rel}
+Version:	%{ver}
+Release:	0.20051125.%{rel}
 License:	BSD
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-thesaurus = %{version}
 Obsoletes:	openoffice-thesaurus-en
 
@@ -2045,11 +2045,11 @@ aplikacje korzystające z MySpella, takie jak OpenOffice.org.
 %package -n myspell-thes-es_ES
 Summary:	MySpell thesaurus for Spanish (Spain)
 Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka hiszpańskiego (dla Hiszpanii)
-Version:	%{_ver}
-Release:	0.20050720.%{_rel}
+Version:	%{ver}
+Release:	0.20050720.%{rel}
 License:	LGPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-thesaurus = %{version}
 Obsoletes:	openoffice-thesaurus-es
 
@@ -2065,11 +2065,11 @@ korzystające z MySpella, takie jak OpenOffice.org.
 %package -n myspell-thes-fr_FR
 Summary:	MySpell thesaurus for French (France)
 Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka francuskiego (dla Francji)
-Version:	%{_ver}
-Release:	0.20090911.%{_rel}
+Version:	%{ver}
+Release:	0.20090911.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-fr_FR
@@ -2084,11 +2084,11 @@ korzystające z MySpella, takie jak OpenOffice.org.
 %package -n myspell-thes-it_IT
 Summary:	MySpell thesaurus for Italian (Italy)
 Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka włoskiego (dla Włoch)
-Version:	%{_ver}
-Release:	0.20081129.%{_rel}
+Version:	%{ver}
+Release:	0.20081129.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-it_IT
@@ -2103,11 +2103,11 @@ korzystające z MySpella, takie jak OpenOffice.org.
 %package -n myspell-thes-pl_PL
 Summary:	MySpell thesaurus for Polish (Poland)
 Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka polskiego (dla Polski)
-Version:	%{_ver}
-Release:	0.20080513.%{_rel}
+Version:	%{ver}
+Release:	0.20080513.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-thesaurus = %{version}
 Obsoletes:	openoffice-thesaurus-pl-alt
 Obsoletes:	openoffice.org-thesaurus-pl-alt
@@ -2124,11 +2124,11 @@ korzystające z MySpella, takie jak OpenOffice.org.
 %package -n myspell-thes-sk_SK
 Summary:	MySpell thesaurus for Slovak (Slovak Republic)
 Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka słowackiego (dla Słowacji)
-Version:	%{_ver}
-Release:	0.20100207.%{_rel}
+Version:	%{ver}
+Release:	0.20100207.%{rel}
 License:	GPL
 Group:		Applications/Text
-Requires:	myspell-common = %{_ver}-%{_rel}
+Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-sk_SK
