@@ -1,10 +1,12 @@
 # NOTE:
 # - the dictionaries are usable for hunspell, openoffice (libreoffice), mozilla products
 #   maybe we should package them all to /usr/share/dict or similiar
+# - hyph_en_AU hyph_en_CA hyph_en_GB hyph_en_NZ hyph_en_US are all identical in ooo contrib
+# - hyph_pt_BR and hyph_pt_PT contents are identical in ooo contrib
 
 %define		rel	1
 %define		ver	1.0.3
-%define		ooo_mirror http://openoffice.osuosl.org/contrib/dictionaries/
+%define		ooo_mirror http://openoffice.osuosl.org/contrib/dictionaries
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Summary(pl.UTF-8):	Słowniki dla MySpella do sprawdzania pisowni i przenoszenia wyrazów
 Name:		myspell-dictionaries
@@ -114,59 +116,58 @@ Source147:	%{ooo_mirror}/zu_ZA.zip
 # Source147-md5:	40a2ea21a81f3b08ffb46896abff66d0
 
 ## Sources for hyphenation dictionaries
-Source200:	hyph_bg.zip
-# Source200-md5:	ca6a69d405475b14d68716e2b1f2ce8d
-Source201:	hyph_cs.zip
-# Source201-md5:	b2684e33da7f82d676539a5a7230a55d
-Source202:	hyph_da.zip
-# Source202-md5:	392af1b75300b0deffe5996ebf54584a
+Source200:	%{ooo_mirror}/hyph_bg_BG.zip
+# Source200-md5:	d63dd099546a3a4ae46eac156d13d7a9
+Source201:	%{ooo_mirror}/hyph_cs_CZ.zip
+# Source201-md5:	7dc7192fb3c141db6518c54781df6846
+Source202:	%{ooo_mirror}/hyph_da_DK.zip
+# Source202-md5:	c398f568793bc62982f1179f2db0c119
 Source203:	hyph_de.zip
 # Source203-md5:	f1e532e3acc986382eb86faf7f34aa66
-Source204:	hyph_el.zip
-# Source204-md5:	263af85c144a19fe90417520b095b74d
+Source204:	%{ooo_mirror}/hyph_el_GR.zip
+# Source204-md5:	73c0d55de8ad750557b0703c5004279e
 Source205:	hyph_en.zip
 # Source205-md5:	96fa5a6596fb41be94dde6427fc235cb
-Source206:	hyph_es.zip
-# Source206-md5:	66f86d65aab4c459eb4bc120b452f509
-#ftp://ftp.linux.ee/pub/openoffice/contrib/dictionaries/hyph_et_EE.zip
-Source207:	hyph_et.zip
-# Source207-md5:	866e01bd74b729be6fe09db075314007
-Source208:	hyph_fi.zip
-# Source208-md5:	df10e1430ab31d46e7afffb63598a3e4
-Source209:	hyph_fr.zip
-# Source209-md5:	2e2181e7358634fe927f7726ef4a958d
-Source210:	hyph_ga.zip
-# Source210-md5:	23fb9ccc5d7193da8e7daaa34f00235c
+Source206:	%{ooo_mirror}/hyph_es_ES.zip
+# Source206-md5:	d34ab9eefdb49147c57c01227eeb0c66
+Source207:	%{ooo_mirror}/hyph_et_EE.zip
+# Source207-md5:	3033df98b0975299e0b8d3b990f0e155
+Source208:	%{ooo_mirror}/hyph_fi_FI.zip
+# Source208-md5:	1fc88b865f919a9323d72843e860e266
+Source209:	%{ooo_mirror}/hyph_fr_FR_2-0.zip
+# Source209-md5:	f6d9bd51a939df943612c3f5ac2a511c
+Source210:	%{ooo_mirror}/hyph_ga_IE.zip
+# Source210-md5:	bd410dd925853de0dc7e5e117ac2555d
 Source211:	hyph_hu.zip
 # Source211-md5:	6dc2c19e6047c7faa9548cf85e93ae90
-Source212:	hyph_ia.zip
+Source212:	%{ooo_mirror}/hyph_ia.zip
 # Source212-md5:	63752d6c43cb6bc2eb749121ebbd9726
-Source213:	hyph_id.zip
-# Source213-md5:	a98334abf10af82c9358e468010d34e4
-Source214:	hyph_is.zip
-# Source214-md5:	d2a599bb65e607eedfcb8123d9016d03
-Source215:	hyph_it.zip
-# Source215-md5:	96898e7f6320d6d95cf77e8d4dd4fab2
-Source216:	hyph_lt.zip
-# Source216-md5:	d1801298677d0e2e7e56702c7a0c406a
-Source217:	hyph_lv.zip
-# Source217-md5:	fc5626d171cb0aacfa165990f86017e5
+Source213:	%{ooo_mirror}/hyph_id_ID.zip
+# Source213-md5:	f94557d7e57b22fa7e342f1c5bfe88ef
+Source214:	%{ooo_mirror}/hyph_is_IS.zip
+# Source214-md5:	448230e966bdf68d5f8abffd18480402
+Source215:	%{ooo_mirror}/hyph_it_IT.zip
+# Source215-md5:	ee57402fa3930e0641d627ec7f4f1619
+Source216:	%{ooo_mirror}/hyph_lt_LT.zip
+# Source216-md5:	6d90a1e831f639137077879dacb596cb
+Source217:	%{ooo_mirror}/hyph_lv_LV.zip
+# Source217-md5:	87e79d3a4de1f0400f513de6423ab09e
 Source218:	hyph_nl.zip
 # Source218-md5:	5c92b647750f310e5a432f7ffa222528
-Source219:	hyph_pl.zip
-# Source219-md5:	5fe38726ea35db50cd045e1405f450e5
-Source220:	hyph_pt.zip
-# Source220-md5:	8b9abb106cf76c0df933b0d33847d961
-Source221:	hyph_ru.zip
-# Source221-md5:	8db755d136adce60109c148fa66800f8
-Source222:	hyph_sk.zip
-# Source222-md5:	e1eaad327299188eeb74856be8dcfb59
-Source223:	hyph_sl.zip
-# Source223-md5:	8fe35a17d0252417cba7a8df50f44f38
-Source224:	hyph_sv.zip
-# Source224-md5:	0475db87ac1f0c25fb2191f298317b27
-Source225:	hyph_uk.zip
-# Source225-md5:	a5379b3141c2f0cd3c663c2a73eb3b94
+Source219:	%{ooo_mirror}/hyph_pl_PL.zip
+# Source219-md5:	f4055bca56afae126cc41b49bb885e65
+Source220:	%{ooo_mirror}/hyph_pt_PT.zip
+# Source220-md5:	327989bbbfc9f9d56eb772427a344eb3
+Source221:	%{ooo_mirror}/hyph_ru_RU.zip
+# Source221-md5:	f8a8b8a368bc7394b5a4060082c44bb4
+Source222:	%{ooo_mirror}/hyph_sk_SK.zip
+# Source222-md5:	89ad655afadb78f6ceb87d9e1e3a675f
+Source223:	%{ooo_mirror}/hyph_sl_SI.zip
+# Source223-md5:	40e05217a71112257ab89ad41d4859b8
+Source224:	%{ooo_mirror}/hyph_sv_SE.zip
+# Source224-md5:	a1c31b48cbf570bb05f22e98dacb9e17
+Source225:	%{ooo_mirror}/hyph_uk_UA.zip
+# Source225-md5:	caae40c900d8e1fdd3e0ad095ce1e787
 
 ## Sources for thesaurus dictionaries
 Source300:	th_bg_BG.zip
@@ -2157,7 +2158,7 @@ słowackim (dla Słowacji), przeznaczone do używania przez aplikacje
 korzystające z MySpella, takie jak OpenOffice.org.
 
 %prep
-%setup -q -c -T
+%setup -qcT
 
 # Handle spelling dictionaries
 for dictfile in %{SOURCE100} %{SOURCE101} %{SOURCE102} %{SOURCE103} %{SOURCE104} \
@@ -2192,13 +2193,37 @@ for hyphfile in %{SOURCE200} %{SOURCE201} %{SOURCE202} %{SOURCE203} %{SOURCE204}
 		%{SOURCE215} %{SOURCE216} %{SOURCE217} %{SOURCE218} %{SOURCE219} \
 		%{SOURCE220} %{SOURCE221} %{SOURCE222} %{SOURCE223} %{SOURCE224} \
 		%{SOURCE225}; do
-	basefile="${hyphfile##*/}"
-	langpack="${basefile%.zip}"
+	basefile=${hyphfile##*/}
+	langpack=${basefile%.zip}
+	langfile=$langpack
+	# name fixups
+	case "$langpack" in
+	hyph_fr_FR_2-0)
+		langpack=hyph_fr
+		langfile=hyph_fr_FR
+	;;
+	hyph_es_ES)
+		langpack=hyph_es
+		langfile=hyph_es_ES
+	;;
+	hyph_en_US)
+		langpack=hyph_en
+		langfile=hyph_es_US
+	;;
+	hyph_it_IT)
+		langpack=hyph_it
+		langfile=hyph_it_IT
+	;;
+	hyph_pt_PT)
+		langpack=hyph_pt
+		langfile=hyph_pt_PT
+	;;
+	esac
 	echo "LANGPACK/(HPY)=$langpack"
 	mkdir -p doc/HYPH/$langpack
 	%{__unzip} -q -d doc/HYPH/$langpack $hyphfile
 	mkdir -p dic/HYPH/$langpack
-	mv doc/HYPH/$langpack/$langpack.dic dic/HYPH/$langpack
+	mv doc/HYPH/$langpack/$langfile.dic dic/HYPH/$langpack/$langpack.dic
 	# create dummy file if docdir is empty
 	if ! ls doc/HYPH/$langpack/*; then
 		cat > doc/HYPH/$langpack/README_$langpack.txt << EOF
@@ -2718,36 +2743,36 @@ fi
 ## Scripts for hyphenation
 ##
 %post -n myspell-hyph-bg
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*bg[ \t]*BG[ \t]*hyph_bg" %{dictdir}/dictionary.lst; then
-	echo "HYPH bg BG hyph_bg" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*bg[ \t]*BG[ \t]*hyph_bg_BG" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH bg BG hyph_bg_BG" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-bg
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*bg.*BG.*hyph_bg$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*bg.*BG.*hyph_bg_BG$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-cs
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*cs[ \t]*CZ[ \t]*hyph_cs" %{dictdir}/dictionary.lst; then
-	echo "HYPH cs CZ hyph_cs" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*cs[ \t]*CZ[ \t]*hyph_cs_CZ" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH cs CZ hyph_cs_CZ" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-cs
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*cs.*CZ.*hyph_cs$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*cs.*CZ.*hyph_cs_CZ$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-da
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*da[ \t]*DA[ \t]*hyph_da" %{dictdir}/dictionary.lst; then
-	echo "HYPH da DA hyph_da" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*da[ \t]*DA[ \t]*hyph_da_DK" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH da DK hyph_da_DK" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-da
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*da.*DA.*hyph_da$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*da.*DK.*hyph_da_DK$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-de
@@ -2778,14 +2803,14 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-hyph-el
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*el[ \t]*GR[ \t]*hyph_el" %{dictdir}/dictionary.lst; then
-	echo "HYPH el GR hyph_el" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*el[ \t]*GR[ \t]*hyph_el_GR" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH el GR hyph_el_GR" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-el
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*el.*GR.*hyph_el$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*el.*GR.*hyph_el_GR$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-en
@@ -2835,9 +2860,9 @@ if [ "$1" = "0" ]; then
 	%{__sed} -i -e '/^HYPH.*en.*GB.*hyph_en$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^HYPH.*en.*IE.*hyph_en$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^HYPH.*en.*JM.*hyph_en$/d' %{dictdir}/dictionary.lst
-	%{__sed} -i -e '/^HYPH.*en.*NZ.*hyph_bg$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*NZ.*hyph_en$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^HYPH.*en.*PH.*hyph_en$/d' %{dictdir}/dictionary.lst
-	%{__sed} -i -e '/^HYPH.*en.*TT.*hyph_bg$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*en.*TT.*hyph_en$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^HYPH.*en.*US.*hyph_en$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^HYPH.*en.*ZA.*hyph_en$/d' %{dictdir}/dictionary.lst
 	%{__sed} -i -e '/^HYPH.*en.*ZW.*hyph_en$/d' %{dictdir}/dictionary.lst
@@ -2935,24 +2960,24 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-hyph-et
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*et[ \t]*EE[ \t]*hyph_et" %{dictdir}/dictionary.lst; then
-	echo "HYPH et EE hyph_et" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*et[ \t]*EE[ \t]*hyph_et_EE" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH et EE hyph_et_EE" >> %{dictdir}/dictionary.lst
 fi
 %preun -n myspell-hyph-et
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*et.*EE.*hyph_et$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*et.*EE.*hyph_et_EE$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-fi
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*fi[ \t]*FI[ \t]*hyph_fi" %{dictdir}/dictionary.lst; then
-	echo "HYPH fi FI hyph_fi" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*fi[ \t]*FI[ \t]*hyph_fi_FI" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH fi FI hyph_fi_FI" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-fi
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*fi.*FI.*hyph_fi$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*fi.*FI.*hyph_fi_FI$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-fr
@@ -2987,19 +3012,19 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-hyph-ga
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*ga[ \t]*IE[ \t]*hyph_ga" %{dictdir}/dictionary.lst; then
-	echo "HYPH ga IE hyph_ga" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*ga[ \t]*IE[ \t]*hyph_ga_IE" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH ga IE hyph_ga_IE" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-ga
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*ga.*IE.*hyph_ga$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*ga.*IE.*hyph_ga_IE$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-hu
-umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*hu[ \t]*HU[ \t]*hyph_hu" %{dictdir}/dictionary.lst; then
+	umask 002
 	echo "HYPH hu HU hyph_hu" >> %{dictdir}/dictionary.lst
 fi
 
@@ -3009,8 +3034,8 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-hyph-ia
-umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*ia[ \t]*IA[ \t]*hyph_ia" %{dictdir}/dictionary.lst; then
+	umask 002
 	echo "HYPH ia IA hyph_ia" >> %{dictdir}/dictionary.lst
 fi
 
@@ -3020,25 +3045,25 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-hyph-id
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*id[ \t]*ID[ \t]*hyph_id" %{dictdir}/dictionary.lst; then
-	echo "HYPH id ID hyph_id" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*id[ \t]*ID[ \t]*hyph_id_ID" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH id ID hyph_id_ID" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-id
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*id.*ID.*hyph_id$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*id.*ID.*hyph_id_ID$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-is
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*is[ \t]*IS[ \t]*hyph_is" %{dictdir}/dictionary.lst; then
-	echo "HYPH is IS hyph_is" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*is[ \t]*IS[ \t]*hyph_is_IS" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH is IS hyph_is_IS" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-is
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*is.*IS.*hyph_is$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*is.*IS.*hyph_is_IS$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-it
@@ -3057,30 +3082,30 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-hyph-lt
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*lt[ \t]*LT[ \t]*hyph_lt" %{dictdir}/dictionary.lst; then
-	echo "HYPH lt LT hyph_lt" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*lt[ \t]*LT[ \t]*hyph_lt_LT" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH lt LT hyph_lt_LT" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-lt
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*lt.*LT.*hyph_lt$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*lt.*LT.*hyph_lt_LT$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-lv
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*lv[ \t]*LV[ \t]*hyph_lv" %{dictdir}/dictionary.lst; then
-	echo "HYPH lv LV hyph_lv" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*lv[ \t]*LV[ \t]*hyph_lv_LV" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH lv LV hyph_lv_LV" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-lv
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*lv.*LV.*hyph_lv$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*lv.*LV.*hyph_lv_LV$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-nl
-umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*nl[ \t]*NL[ \t]*hyph_nl" %{dictdir}/dictionary.lst; then
+	umask 002
 	echo "HYPH nl NL hyph_nl" >> %{dictdir}/dictionary.lst
 fi
 
@@ -3090,19 +3115,19 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-hyph-pl
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*pl[ \t]*PL[ \t]*hyph_pl" %{dictdir}/dictionary.lst; then
-	echo "HYPH pl PL hyph_pl" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*pl[ \t]*PL[ \t]*hyph_pl_PL" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH pl PL hyph_pl_PL" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-pl
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*pl.*PL.*hyph_pl$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*pl.*PL.*hyph_pl_PL$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-pt
-umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*pt[ \t]*PT[ \t]*hyph_pt" %{dictdir}/dictionary.lst; then
+	umask 002
 	echo "HYPH pt PT hyph_pt" >> %{dictdir}/dictionary.lst
 fi
 
@@ -3117,66 +3142,66 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-hyph-ru
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*ru[ \t]*RU[ \t]*hyph_ru" %{dictdir}/dictionary.lst; then
-	echo "HYPH ru RU hyph_ru" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*ru[ \t]*RU[ \t]*hyph_ru_RU" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH ru RU hyph_ru_RU" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-ru
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*ru.*RU.*hyph_ru$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*ru.*RU.*hyph_ru_RU$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-sk
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*sk[ \t]*SK[ \t]*hyph_sk" %{dictdir}/dictionary.lst; then
-	echo "HYPH sk SK hyph_sk" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*sk[ \t]*SK[ \t]*hyph_sk_SK" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH sk SK hyph_sk_SK" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-sk
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*sk.*SK.*hyph_sk$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*sk.*SK.*hyph_sk_SK$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-sl
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*sl[ \t]*SI[ \t]*hyph_sl" %{dictdir}/dictionary.lst; then
-	echo "HYPH sl SI hyph_sl" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*sl[ \t]*SI[ \t]*hyph_sl_SI" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH sl SI hyph_sl_SI" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-sl
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*sl.*SI.*hyph_sl$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*sl.*SI.*hyph_sl_SI$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-sv
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*sv[ \t]*SE[ \t]*hyph_sv" %{dictdir}/dictionary.lst; then
-	echo "HYPH sv SE hyph_sv" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*sv[ \t]*SE[ \t]*hyph_sv_SE" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH sv SE hyph_sv_SE" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-sv
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*sv.*SE.*hyph_sv$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*sv.*SE.*hyph_sv_SE$/d' %{dictdir}/dictionary.lst
 fi
 
 %post -n myspell-hyph-uk
-umask 002
-if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*uk[ \t]*UA[ \t]*hyph_uk" %{dictdir}/dictionary.lst; then
-	echo "HYPH uk UA hyph_uk" >> %{dictdir}/dictionary.lst
+if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^HYPH[ \t]*uk[ \t]*UA[ \t]*hyph_uk_UA" %{dictdir}/dictionary.lst; then
+	umask 002
+	echo "HYPH uk UA hyph_uk_UA" >> %{dictdir}/dictionary.lst
 fi
 
 %preun -n myspell-hyph-uk
 if [ "$1" = "0" ]; then
-	%{__sed} -i -e '/^HYPH.*uk.*UA.*hyph_uk$/d' %{dictdir}/dictionary.lst
+	%{__sed} -i -e '/^HYPH.*uk.*UA.*hyph_uk_UA$/d' %{dictdir}/dictionary.lst
 fi
 
 ##
 ## Scripts for thesaurus
 ##
 %post -n myspell-thes-bg_BG
-umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*bg[ \t]*BG[ \t]*th_bg_BG" %{dictdir}/dictionary.lst; then
+	umask 002
 	echo "THES bg BG th_bg_BG" >> %{dictdir}/dictionary.lst
 fi
 %preun -n myspell-thes-bg_BG
@@ -3185,8 +3210,8 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-thes-de_DE
-umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*de[ \t]*DE[ \t]*th_de_DE" %{dictdir}/dictionary.lst; then
+	umask 002
 	echo "THES de DE th_de_DE" >> %{dictdir}/dictionary.lst
 fi
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*de[ \t]*AT[ \t]*th_de_DE" %{dictdir}/dictionary.lst; then
@@ -3315,7 +3340,7 @@ fi
 %post -n myspell-thes-it_IT
 umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*it[ \t]*CH[ \t]*th_it_IT" %{dictdir}/dictionary.lst; then
-	cho "THES it CH th_it_IT" >> %{dictdir}/dictionary.lst
+	echo "THES it CH th_it_IT" >> %{dictdir}/dictionary.lst
 fi
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*it[ \t]*IT[ \t]*th_it_IT" %{dictdir}/dictionary.lst; then
 	echo "THES it IT th_it_IT" >> %{dictdir}/dictionary.lst
@@ -3328,8 +3353,8 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-thes-pl_PL
-umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*pl[ \t]*PL[ \t]*th_pl_PL" %{dictdir}/dictionary.lst; then
+	umask 002
 	echo "THES pl PL th_pl_PL" >> %{dictdir}/dictionary.lst
 fi
 
@@ -3339,8 +3364,8 @@ if [ "$1" = "0" ]; then
 fi
 
 %post -n myspell-thes-sk_SK
-umask 002
 if [ ! -f "%{dictdir}/dictionary.lst" ] || ! grep -q "^THES[ \t]*sk[ \t]*SK[ \t]*th_sk_SK" %{dictdir}/dictionary.lst; then
+	umask 002
 	echo "THES sk SK th_sk_SK" >> %{dictdir}/dictionary.lst
 fi
 
@@ -3348,7 +3373,6 @@ fi
 if [ "$1" = "0" ]; then
 	%{__sed} -i -e '/^THES.*sk.*SK.*th_sk_SK$/d' %{dictdir}/dictionary.lst
 fi
-
 
 %files -n myspell-common
 %defattr(644,root,root,755)
@@ -3604,18 +3628,18 @@ fi
 
 %files -n myspell-hyph-bg
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_bg/*
-%{dictdir}/hyph_bg.*
+%doc doc/HYPH/hyph_bg_BG/*
+%{dictdir}/hyph_bg_BG.*
 
 %files -n myspell-hyph-cs
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_cs/*
-%{dictdir}/hyph_cs.*
+%doc doc/HYPH/hyph_cs_CZ/*
+%{dictdir}/hyph_cs_CZ.*
 
 %files -n myspell-hyph-da
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_da/*
-%{dictdir}/hyph_da.*
+%doc doc/HYPH/hyph_da_DK/*
+%{dictdir}/hyph_da_DK.*
 
 %files -n myspell-hyph-de
 %defattr(644,root,root,755)
@@ -3624,8 +3648,8 @@ fi
 
 %files -n myspell-hyph-el
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_el/*
-%{dictdir}/hyph_el.*
+%doc doc/HYPH/hyph_el_GR/*
+%{dictdir}/hyph_el_GR.*
 
 %files -n myspell-hyph-en
 %defattr(644,root,root,755)
@@ -3639,13 +3663,13 @@ fi
 
 %files -n myspell-hyph-et
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_et/*
-%{dictdir}/hyph_et.*
+%doc doc/HYPH/hyph_et_EE/*
+%{dictdir}/hyph_et_EE.*
 
 %files -n myspell-hyph-fi
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_fi/*
-%{dictdir}/hyph_fi.*
+%doc doc/HYPH/hyph_fi_FI/*
+%{dictdir}/hyph_fi_FI.*
 
 %files -n myspell-hyph-fr
 %defattr(644,root,root,755)
@@ -3654,8 +3678,8 @@ fi
 
 %files -n myspell-hyph-ga
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_ga/*
-%{dictdir}/hyph_ga.*
+%doc doc/HYPH/hyph_ga_IE/*
+%{dictdir}/hyph_ga_IE.*
 
 %files -n myspell-hyph-hu
 %defattr(644,root,root,755)
@@ -3669,13 +3693,13 @@ fi
 
 %files -n myspell-hyph-id
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_id/*
-%{dictdir}/hyph_id.*
+%doc doc/HYPH/hyph_id_ID/*
+%{dictdir}/hyph_id_ID.*
 
 %files -n myspell-hyph-is
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_is/*
-%{dictdir}/hyph_is.*
+%doc doc/HYPH/hyph_is_IS/*
+%{dictdir}/hyph_is_IS.*
 
 %files -n myspell-hyph-it
 %defattr(644,root,root,755)
@@ -3684,13 +3708,13 @@ fi
 
 %files -n myspell-hyph-lt
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_lt/*
-%{dictdir}/hyph_lt.*
+%doc doc/HYPH/hyph_lt_LT/*
+%{dictdir}/hyph_lt_LT.*
 
 %files -n myspell-hyph-lv
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_lv/*
-%{dictdir}/hyph_lv.*
+%doc doc/HYPH/hyph_lv_LV/*
+%{dictdir}/hyph_lv_LV.*
 
 %files -n myspell-hyph-nl
 %defattr(644,root,root,755)
@@ -3699,8 +3723,8 @@ fi
 
 %files -n myspell-hyph-pl
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_pl/*
-%{dictdir}/hyph_pl.*
+%doc doc/HYPH/hyph_pl_PL/*
+%{dictdir}/hyph_pl_PL.*
 
 %files -n myspell-hyph-pt
 %defattr(644,root,root,755)
@@ -3709,28 +3733,28 @@ fi
 
 %files -n myspell-hyph-ru
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_ru/*
-%{dictdir}/hyph_ru.*
+%doc doc/HYPH/hyph_ru_RU/*
+%{dictdir}/hyph_ru_RU.*
 
 %files -n myspell-hyph-sk
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_sk/*
-%{dictdir}/hyph_sk.*
+%doc doc/HYPH/hyph_sk_SK/*
+%{dictdir}/hyph_sk_SK.*
 
 %files -n myspell-hyph-sl
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_sl/*
-%{dictdir}/hyph_sl.*
+%doc doc/HYPH/hyph_sl_SI/*
+%{dictdir}/hyph_sl_SI.*
 
 %files -n myspell-hyph-sv
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_sv/*
-%{dictdir}/hyph_sv.*
+%doc doc/HYPH/hyph_sv_SE/*
+%{dictdir}/hyph_sv_SE.*
 
 %files -n myspell-hyph-uk
 %defattr(644,root,root,755)
-%doc doc/HYPH/hyph_uk/*
-%{dictdir}/hyph_uk.*
+%doc doc/HYPH/hyph_uk_UA/*
+%{dictdir}/hyph_uk_UA.*
 
 #
 # Files for thesaurus
