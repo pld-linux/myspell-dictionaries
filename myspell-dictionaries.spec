@@ -174,10 +174,10 @@ Source300:	th_bg_BG.zip
 # Source300-md5:	3c04f8df022e819e6ac5f161acc08229
 Source301:	th_de_DE.zip
 # Source301-md5:	2c466662e7bfe3466192ef3e6bf53d2c
-Source302:	th_en_US.zip
-# Source302-md5:	62c1dd5ced0b8f1be73eaab61526e02e
-Source303:	th_es_ES.zip
-# Source303-md5:	1951c3be40534bd5645e95ac7882110e
+Source302:	%{ooo_mirror}/thes_en_US_v2.zip
+# Source302-md5:	ec611ad21ae4ee2b4415e27e252e4952
+Source303:	%{ooo_mirror}/thes_es_ES_v2.zip
+# Source303-md5:	e65fc3d81e98a1cda8c6725c2122a124
 Source304:	th_fr_FR.zip
 # Source304-md5:	4a8a55f7b1d855791e0adaa74851c90c
 Source305:	th_it_IT.zip
@@ -2174,9 +2174,9 @@ for dictfile in %{SOURCE100} %{SOURCE101} %{SOURCE102} %{SOURCE103} %{SOURCE104}
 	basefile="${dictfile##*/}"
 	langpack="${basefile%.zip}"
 	echo "LANGPACK=$langpack"
-	mkdir -p doc/DICT/$langpack
+	install -d doc/DICT/$langpack
 	%{__unzip} -q -d doc/DICT/$langpack $dictfile
-	mkdir -p dic/DICT/$langpack
+	install -d dic/DICT/$langpack
 	mv doc/DICT/$langpack/$langpack.{aff,dic} dic/DICT/$langpack
 	# create dummy file if docdir is empty
 	if ! ls doc/DICT/$langpack/*; then
@@ -2220,9 +2220,9 @@ for hyphfile in %{SOURCE200} %{SOURCE201} %{SOURCE202} %{SOURCE203} %{SOURCE204}
 	;;
 	esac
 	echo "LANGPACK/(HPY)=$langpack"
-	mkdir -p doc/HYPH/$langpack
+	install -d doc/HYPH/$langpack
 	%{__unzip} -q -d doc/HYPH/$langpack $hyphfile
-	mkdir -p dic/HYPH/$langpack
+	install -d dic/HYPH/$langpack
 	mv doc/HYPH/$langpack/$langfile.dic dic/HYPH/$langpack/$langpack.dic
 	# create dummy file if docdir is empty
 	if ! ls doc/HYPH/$langpack/*; then
@@ -2235,13 +2235,26 @@ done
 # Handle thesaurus dictionaries
 for thesfile in %{SOURCE300} %{SOURCE301} %{SOURCE302} %{SOURCE303} %{SOURCE304} \
 		%{SOURCE305} %{SOURCE306} %{SOURCE307}; do
-	basefile="${thesfile##*/}"
-	langpack="${basefile%.zip}"
+	basefile=${thesfile##*/}
+	langpack=${basefile%.zip}
+	langfile=$langpack
+	# name fixups
+	case "$langpack" in
+	thes_en_US_v2)
+		langpack=th_en_US
+		langfile=th_en_US_v2
+	;;
+	thes_es_ES_v2)
+		langpack=th_es_ES
+		langfile=th_es_ES_v2
+	;;
+	esac
 	echo "LANGPACK(thes)=$langpack"
-	mkdir -p doc/THES/$langpack
+	install -d doc/THES/$langpack
 	%{__unzip} -q -d doc/THES/$langpack $thesfile
-	mkdir -p dic/THES/$langpack
-	mv doc/THES/$langpack/$langpack.{dat,idx} dic/THES/$langpack
+	install -d dic/THES/$langpack
+	mv doc/THES/$langpack/$langfile.dat dic/THES/$langpack/$langpack.dat
+	mv doc/THES/$langpack/$langfile.idx dic/THES/$langpack/$langpack.idx
 	# create dummy file if docdir is empty
 	if ! ls doc/THES/$langpack/*; then
 		cat > doc/THES/$langpack/README_$langpack.txt << EOF
