@@ -19,8 +19,9 @@ URL:		http://lingucomponent.openoffice.org/download_dictionary.html
 ## Sources for spell checking dictionaries
 Source100:	%{ooo_mirror}/af_ZA.zip
 # Source100-md5:	6c12cd93012a04a727413d4975801604
-Source101:	%{ooo_mirror}/bg_BG.zip
-# Source101-md5:	0619620e36b1a9a45995f939d765fd3e
+#Source101:	%{ooo_mirror}/bg_BG.zip
+Source101:	http://downloads.sourceforge.net/bgoffice/OOo-spell-bg-4.3.zip
+# Source101-md5:	ee804f871c855eb218c8d825b5fe54fb
 Source102:	%{ooo_mirror}/ca_ES.zip
 # Source102-md5:	f0f83bd213f9cb2242173894abda37ba
 Source103:	%{ooo_mirror}/cs_CZ.zip
@@ -116,8 +117,8 @@ Source147:	%{ooo_mirror}/zu_ZA.zip
 # Source147-md5:	40a2ea21a81f3b08ffb46896abff66d0
 
 ## Sources for hyphenation dictionaries
-Source200:	%{ooo_mirror}/hyph_bg_BG.zip
-# Source200-md5:	d63dd099546a3a4ae46eac156d13d7a9
+Source200:	http://downloads.sourceforge.net/bgoffice/OOo-hyph-bg-4.3.zip
+# Source200-md5:	34fbed48dd43d66fda133d0b05ea9c55
 Source201:	%{ooo_mirror}/hyph_cs_CZ.zip
 # Source201-md5:	7dc7192fb3c141db6518c54781df6846
 Source202:	%{ooo_mirror}/hyph_da_DK.zip
@@ -170,8 +171,8 @@ Source225:	%{ooo_mirror}/hyph_uk_UA.zip
 # Source225-md5:	caae40c900d8e1fdd3e0ad095ce1e787
 
 ## Sources for thesaurus dictionaries
-Source300:	th_bg_BG.zip
-# Source300-md5:	3c04f8df022e819e6ac5f161acc08229
+Source300:	http://downloads.sourceforge.net/bgoffice/OOo-thes-bg-4.3.zip
+# Source300-md5:	11ca6156c811340f25133d70cda65ca9
 Source301:	th_de_DE.zip
 # Source301-md5:	2c466662e7bfe3466192ef3e6bf53d2c
 Source302:	%{ooo_mirror}/thes_en_US_v2.zip
@@ -251,8 +252,9 @@ tworzyć dokumenty w języku afrykanerskim i poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Bulgarian (Bulgaria)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka bułgarskiego (dla Bułgarii)
 Version:	%{ver}
-Release:	0.20071210.%{rel}
-License:	GPL
+# 20100617 is mtime of release tarball from sf.net
+Release:	0.20100617.%{rel}
+License:	GPL/LGPL/MPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-bg = %{version}
@@ -1509,8 +1511,9 @@ języku zuluskim i poprawiać w nich błędy.
 Summary:	MySpell hyphenation dictionaries for Bulgarian
 Summary(pl.UTF-8):	Słowniki przenoszenia wyrazów dla MySpella dla języka bułgarskiego
 Version:	%{ver}
-Release:	0.20071210.%{rel}
-License:	LGPL
+# 20100617 is mtime of release tarball from sf.net
+Release:	0.20100617.%{rel}
+License:	GPL/LGPL/MPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-hyphenation = %{version}
@@ -2004,8 +2007,9 @@ aplikacje korzystające z Myspella, takie jak Mozilla.
 Summary:	MySpell thesaurus for Bulgarian (Bulgaria)
 Summary(pl.UTF-8):	Słownik wyrazów bliskoznacznych dla MySpella dla języka bułgarskiego (dla Bułgarii)
 Version:	%{ver}
-Release:	0.20071210.%{rel}
-License:	GPL
+# 20100617 is mtime of release tarball from sf.net
+Release:	0.20100617.%{rel}
+License:	GPL/LGPL/MPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-thesaurus = %{version}
@@ -2173,11 +2177,20 @@ for dictfile in %{SOURCE100} %{SOURCE101} %{SOURCE102} %{SOURCE103} %{SOURCE104}
 		%{SOURCE145} %{SOURCE146} %{SOURCE147}; do
 	basefile="${dictfile##*/}"
 	langpack="${basefile%.zip}"
+	langfile=$langpack
+	# name fixups
+	case "$langpack" in
+	OOo-spell-bg*)
+		langfile=$langpack/bg_BG
+		langpack=bg_BG
+	;;
+	esac
 	echo "LANGPACK=$langpack"
 	install -d doc/DICT/$langpack
 	%{__unzip} -q -d doc/DICT/$langpack $dictfile
 	install -d dic/DICT/$langpack
-	mv doc/DICT/$langpack/$langpack.{aff,dic} dic/DICT/$langpack
+	mv doc/DICT/$langpack/$langfile.aff dic/DICT/$langpack/$langpack.aff
+	mv doc/DICT/$langpack/$langfile.dic dic/DICT/$langpack/$langpack.dic
 	# create dummy file if docdir is empty
 	if ! ls doc/DICT/$langpack/*; then
 		cat > doc/DICT/$langpack/README_$langpack.txt << EOF
@@ -2198,6 +2211,10 @@ for hyphfile in %{SOURCE200} %{SOURCE201} %{SOURCE202} %{SOURCE203} %{SOURCE204}
 	langfile=$langpack
 	# name fixups
 	case "$langpack" in
+	OOo-hyph-bg*)
+		langfile=$langpack/hyph_bg_BG
+		langpack=hyph_bg_BG
+	;;
 	hyph_fr_FR_2-0)
 		langpack=hyph_fr
 		langfile=hyph_fr_FR
@@ -2240,6 +2257,10 @@ for thesfile in %{SOURCE300} %{SOURCE301} %{SOURCE302} %{SOURCE303} %{SOURCE304}
 	langfile=$langpack
 	# name fixups
 	case "$langpack" in
+	OOo-thes-bg*)
+		langfile=$langpack/th_bg_BG
+		langpack=th_bg_BG
+	;;
 	thes_en_US_v2)
 		langpack=th_en_US
 		langfile=th_en_US_v2
@@ -2262,6 +2283,19 @@ Thesaurus dictionary for $langpack
 EOF
 	fi
 done
+
+# no subdirs there
+mv doc/DICT/bg_BG/{OOo-spell-bg-*/*,}
+rmdir doc/DICT/bg_BG/OOo-spell-bg-*
+mv doc/HYPH/hyph_bg_BG/{OOo-hyph-bg-*/*,}
+rmdir doc/HYPH/hyph_bg_BG/OOo-hyph-bg-*
+mv doc/THES/th_bg_BG/{OOo-thes-bg-*/*,}
+rmdir doc/THES/th_bg_BG/OOo-thes-bg-*
+
+# remove common docs
+find -name GPL-2.0.txt | xargs rm -v
+find -name LGPL-2.1.txt | xargs rm -v
+find -name MPL-1.1.txt | xargs rm -v
 
 %patch0 -p1
 
