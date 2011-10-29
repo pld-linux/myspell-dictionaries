@@ -1,5 +1,10 @@
-%define		ver	1.0.3
+# NOTE:
+# - the dictionaries are usable for hunspell, openoffice (libreoffice), mozilla products
+#   maybe we should package them all to /usr/share/dict or similiar
+
 %define		rel	1
+%define		ver	1.0.3
+%define		ooo_mirror http://openoffice.osuosl.org/contrib/dictionaries/
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Summary(pl.UTF-8):	Słowniki dla MySpella do sprawdzania pisowni i przenoszenia wyrazów
 Name:		myspell-dictionaries
@@ -8,46 +13,46 @@ Release:	%{rel}
 License:	BSD/GPL/LGPL
 Group:		Applications/Text
 URL:		http://lingucomponent.openoffice.org/download_dictionary.html
+# http://openoffice.osuosl.org/contrib/dictionaries/
 ## Sources for spell checking dictionaries
-Source100:	af_ZA.zip
-# Source100-md5:	5950ed4e9dfccb1592de3f385404578c
-Source101:	bg_BG.zip
-# Source101-md5:	b7d595082a0efdb32cef053771383be4
-Source102:	ca_ES.zip
-# Source102-md5:	8cac267447a5502c35dde43819efd162
-Source103:	cs_CZ.zip
-# Source103-md5:	da978932a97adfc92a16a802a199efcb
-Source104:	cy_GB.zip
-# Source104-md5:	5cd020448b2c5c19f6157543e4fe79d6
-Source105:	da_DK.zip
-# Source105-md5:	db20b8a28174a96eaea35710898407a1
+Source100:	%{ooo_mirror}/af_ZA.zip
+# Source100-md5:	6c12cd93012a04a727413d4975801604
+Source101:	%{ooo_mirror}/bg_BG.zip
+# Source101-md5:	0619620e36b1a9a45995f939d765fd3e
+Source102:	%{ooo_mirror}/ca_ES.zip
+# Source102-md5:	f0f83bd213f9cb2242173894abda37ba
+Source103:	%{ooo_mirror}/cs_CZ.zip
+# Source103-md5:	afe150b3aa50cc4e0eed0704e2d1cc17
+Source104:	%{ooo_mirror}/cy_GB.zip
+# Source104-md5:	accdb94f38555af45a54494e046a88f3
+Source105:	%{ooo_mirror}/da_DK.zip
+# Source105-md5:	7da0aa2b5f87ec7534df71cd6a04c6bb
 Source106:	de_AT.zip
 # Source106-md5:	5d079b9935f3a470960bf4bc0556179b
 Source107:	de_CH.zip
 # Source107-md5:	4cef76956bf62b8eda12566c6884f70d
 Source108:	de_DE.zip
 # Source108-md5:	886b8c3a539212ff3660a3d5eb1a8147
-Source109:	el_GR.zip
-# Source109-md5:	afc685caee5cbcfd8886bd5c14b3eaf3
-Source110:	en_AU.zip
+Source109:	%{ooo_mirror}/el_GR.zip
+# Source109-md5:	02d4c0022dee569bd4733e02ef885dc4
+Source110:	%{ooo_mirror}/en_AU.zip
 # Source110-md5:	c39f529173d8bb0e15b1fade11dfe780
-Source111:	en_CA.zip
+Source111:	%{ooo_mirror}/en_CA.zip
 # Source111-md5:	c14942ea471a5182f376802c68933880
 Source112:	en_GB.zip
 # Source112-md5:	89de459a37ed6b7d9f54ad9626047e68
 Source113:	en_NZ.zip
 # Source113-md5:	aaf2cdd1597abdf4cfa0d9b12cfb8a29
-Source114:	en_US.zip
-# Source114-md5:	ee6bb9a3c533e5d65b4cc8ed3e32ae10
-Source115:	es_ES.zip
-# Source115-md5:	eb539abf2b93816eaa0c71df2ae06dc1
-Source116:	es_MX.zip
-# Source116-md5:	2f33174f46369634ebd3e0011baa1726
-#ftp://ftp.linux.ee/pub/openoffice/contrib/dictionaries/et_EE.zip
-Source117:	et_EE.zip
+Source114:	%{ooo_mirror}/en_US.zip
+# Source114-md5:	cb1e21fee281f32d832a34ad6de1b553
+Source115:	%{ooo_mirror}/es_ES.zip
+# Source115-md5:	4b272f7c958dd619b2ddc007c45db53b
+Source116:	%{ooo_mirror}/es_MX.zip
+# Source116-md5:	e32f5ec8c94fd902a9823dae4040a019
+Source117:	%{ooo_mirror}/et_EE.zip
 # Source117-md5:	2a1e97d61132c537aa03df4d0fee9b89
-Source118:	fo_FO.zip
-# Source118-md5:	74bf95820869527f2e2ecced592ce62b
+Source118:	%{ooo_mirror}/fo_FO.zip
+# Source118-md5:	c31aabce25acd791e0e41419d8d4329e
 Source119:	fr_BE.zip
 # Source119-md5:	6eac149eb16fc6279e93901d24b350a2
 Source120:	fr_FR.zip
@@ -56,28 +61,28 @@ Source121:	ga_IE.zip
 # Source121-md5:	42d27da49daf068584be9592a58f3b98
 Source122:	gl_ES.zip
 # Source122-md5:	c9feb9d9d99baebf97d6924b81c8ecf2
-Source123:	he_IL.zip
+Source123:	%{ooo_mirror}/he_IL.zip
 # Source123-md5:	5ff2bf971a2185f65c004150ccae9965
-Source124:	hr_HR.zip
-# Source124-md5:	3269437ec54bda0e7f3438f1130ad676
+Source124:	%{ooo_mirror}/hr_HR.zip
+# Source124-md5:	0017e47e491d97c0f993a7f959b0bf01
 Source125:	hu_HU.zip
 # Source125-md5:	7c83480778c78cc8bef9a50d84284314
 Source126:	ia_IA.zip
 # Source126-md5:	b5b26537d6b8ad8ce2a84d3eb4840b62
-Source127:	id_ID.zip
-# Source127-md5:	1174ccbde370dfc64fe0ec2d27269492
+Source127:	%{ooo_mirror}/id_ID.zip
+# Source127-md5:	fe0ac356fd725cf1d5197e040fb507fc
 Source128:	it_IT.zip
 # Source128-md5:	4b616ce3cc57c1f9f190e3733841911e
 Source129:	la_VA.zip
 # Source129-md5:	299b9155bd1d3cc7555bde413d887a0e
-Source130:	lt_LT.zip
-# Source130-md5:	4d38192054bbd4dc2946c0e973b9e2c0
-Source131:	lv_LV.zip
-# Source131-md5:	a50182656dccf65c2138222ce9afc437
-Source132:	mi_NZ.zip
-# Source132-md5:	f691ca67df4570821f931574295715b5
-Source133:	ms_MY.zip
-# Source133-md5:	a8d8f8c248f10c9399e5fbbeb8842c60
+Source130:	%{ooo_mirror}/lt_LT.zip
+# Source130-md5:	3590ba02288c9092340101dca3ddc132
+Source131:	%{ooo_mirror}/lv_LV.zip
+# Source131-md5:	9796365409cd4387059b692679b5eff1
+Source132:	%{ooo_mirror}/mi_NZ.zip
+# Source132-md5:	9378de5ead3ee2759354f8ae4c7a2222
+Source133:	%{ooo_mirror}/ms_MY.zip
+# Source133-md5:	4b984b699541c12e1bd81b2f5f7b0050
 Source134:	nb_NO.zip
 # Source134-md5:	c42de27e4c12e29560f22f266f51655f
 Source135:	nl_NL.zip
@@ -87,8 +92,8 @@ Source136:	nn_NO.zip
 #http://www.sjp.pl/slownik/en/
 Source137:	pl_PL.zip
 # Source137-md5:	a1a7c9cd3f158764862329a834b44906
-Source138:	pt_BR.zip
-# Source138-md5:	e1cb7a2093f72487541b8f54364469ee
+Source138:	%{ooo_mirror}/pt_BR.zip
+# Source138-md5:	ef3a5b77535c8a35467c736fd67d73d9
 Source139:	pt_PT.zip
 # Source139-md5:	622f05d1e3f4d9ec6b7b691550458389
 Source140:	ro_RO.zip
@@ -97,16 +102,16 @@ Source141:	ru_RU.zip
 # Source141-md5:	a6c98684e95035cf3b49e90d4a4824b2
 Source142:	sk_SK.zip
 # Source142-md5:	b699bb18648e62248e4a5ae05f9b4a7b
-Source143:	sl_SI.zip
-# Source143-md5:	728b7a694fec9a234a115881fbf9b14f
+Source143:	%{ooo_mirror}/sl_SI.zip
+# Source143-md5:	74d1bf52a3c013e2a5dae2bd20ccdc00
 Source144:	sv_SE.zip
 # Source144-md5:	702d4dc9dc135e194086a6a270fe478d
-Source145:	sw_KE.zip
-# Source145-md5:	baf4d97ec843114fd543f8e4cc362a79
-Source146:	uk_UA.zip
-# Source146-md5:	091a1cfd1557b5e8c0741b7d43164353
-Source147:	zu_ZA.zip
-# Source147-md5:	0f86570c4d69984f23333fbbdd478953
+Source145:	%{ooo_mirror}/sw_KE.zip
+# Source145-md5:	af1bb4afd5e46e3624a785d1323ee6a7
+Source146:	%{ooo_mirror}/uk_UA.zip
+# Source146-md5:	1e067400ca6a3414d232c10ef1300293
+Source147:	%{ooo_mirror}/zu_ZA.zip
+# Source147-md5:	40a2ea21a81f3b08ffb46896abff66d0
 
 ## Sources for hyphenation dictionaries
 Source200:	hyph_bg.zip
@@ -218,7 +223,8 @@ Pliki wspólne dla słowników myspella i hunspella.
 Summary:	MySpell spelling dictionaries for Afrikaans (South Africa)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka afrykanerskiego (dla Republiki Południowej Afryki)
 Version:	%{ver}
-Release:	0.20060705.%{rel}
+# version in VERSION_af_ZA.txt
+Release:	0.20060117.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
@@ -351,8 +357,9 @@ poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Danish (Denmark)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka duńskiego (dla Danii)
 Version:	%{ver}
+# version in README_da_DK.txt
 Release:	0.20070902.%{rel}
-License:	GPL
+License:	LGPL v2.1+
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-da = %{version}
@@ -379,7 +386,7 @@ Summary:	MySpell spelling dictionaries for German (Austria)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka niemieckiego (dla Austrii)
 Version:	%{ver}
 Release:	0.20100306.%{rel}
-License:	GPL
+License:	GPL v2
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-de = %{version}
@@ -406,7 +413,7 @@ Summary:	MySpell spelling dictionaries for German (Switzerland)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka niemieckiego (dla Szwajcarii)
 Version:	%{ver}
 Release:	0.20100306.%{rel}
-License:	GPL
+License:	GPL v2
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-de = %{version}
@@ -459,6 +466,7 @@ poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Greek (Greece)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka greckiego (dla Grecji)
 Version:	%{ver}
+# version in README_el_GR.txt
 Release:	0.20041220.%{rel}
 License:	GPL
 Group:		Applications/Text
@@ -595,7 +603,7 @@ Summary:	MySpell spelling dictionaries for English (US)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka angielskiego (dla Stanów Zjednoczonych)
 Version:	%{ver}
 Release:	0.20070504.%{rel}
-License:	BSD
+License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
@@ -701,7 +709,7 @@ Summary:	MySpell spelling dictionaries for Faroese (Faroe Islands)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka farerskiego (dla Wysp Owczych)
 Version:	%{ver}
 Release:	0.20070126.%{rel}
-License:	GPL
+License:	GPL v2
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
@@ -936,8 +944,9 @@ międzynarodowym i poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Indonesian (Indonesia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka indonezyjskiego (dla Indonezji)
 Version:	%{ver}
+# version in README_id_ID.txt
 Release:	0.20040810.%{rel}
-License:	GPL
+License:	GPL v2
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
@@ -1041,8 +1050,9 @@ poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Latvian (Latvia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka łotewskiego (dla Łotwy)
 Version:	%{ver}
+# README_lv_LV.txt version 0.7.2
 Release:	0.20080222.%{rel}
-License:	BSD-like
+License:	LGPL v2.1
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
@@ -1066,9 +1076,11 @@ poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Maori (New Zealand)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka maoryjskiego (dla Nowej Zelandii)
 Version:	%{ver}
-Release:	0.20080629.%{rel}
+# version in mi_NZ.aff
+Release:	0.20080630.%{rel}
 License:	LGPL
 Group:		Applications/Text
+URL:		http://papakupu.maori.nz/
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
 Provides:	myspell-mi = %{version}
@@ -1092,6 +1104,7 @@ poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Malay (Malaysia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka malajskiego (dla Malezji)
 Version:	%{ver}
+# version 20041230 in README_ms_MY.txt, but mtime 20050117
 Release:	0.20050117.%{rel}
 License:	GNU Free Documentation License
 Group:		Applications/Text
@@ -1228,7 +1241,7 @@ Summary:	MySpell spelling dictionaries for Portuguese (Brasil)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka portugalskiego (dla Brazylii)
 Version:	%{ver}
 Release:	0.20070606.%{rel}
-License:	GPL
+License:	LGPL v2.1
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
@@ -1360,7 +1373,7 @@ Summary:	MySpell spelling dictionaries for Slovenian (Slovenia)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka słoweńskiego (dla Słowenii)
 Version:	%{ver}
 Release:	0.20030907.%{rel}
-License:	BSD-like
+License:	GPL, LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
@@ -1413,6 +1426,7 @@ poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Kiswahili (Africa)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka suahili (dla Afryki)
 Version:	%{ver}
+# version 20040316 in README_sw_KE.txt, files mtime 20040515
 Release:	0.20040515.%{rel}
 License:	LGPL
 Group:		Applications/Text
@@ -1438,8 +1452,9 @@ poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Ukrainian (Ukraine)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka ukraińskiego (dla Ukrainy)
 Version:	%{ver}
+# version in README_uk_UA.txt is 1.5.7, files mtime 20090124
 Release:	0.20090124.%{rel}
-License:	LGPL
+License:	GPL, LGPL and MPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
@@ -1465,8 +1480,9 @@ poprawiać w nich błędy.
 Summary:	MySpell spelling dictionaries for Zulu (South Africa)
 Summary(pl.UTF-8):	Słownik dla MySpella do sprawdzania pisowni dla języka zuluskiego (dla Republiki Południowej Afryki)
 Version:	%{ver}
+# version 20060120 in VERSION_zu_ZA.txt, files mtime 20060124
 Release:	0.20060124.%{rel}
-License:	LGPL
+License:	LGPL v2.1
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
 Provides:	myspell-dictionary = %{version}
@@ -2217,17 +2233,17 @@ install -d $RPM_BUILD_ROOT%{dictdir}
 
 # Install spell checking dictionaries
 for file in dic/DICT/*/*; do
-	install -m 644 $file $RPM_BUILD_ROOT%{dictdir}/${file##*/}
+	cp -p $file $RPM_BUILD_ROOT%{dictdir}/${file##*/}
 done
 
 # Install hyphenation dictionaries
 for file in dic/HYPH/*/*; do
-	install -m 644 $file $RPM_BUILD_ROOT%{dictdir}/${file##*/}
+	cp -p $file $RPM_BUILD_ROOT%{dictdir}/${file##*/}
 done
 
 # Install thesaurus dictionaries
 for file in dic/THES/*/*; do
-	install -m 644 $file $RPM_BUILD_ROOT%{dictdir}/${file##*/}
+	cp -p $file $RPM_BUILD_ROOT%{dictdir}/${file##*/}
 done
 
 touch $RPM_BUILD_ROOT%{dictdir}/dictionary.lst
