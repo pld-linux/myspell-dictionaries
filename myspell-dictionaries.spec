@@ -4,7 +4,7 @@
 # - hyph_en_AU hyph_en_CA hyph_en_GB hyph_en_NZ hyph_en_US are all identical in ooo contrib
 # - hyph_pt_BR and hyph_pt_PT contents are identical in ooo contrib
 
-%define		rel	2
+%define		rel	3
 %define		ver	1.0.3
 %define		ooo_mirror http://download.services.openoffice.org/contrib/dictionaries
 Summary:	MySpell Spelling and Hyphenation dictionaries
@@ -230,8 +230,6 @@ Release:	0.20060117.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-af = %{version}
-Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-af-ZA
 Obsoletes:	myspell-af
 
@@ -257,8 +255,6 @@ Release:	0.20100617.%{rel}
 License:	GPL/LGPL/MPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-bg = %{version}
-Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-bg
 Obsoletes:	myspell-bg
 Obsoletes:	openoffice-dict-bg
@@ -284,8 +280,6 @@ Release:	0.20070724.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-ca = %{version}
-Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ca
 Obsoletes:	myspell-ca
 Obsoletes:	openoffice-dict-ca
@@ -311,8 +305,6 @@ Release:	0.20060303.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-cs = %{version}
-Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-cs
 Obsoletes:	myspell-cs
 Obsoletes:	openoffice-dict-cs
@@ -338,8 +330,6 @@ Release:	0.20040425.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-cy = %{version}
-Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-cy-GB
 Obsoletes:	myspell-cy
 
@@ -365,8 +355,6 @@ Release:	0.20070902.%{rel}
 License:	LGPL v2.1+
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-da = %{version}
-Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-da
 Obsoletes:	myspell-da
 Obsoletes:	openoffice-dict-da
@@ -392,8 +380,6 @@ Release:	0.20100306.%{rel}
 License:	GPL v2
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-de = %{version}
-Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-de-AT
 Obsoletes:	myspell-de
 Obsoletes:	openoffice-dict-de
@@ -419,8 +405,6 @@ Release:	0.20100306.%{rel}
 License:	GPL v2
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-de = %{version}
-Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-de-CH
 Obsoletes:	myspell-de
 Obsoletes:	openoffice-dict-de
@@ -446,8 +430,6 @@ Release:	0.20100306.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-de = %{version}
-Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-de-DE
 Obsoletes:	myspell-de
 Obsoletes:	openoffice-dict-de
@@ -474,8 +456,6 @@ Release:	0.20041220.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-el = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-el
 Obsoletes:	myspell-el
 Obsoletes:	openoffice-dict-el
@@ -501,8 +481,6 @@ Release:	0.20030323.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-AU
 Obsoletes:	myspell-en
 Obsoletes:	openoffice-dict-en
@@ -528,8 +506,6 @@ Release:	0.20020315.%{rel}
 License:	Public Domain
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-CA
 Obsoletes:	myspell-en
 Obsoletes:	openoffice-dict-en
@@ -555,8 +531,6 @@ Release:	0.20050526.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-GB
 Obsoletes:	myspell-en
 Obsoletes:	openoffice-dict-en
@@ -582,8 +556,6 @@ Release:	0.20030906.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-NZ
 Obsoletes:	myspell-en
 Obsoletes:	openoffice-dict-en
@@ -609,8 +581,6 @@ Release:	0.20070504.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-en = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-en-US
 Obsoletes:	myspell-en
 Obsoletes:	openoffice-dict-en
@@ -636,8 +606,6 @@ Release:	0.20051029.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-es = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-es-ES
 Obsoletes:	myspell-es
 Obsoletes:	openoffice-dict-es
@@ -663,8 +631,6 @@ Release:	0.20051029.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-es = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-es-MX
 Obsoletes:	myspell-es
 Obsoletes:	openoffice-dict-es
@@ -690,8 +656,6 @@ Release:	0.20040621.%{rel}
 License:	free, see http://www.eki.ee/eki/licence.html
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-et = %{version}
 Obsoletes:	myspell-et
 
 %description -n myspell-et_EE
@@ -715,8 +679,6 @@ Release:	0.20070126.%{rel}
 License:	GPL v2
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-fo = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-fo
 Obsoletes:	myspell-fo
 
@@ -741,8 +703,6 @@ Release:	0.20030701.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-fr = %{version}
 Obsoletes:	myspell-fr
 Obsoletes:	openoffice-dict-fr
 
@@ -767,8 +727,6 @@ Release:	0.20090914.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-fr = %{version}
 Obsoletes:	myspell-fr
 Obsoletes:	openoffice-dict-fr
 
@@ -793,8 +751,6 @@ Release:	0.20071030.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-ga = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ga
 Obsoletes:	myspell-ga
 Obsoletes:	openoffice-dict-ga
@@ -820,8 +776,6 @@ Release:	0.20080515.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-gl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-gl
 Obsoletes:	myspell-gl
 Obsoletes:	openoffice-dict-gl
@@ -847,8 +801,6 @@ Release:	0.20060517.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-he = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-he-IL
 
 %description -n myspell-he_IL
@@ -872,8 +824,6 @@ Release:	0.20030928.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-hr = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-hr
 Obsoletes:	myspell-hr
 Obsoletes:	openoffice-dict-hr
@@ -899,8 +849,6 @@ Release:	0.20100206.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-hu = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-hu
 Obsoletes:	myspell-hu
 Obsoletes:	openoffice-dict-hu
@@ -926,8 +874,6 @@ Release:	0.20050101.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-ia = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ia
 
 %description -n myspell-ia_IA
@@ -952,8 +898,6 @@ Release:	0.20040810.%{rel}
 License:	GPL v2
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-id = %{version}
 Obsoletes:	myspell-id
 
 %description -n myspell-id_ID
@@ -977,8 +921,6 @@ Release:	0.20070901.%{rel}
 License:	LGPL/GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-it = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-it
 Obsoletes:	myspell-it
 Obsoletes:	openoffice-dict-it
@@ -1004,8 +946,6 @@ Release:	0.20060303.%{rel}
 License:	LGPL/GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-la = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-la
 Obsoletes:	openoffice-dict-la
 
@@ -1030,8 +970,6 @@ Release:	0.20031231.%{rel}
 License:	BSD-like
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-lt = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-lt
 Obsoletes:	myspell-lt
 Obsoletes:	openoffice-dict-lt
@@ -1058,8 +996,6 @@ Release:	0.20080222.%{rel}
 License:	LGPL v2.1
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-lv = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-lv_LV
 
 %description -n myspell-lv_LV
@@ -1085,8 +1021,6 @@ License:	LGPL
 Group:		Applications/Text
 URL:		http://papakupu.maori.nz/
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-mi = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-mi
 Obsoletes:	myspell-mi
 
@@ -1112,8 +1046,6 @@ Release:	0.20050117.%{rel}
 License:	GNU Free Documentation License
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-ms = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ms
 Obsoletes:	myspell-ms
 
@@ -1138,8 +1070,6 @@ Release:	0.20080310.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-no = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-nb
 Obsoletes:	myspell-no
 Obsoletes:	openoffice-dict-nb
@@ -1165,8 +1095,6 @@ Release:	0.20090722.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-nl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-nl
 Obsoletes:	myspell-nl
 Obsoletes:	openoffice-dict-nl
@@ -1192,8 +1120,6 @@ Release:	0.20080310.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-no = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-nn
 Obsoletes:	myspell-no
 Obsoletes:	openoffice-dict-nn
@@ -1219,8 +1145,6 @@ Release:	0.20100310.%{rel}
 License:	Creative Commons ShareAlike, http://creativecommons.org/licenses/sa/1.0
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-pl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-pl
 Obsoletes:	myspell-pl
 Obsoletes:	openoffice-dict-pl
@@ -1247,7 +1171,6 @@ Release:	0.20070606.%{rel}
 License:	LGPL v2.1
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-pt-BR
 Obsoletes:	openoffice-dict-pt
 
@@ -1272,8 +1195,6 @@ Release:	0.20091013.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-pt = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-pt
 Obsoletes:	myspell-pt
 Obsoletes:	openoffice-dict-pt
@@ -1299,8 +1220,6 @@ Release:	0.20091108.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-ro = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ro
 Obsoletes:	myspell-ro
 
@@ -1325,8 +1244,6 @@ Release:	0.20090603.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-ru = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-ru
 Obsoletes:	myspell-ru
 Obsoletes:	openoffice-dict-ru
@@ -1352,8 +1269,6 @@ Release:	0.20100208.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-sk = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-sk
 Obsoletes:	myspell-sk
 Obsoletes:	openoffice-dict-sk
@@ -1379,8 +1294,6 @@ Release:	0.20030907.%{rel}
 License:	GPL, LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-sl = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-sl
 Obsoletes:	myspell-sl
 Obsoletes:	openoffice-dict-sl
@@ -1406,8 +1319,6 @@ Release:	0.20100131.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-sv = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-sv
 Obsoletes:	myspell-sv
 Obsoletes:	openoffice-dict-sv
@@ -1434,8 +1345,6 @@ Release:	0.20040515.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-sw = %{version}
 Obsoletes:	myspell-sw
 
 %description -n myspell-sw_KE
@@ -1460,8 +1369,6 @@ Release:	0.20090124.%{rel}
 License:	GPL, LGPL and MPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-uk = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-uk
 Obsoletes:	myspell-uk
 Obsoletes:	openoffice-dict-uk
@@ -1488,8 +1395,6 @@ Release:	0.20060124.%{rel}
 License:	LGPL v2.1
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-dictionary = %{version}
-Provides:	myspell-zu = %{version}
 Obsoletes:	mozilla-thunderbird-dictionary-zu-ZA
 Obsoletes:	myspell-zu
 
@@ -1516,7 +1421,6 @@ Release:	0.20100617.%{rel}
 License:	GPL/LGPL/MPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-bg
 myspell-hyph-bg contains hyphenation data for Bulgarian to be used by
@@ -1535,7 +1439,6 @@ Release:	0.20031228.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-cs
 myspell-hyph-cs contains hyphenation data for Czech to be used by
@@ -1554,7 +1457,6 @@ Release:	0.20030904.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-da
 myspell-hyph-da contains hyphenation data for Danish to be used by
@@ -1573,7 +1475,6 @@ Release:	0.20100113.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-de
 myspell-hyph-de contains hyphenation data for German to be used by
@@ -1592,7 +1493,6 @@ Release:	0.20051017.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-el
 myspell-hyph-el contains hyphenation data for Greek to be used by
@@ -1611,7 +1511,6 @@ Release:	0.20020608.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-en
 myspell-hyph-en contains hyphenation data for English to be used by
@@ -1630,7 +1529,6 @@ Release:	0.20050201.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-es
 myspell-hyph-es contains hyphenation data for Spanish to be used by
@@ -1649,7 +1547,6 @@ Release:	0.20040718.%{rel}
 License:	free, see http://www.eki.ee/eki/licence.html
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-et
 myspell-hyph-et contains hyphenation data for Estonian to be used by
@@ -1668,7 +1565,6 @@ Release:	0.20040816.%{rel}
 License:	freely distributable
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-fi
 myspell-hyph-fi contains hyphenation data for Finnish to be used by
@@ -1687,7 +1583,6 @@ Release:	0.20080318.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-fr
 myspell-hyph-fr contains hyphenation data for French to be used by
@@ -1706,7 +1601,6 @@ Release:	0.20040816.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-ga
 myspell-hyph-ga contains hyphenation data for Irish to be used by
@@ -1725,7 +1619,6 @@ Release:	0.20100212.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-hu
 myspell-hyph-hu contains hyphenation data for Hungarian to be used by
@@ -1744,7 +1637,6 @@ Release:	0.20050228.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-ia
 myspell-hyph-ia contains hyphenation data for Interlingua to be used
@@ -1763,7 +1655,6 @@ Release:	0.20040816.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-id
 myspell-hyph-id contains hyphenation data for Indonesian to be used by
@@ -1782,7 +1673,6 @@ Release:	0.20040816.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-is
 myspell-hyph-is contains hyphenation data for Icelandic to be used by
@@ -1801,7 +1691,6 @@ Release:	0.20071126.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-it
 myspell-hyph-it contains hyphenation data for Italian to be used by
@@ -1820,7 +1709,6 @@ Release:	0.20040816.%{rel}
 License:	LPPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-lt
 myspell-hyph-lt contains hyphenation data for Lithuanian to be used by
@@ -1839,7 +1727,6 @@ Release:	0.20050914.%{rel}
 License:	LPPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-lv
 myspell-hyph-lv contains hyphenation data for Latvian to be used by
@@ -1858,7 +1745,6 @@ Release:	0.20080829.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-nl
 myspell-hyph-nl contains hyphenation data for Dutch to be used by
@@ -1877,7 +1763,6 @@ Release:	0.20070407.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-pl
 myspell-hyph-pl contains hyphenation data for Polish to be used by
@@ -1896,7 +1781,6 @@ Release:	0.20040816.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-pt
 myspell-hyph-pt contains hyphenation data for Portuguese to be used by
@@ -1915,7 +1799,6 @@ Release:	0.20030908.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-ru
 myspell-hyph-ru contains hyphenation data for Russian to be used by
@@ -1934,7 +1817,6 @@ Release:	0.20060323.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-sk
 myspell-hyph-sk contains hyphenation data for Slovak to be used by
@@ -1953,7 +1835,6 @@ Release:	0.20030904.%{rel}
 License:	Copyright Matjaz Vrecko
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-sl
 myspell-hyph-sl contains hyphenation data for Slovenian to be used by
@@ -1972,7 +1853,6 @@ Release:	0.20030814.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-sv
 myspell-hyph-sv contains hyphenation data for Swedish to be used by
@@ -1991,7 +1871,6 @@ Release:	0.20030904.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-hyphenation = %{version}
 
 %description -n myspell-hyph-uk
 myspell-hyph-uk contains hyphenation data for Ukrainian to be used by
@@ -2012,7 +1891,6 @@ Release:	0.20100617.%{rel}
 License:	GPL/LGPL/MPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-bg_BG
 myspell-thes-bg_BG contains thesaurus data in Bulgarian (Bulgaria) to
@@ -2031,7 +1909,6 @@ Release:	0.20100307.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-thesaurus = %{version}
 Obsoletes:	openoffice-thesaurus-de
 
 %description -n myspell-thes-de_DE
@@ -2051,7 +1928,6 @@ Release:	0.20051125.%{rel}
 License:	BSD
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-thesaurus = %{version}
 Obsoletes:	openoffice-thesaurus-en
 
 %description -n myspell-thes-en_US
@@ -2071,7 +1947,6 @@ Release:	0.20050720.%{rel}
 License:	LGPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-thesaurus = %{version}
 Obsoletes:	openoffice-thesaurus-es
 
 %description -n myspell-thes-es_ES
@@ -2091,7 +1966,6 @@ Release:	0.20090911.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-fr_FR
 myspell-thes-fr_FR contains thesaurus data in French (France) to be
@@ -2110,7 +1984,6 @@ Release:	0.20081129.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-it_IT
 myspell-thes-it_IT contains thesaurus data in Italian (Italy) to be
@@ -2129,7 +2002,6 @@ Release:	0.20080513.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-thesaurus = %{version}
 Obsoletes:	openoffice-thesaurus-pl-alt
 Obsoletes:	openoffice.org-thesaurus-pl-alt
 
@@ -2150,7 +2022,6 @@ Release:	0.20100207.%{rel}
 License:	GPL
 Group:		Applications/Text
 Requires:	myspell-common = %{ver}-%{rel}
-Provides:	myspell-thesaurus = %{version}
 
 %description -n myspell-thes-sk_SK
 myspell-thes-sk_SK contains thesaurus data in Slovak (Slovak Republic)
