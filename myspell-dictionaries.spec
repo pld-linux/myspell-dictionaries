@@ -4,7 +4,7 @@
 # - hyph_en_AU hyph_en_CA hyph_en_GB hyph_en_NZ hyph_en_US are all identical in ooo contrib
 # - hyph_pt_BR and hyph_pt_PT contents are identical in ooo contrib
 
-%define		rel	1
+%define		rel	2
 %define		ver	1.0.3
 %define		ooo_mirror http://download.services.openoffice.org/contrib/dictionaries
 Summary:	MySpell Spelling and Hyphenation dictionaries
