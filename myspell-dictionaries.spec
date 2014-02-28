@@ -6,7 +6,7 @@
 
 %define		rel	1
 %define		ver	1.0.3
-%define		ooo_mirror http://openoffice.osuosl.org/contrib/dictionaries
+%define		ooo_mirror http://download.services.openoffice.org/contrib/dictionaries
 Summary:	MySpell Spelling and Hyphenation dictionaries
 Summary(pl.UTF-8):	Słowniki dla MySpella do sprawdzania pisowni i przenoszenia wyrazów
 Name:		myspell-dictionaries
