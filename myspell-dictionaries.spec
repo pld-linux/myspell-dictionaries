@@ -2168,7 +2168,7 @@ find -name GPL-2.0.txt | xargs rm -v
 find -name LGPL-2.1.txt | xargs rm -v
 find -name MPL-1.1.txt | xargs rm -v
 
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
